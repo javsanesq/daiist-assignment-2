@@ -1,0 +1,7 @@
+{
+  "run_id": "yolo11_20261026T024637Z_a7af6c",
+  "best_epoch": 10,
+  "fitness": 0.08999,
+  "recorded_at_utc": "2026-10-26T02:57:56.309448+00:00",
+  "source": "on_model_save callback after the actual best.pt write, including equal-fitness replacements"
+}

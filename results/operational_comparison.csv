@@ -1,0 +1,5 @@
+policy_id,policy,lower,upper,cost_per_1000,error_cost_per_1000,review_cost_per_1000,inference_cost_per_1000,false_negatives_per_1000,false_positives_per_1000,review_fraction,daily_reviews,daily_review_hours,reviewers_needed,within_capacity,daily_backlog_if_no_extra_staff
+routine_all,Routine queue for all (no added triage),1.001,1.001,50000.0,50000.0,0.0,0.0,100.0,0.0,0.0,0.0,0.0,0,True,0.0
+human_all,Human priority review for all,0.0,1.001,9249.999999999998,7249.999999999998,2000.0,0.0,9.999999999999998,89.99999999999999,1.0,200.0,6.666666666666667,4,False,140.0
+model_only,Model only,0.04,0.04,3797.8674857393594,3787.8674857393594,0.0,10.0,2.5943396226415096,99.62790697674419,0.0,0.0,0.0,0,True,0.0
+model_human,Model + human review,0.02,0.15,2669.1557700745943,2416.2220272049144,242.9337428696797,10.0,2.3584905660377355,49.479069767441864,0.12146687143483985,24.29337428696797,0.8097791428989324,1,True,0.0

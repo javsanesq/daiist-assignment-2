@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "selection_after_comparison": false,
+  "test_previously_exposed": true,
+  "note": "Descriptive follow-up after explicit candidate adoption and policy freeze. Does not select a model or retune policy. Expected hybrid outcomes assume 90% reviewers and the same approved scenario.",
+  "baseline_archive": "history/run_20261026T085846Z_dc042c",
+  "rows": [
+    {
+      "label": "Original 768",
+      "detection": {
+        "map50": 0.17255791383711053,
+        "map50_95": 0.0800198836867491,
+        "mean_precision_at_max_f1": 0.20954993467893163,
+        "mean_recall_at_max_f1": 0.20404210392604288
+      },
+      "observed_model_only": {
+        "confusion": [
+          [
+            906,
+            169
+          ],
+          [
+            13,
+            411
+          ]
+        ],
+        "rows": [
+          "annotated_negative",
+          "annotated_positive"
+        ],
+        "columns": [
+          "routine",
+          "accelerated"
+        ],
+        "sensitivity": 0.9693396226415094,
+        "specificity": 0.8427906976744186,
+        "precision": 0.7086206896551724,
+        "threshold": 0.04,
+        "units": "Observed image counts; no assumed human decisions included"
+      },
+      "hybrid": {
+        "cost_per_1000": 2692.2220272049135,
+        "daily_reviews": 40.4905221588416,
+        "false_negatives_per_1000": 2.382075471698113,
+        "false_positives_per_1000": 43.451162790697666
+      },
+      "binary_cost_per_1000": 5080.2281702501095,
+      "test_metrics_sha256": "592e4cbd2f7848a73a3077211f116c1e8f15a41e9b8cf714cbc3f966938c452a",
+      "test_predictions_sha256": "721a20acd68f407ee0f715edbe3bf8dd3a1c971998370795e2079fe1149ac76f"
+    },
+    {
+      "label": "Adopted 1024",
+      "detection": {
+        "map50": 0.2004648622619678,
+        "map50_95": 0.08883195012295796,
+        "mean_precision_at_max_f1": 0.4079912208942303,
+        "mean_recall_at_max_f1": 0.222298125508844
+      },
+      "observed_model_only": {
+        "confusion": [
+          [
+            956,
+            119
+          ],
+          [
+            11,
+            413
+          ]
+        ],
+        "rows": [
+          "annotated_negative",
+          "annotated_positive"
+        ],
+        "columns": [
+          "routine",
+          "accelerated"
+        ],
+        "sensitivity": 0.9740566037735849,
+        "specificity": 0.8893023255813953,
+        "precision": 0.7763157894736842,
+        "threshold": 0.04,
+        "units": "Observed image counts; no assumed human decisions included"
+      },
+      "hybrid": {
+        "cost_per_1000": 2669.1557700745943,
+        "daily_reviews": 24.29337428696797,
+        "false_negatives_per_1000": 2.3584905660377355,
+        "false_positives_per_1000": 49.479069767441864
+      },
+      "binary_cost_per_1000": 3797.8674857393594,
+      "test_metrics_sha256": "88ab502518ea7849f58f7ffd6291f10798c85410819990c4fc957b8fbb7e18b7",
+      "test_predictions_sha256": "7ca77924fa995c19199d231b8965081bc32d9b0e344a859271d7ddb989d40026"
+    }
+  ]
+}

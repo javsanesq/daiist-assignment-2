@@ -1,0 +1,31 @@
+{
+  "scope": "Functional verification on Windows; not clinical validation.",
+  "original_checker": {
+    "command": "uv run python check.py",
+    "exit_code": 0,
+    "duration_seconds": 16.45,
+    "checked_at_utc": "2026-10-26T20:17:57.894717+00:00",
+    "credentials_redacted": true
+  },
+  "unattended_training": {
+    "command": "python main.py train",
+    "status": "passed",
+    "exit_code": 0,
+    "started_at_utc": "2026-10-26T19:40:33.131762+00:00",
+    "finished_at_utc": "2026-10-26T20:19:29.623302+00:00",
+    "completed_epochs": 30,
+    "approved_submission_artifacts_unchanged": true,
+    "post_run_app_inference_verified": true
+  },
+  "examples": {
+    "downloaded_images": 3,
+    "bytes_fetched": 5343893,
+    "audited_image_hashes_verified": true
+  },
+  "note": "Detailed verification logs and historical research remain local. The included tests cover the submitted implementation.",
+  "included_tests": {
+    "passed": 140,
+    "warnings": 2,
+    "scope": "Tests for the submitted code; research/document-generation tests remain local."
+  }
+}

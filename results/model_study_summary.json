@@ -1,0 +1,1468 @@
+{
+  "schema_version": 1,
+  "status": "complete",
+  "updated_at_utc": "2026-10-26T06:23:03.504689+00:00",
+  "selection_split": "val",
+  "test_previously_exposed": true,
+  "selection_rule": "Recommend highest standalone validation macro mAP50-95; show per-class detection and hypothetical triage cost/capacity before any adoption. No automatic promotion or new policy approval.",
+  "budget_hours": 8,
+  "consumed_seconds": 14292.203000000009,
+  "study_outcome": "all_candidates_validation_ready",
+  "all_candidates_trained": true,
+  "baseline": {
+    "id": "original_baseline",
+    "model": "yolo11n.pt",
+    "imgsz": 768,
+    "validation": {
+      "map50": 0.17176372415323243,
+      "map50_95": 0.08211441137667383,
+      "hybrid_cost_per_1000": 3184.445459436876,
+      "hybrid_daily_reviews": 40.61263130484162,
+      "binary_cost_per_1000": 4862.485491040498,
+      "per_class": [
+        {
+          "class_id": 0,
+          "class_name": "Aortic enlargement",
+          "ap50": 0.8351044180309154,
+          "ap50_95": 0.40533257009520857,
+          "precision_at_max_f1": 0.5570491975056617,
+          "recall_at_max_f1": 0.9098101265822784,
+          "instances": 632,
+          "images": 632
+        },
+        {
+          "class_id": 1,
+          "class_name": "Atelectasis",
+          "ap50": 0.020025745996610805,
+          "ap50_95": 0.006654737491556262,
+          "precision_at_max_f1": 0.014232926965189923,
+          "recall_at_max_f1": 0.02857142857142857,
+          "instances": 35,
+          "images": 35
+        },
+        {
+          "class_id": 2,
+          "class_name": "Calcification",
+          "ap50": 0.03363597253194904,
+          "ap50_95": 0.010196707444614405,
+          "precision_at_max_f1": 0.12729064888012015,
+          "recall_at_max_f1": 0.018867924528301886,
+          "instances": 106,
+          "images": 106
+        },
+        {
+          "class_id": 3,
+          "class_name": "Cardiomegaly",
+          "ap50": 0.9008136823953024,
+          "ap50_95": 0.4995202203562443,
+          "precision_at_max_f1": 0.48777685585046765,
+          "recall_at_max_f1": 0.9532520325203252,
+          "instances": 492,
+          "images": 492
+        },
+        {
+          "class_id": 4,
+          "class_name": "Consolidation",
+          "ap50": 0.07931030982913265,
+          "ap50_95": 0.029385676529762046,
+          "precision_at_max_f1": 0.1361666644001412,
+          "recall_at_max_f1": 0.15625,
+          "instances": 64,
+          "images": 64
+        },
+        {
+          "class_id": 5,
+          "class_name": "ILD",
+          "ap50": 0.08384940599354226,
+          "ap50_95": 0.03355617638902898,
+          "precision_at_max_f1": 0.2926764270703423,
+          "recall_at_max_f1": 0.08,
+          "instances": 100,
+          "images": 100
+        },
+        {
+          "class_id": 6,
+          "class_name": "Infiltration",
+          "ap50": 0.08180951597750756,
+          "ap50_95": 0.027921835660724575,
+          "precision_at_max_f1": 0.20195651650594934,
+          "recall_at_max_f1": 0.1322314049586777,
+          "instances": 121,
+          "images": 121
+        },
+        {
+          "class_id": 7,
+          "class_name": "Lung Opacity",
+          "ap50": 0.041954202964832925,
+          "ap50_95": 0.01329477922142725,
+          "precision_at_max_f1": 0.12436507228113823,
+          "recall_at_max_f1": 0.11594202898550725,
+          "instances": 276,
+          "images": 276
+        },
+        {
+          "class_id": 8,
+          "class_name": "Nodule-Mass",
+          "ap50": 0.04837864006223261,
+          "ap50_95": 0.014907709410509753,
+          "precision_at_max_f1": 0.18222170608728686,
+          "recall_at_max_f1": 0.07777777777777778,
+          "instances": 180,
+          "images": 180
+        },
+        {
+          "class_id": 9,
+          "class_name": "Other lesion",
+          "ap50": 0.007963833093851451,
+          "ap50_95": 0.0015453878366159714,
+          "precision_at_max_f1": 0.06356210509974629,
+          "recall_at_max_f1": 0.013636363636363636,
+          "instances": 220,
+          "images": 220
+        },
+        {
+          "class_id": 10,
+          "class_name": "Pleural effusion",
+          "ap50": 0.14139340468312334,
+          "ap50_95": 0.047868732710848794,
+          "precision_at_max_f1": 0.1684800996877787,
+          "recall_at_max_f1": 0.215311004784689,
+          "instances": 209,
+          "images": 209
+        },
+        {
+          "class_id": 11,
+          "class_name": "Pleural thickening",
+          "ap50": 0.04637988895135045,
+          "ap50_95": 0.00979739567275539,
+          "precision_at_max_f1": 0.1877097005592187,
+          "recall_at_max_f1": 0.03526448362720403,
+          "instances": 397,
+          "images": 397
+        },
+        {
+          "class_id": 12,
+          "class_name": "Pneumothorax",
+          "ap50": 0.061326835262252494,
+          "ap50_95": 0.04232554514442779,
+          "precision_at_max_f1": 0.05259449953422503,
+          "recall_at_max_f1": 0.14285714285714285,
+          "instances": 21,
+          "images": 21
+        },
+        {
+          "class_id": 13,
+          "class_name": "Pulmonary fibrosis",
+          "ap50": 0.02274628237265139,
+          "ap50_95": 0.00729428530970964,
+          "precision_at_max_f1": 0.05537596839644928,
+          "recall_at_max_f1": 0.034482758620689655,
+          "instances": 319,
+          "images": 319
+        }
+      ],
+      "hypothetical_scenario": {
+        "prevalence": 0.1,
+        "false_positive_eur": 25.0,
+        "false_negative_eur": 500.0,
+        "review_minutes": 2.0,
+        "reviewer_hourly_eur": 60.0,
+        "reviewer_sensitivity": 0.9,
+        "reviewer_specificity": 0.9,
+        "daily_images": 200,
+        "reviewers_available": 1,
+        "review_hours_per_person": 2.0,
+        "inference_eur_per_image": 0.01
+      },
+      "policy_proposal_not_adopted": {
+        "binary": {
+          "lower": 0.04,
+          "upper": 0.04,
+          "observed_actions": [
+            [
+              1758,
+              0,
+              323
+            ],
+            [
+              25,
+              0,
+              894
+            ]
+          ],
+          "expected_actions_per_1000": [
+            [
+              760.3075444497838,
+              0.0,
+              139.69245555021624
+            ],
+            [
+              2.7203482045701852,
+              0.0,
+              97.27965179542981
+            ]
+          ],
+          "expected_resolved_confusion_per_1000": [
+            [
+              760.3075444497838,
+              139.69245555021624
+            ],
+            [
+              2.7203482045701852,
+              97.27965179542981
+            ]
+          ],
+          "cost_per_1000": 4862.485491040498,
+          "error_cost_per_1000": 4852.485491040498,
+          "review_cost_per_1000": 0.0,
+          "inference_cost_per_1000": 10.0,
+          "false_negatives_per_1000": 2.7203482045701852,
+          "false_positives_per_1000": 139.69245555021624,
+          "review_fraction": 0.0,
+          "daily_reviews": 0.0,
+          "daily_review_hours": 0.0,
+          "reviewers_needed": 0,
+          "within_capacity": true,
+          "sensitivity": 0.9727965179542981,
+          "specificity": 0.8447861604997597
+        },
+        "hybrid": {
+          "lower": 0.02,
+          "upper": 0.27,
+          "observed_actions": [
+            [
+              1589,
+              426,
+              66
+            ],
+            [
+              12,
+              173,
+              734
+            ]
+          ],
+          "expected_actions_per_1000": [
+            [
+              687.2176838058625,
+              184.2383469485824,
+              28.54396924555502
+            ],
+            [
+              1.3057671381936888,
+              18.824809575625682,
+              79.86942328618063
+            ]
+          ],
+          "expected_resolved_confusion_per_1000": [
+            [
+              853.0321960595867,
+              46.967803940413255
+            ],
+            [
+              3.188248095756257,
+              96.81175190424375
+            ]
+          ],
+          "cost_per_1000": 3184.445459436876,
+          "error_cost_per_1000": 2768.3191463884596,
+          "review_cost_per_1000": 406.1263130484162,
+          "inference_cost_per_1000": 10.0,
+          "false_negatives_per_1000": 3.188248095756257,
+          "false_positives_per_1000": 46.967803940413255,
+          "review_fraction": 0.2030631565242081,
+          "daily_reviews": 40.61263130484162,
+          "daily_review_hours": 1.353754376828054,
+          "reviewers_needed": 1,
+          "within_capacity": true,
+          "sensitivity": 0.9681175190424375,
+          "specificity": 0.9478135511773187
+        }
+      },
+      "completed_epochs": 19,
+      "best_epoch": 11,
+      "weights_sha256": "ff5750d5bdbbeac35d6ffd7ad6ab58b809e3b963bdecf46bb4b92b050b89c673",
+      "validation_predictions_sha256": "2627ef35afcb7a67ce47fa4053188041e2e3c70e97ca0a695fc81f7d99b92261"
+    }
+  },
+  "candidates": [
+    {
+      "id": "n768_adamw_control",
+      "model": "yolo11n.pt",
+      "imgsz": 768,
+      "changes": [
+        "Corrected AdamW warmup_bias_lr=0",
+        "lr0=0.0005",
+        "Longer predeclared stopping budget"
+      ],
+      "status": "validation_ready",
+      "epochs": 100,
+      "patience": 20,
+      "seed": 42,
+      "validation": {
+        "map50": 0.19588559753610452,
+        "map50_95": 0.0896325972235222,
+        "hybrid_cost_per_1000": 2842.208818163612,
+        "hybrid_daily_reviews": 29.708482205184062,
+        "binary_cost_per_1000": 4283.827818821934,
+        "per_class": [
+          {
+            "class_id": 0,
+            "class_name": "Aortic enlargement",
+            "ap50": 0.8343543436691511,
+            "ap50_95": 0.3953396404278715,
+            "precision_at_max_f1": 0.6027833405124323,
+            "recall_at_max_f1": 0.879746835443038,
+            "instances": 632,
+            "images": 632
+          },
+          {
+            "class_id": 1,
+            "class_name": "Atelectasis",
+            "ap50": 0.12983136069167478,
+            "ap50_95": 0.03681237798436922,
+            "precision_at_max_f1": 0.6003829077175423,
+            "recall_at_max_f1": 0.05714285714285714,
+            "instances": 35,
+            "images": 35
+          },
+          {
+            "class_id": 2,
+            "class_name": "Calcification",
+            "ap50": 0.05385475189642102,
+            "ap50_95": 0.022511962121009654,
+            "precision_at_max_f1": 0.15007101204324674,
+            "recall_at_max_f1": 0.0660377358490566,
+            "instances": 106,
+            "images": 106
+          },
+          {
+            "class_id": 3,
+            "class_name": "Cardiomegaly",
+            "ap50": 0.924156598443442,
+            "ap50_95": 0.5034052790118562,
+            "precision_at_max_f1": 0.6022313184984176,
+            "recall_at_max_f1": 0.9613821138211383,
+            "instances": 492,
+            "images": 492
+          },
+          {
+            "class_id": 4,
+            "class_name": "Consolidation",
+            "ap50": 0.09912172740557104,
+            "ap50_95": 0.03603249657031171,
+            "precision_at_max_f1": 0.20914341433713385,
+            "recall_at_max_f1": 0.125,
+            "instances": 64,
+            "images": 64
+          },
+          {
+            "class_id": 5,
+            "class_name": "ILD",
+            "ap50": 0.06671221593909613,
+            "ap50_95": 0.029936432776668593,
+            "precision_at_max_f1": 0.1334992638843743,
+            "recall_at_max_f1": 0.22,
+            "instances": 100,
+            "images": 100
+          },
+          {
+            "class_id": 6,
+            "class_name": "Infiltration",
+            "ap50": 0.08010983303399935,
+            "ap50_95": 0.031734524919448094,
+            "precision_at_max_f1": 0.108006732549774,
+            "recall_at_max_f1": 0.2231404958677686,
+            "instances": 121,
+            "images": 121
+          },
+          {
+            "class_id": 7,
+            "class_name": "Lung Opacity",
+            "ap50": 0.06130602165680584,
+            "ap50_95": 0.02158437877434127,
+            "precision_at_max_f1": 0.12564646610552707,
+            "recall_at_max_f1": 0.16304347826086957,
+            "instances": 276,
+            "images": 276
+          },
+          {
+            "class_id": 8,
+            "class_name": "Nodule-Mass",
+            "ap50": 0.0873662014443132,
+            "ap50_95": 0.030396259098687206,
+            "precision_at_max_f1": 0.2899596799397752,
+            "recall_at_max_f1": 0.1111111111111111,
+            "instances": 180,
+            "images": 180
+          },
+          {
+            "class_id": 9,
+            "class_name": "Other lesion",
+            "ap50": 0.007887243503673343,
+            "ap50_95": 0.0020590357512495954,
+            "precision_at_max_f1": 0.0,
+            "recall_at_max_f1": 0.0,
+            "instances": 220,
+            "images": 220
+          },
+          {
+            "class_id": 10,
+            "class_name": "Pleural effusion",
+            "ap50": 0.22997460879681916,
+            "ap50_95": 0.07700103049640612,
+            "precision_at_max_f1": 0.23595835151186026,
+            "recall_at_max_f1": 0.3492822966507177,
+            "instances": 209,
+            "images": 209
+          },
+          {
+            "class_id": 11,
+            "class_name": "Pleural thickening",
+            "ap50": 0.0567075537090519,
+            "ap50_95": 0.014861116477139943,
+            "precision_at_max_f1": 0.16180449934059998,
+            "recall_at_max_f1": 0.10075566750629723,
+            "instances": 397,
+            "images": 397
+          },
+          {
+            "class_id": 12,
+            "class_name": "Pneumothorax",
+            "ap50": 0.06950238355731572,
+            "ap50_95": 0.04260914391608099,
+            "precision_at_max_f1": 0.955784572683932,
+            "recall_at_max_f1": 0.047619047619047616,
+            "instances": 21,
+            "images": 21
+          },
+          {
+            "class_id": 13,
+            "class_name": "Pulmonary fibrosis",
+            "ap50": 0.041513521758129286,
+            "ap50_95": 0.010572682803870876,
+            "precision_at_max_f1": 0.09733972119764031,
+            "recall_at_max_f1": 0.15047021943573669,
+            "instances": 319,
+            "images": 319
+          }
+        ],
+        "hypothetical_scenario": {
+          "prevalence": 0.1,
+          "false_positive_eur": 25.0,
+          "false_negative_eur": 500.0,
+          "review_minutes": 2.0,
+          "reviewer_hourly_eur": 60.0,
+          "reviewer_sensitivity": 0.9,
+          "reviewer_specificity": 0.9,
+          "daily_images": 200,
+          "reviewers_available": 1,
+          "review_hours_per_person": 2.0,
+          "inference_eur_per_image": 0.01
+        },
+        "policy_proposal_not_adopted": {
+          "binary": {
+            "lower": 0.03,
+            "upper": 0.03,
+            "observed_actions": [
+              [
+                1887,
+                0,
+                194
+              ],
+              [
+                40,
+                0,
+                879
+              ]
+            ],
+            "expected_actions_per_1000": [
+              [
+                816.0980297933686,
+                0.0,
+                83.90197020663143
+              ],
+              [
+                4.352557127312296,
+                0.0,
+                95.64744287268772
+              ]
+            ],
+            "expected_resolved_confusion_per_1000": [
+              [
+                816.0980297933686,
+                83.90197020663143
+              ],
+              [
+                4.352557127312296,
+                95.64744287268772
+              ]
+            ],
+            "cost_per_1000": 4283.827818821934,
+            "error_cost_per_1000": 4273.827818821934,
+            "review_cost_per_1000": 0.0,
+            "inference_cost_per_1000": 10.0,
+            "false_negatives_per_1000": 4.352557127312296,
+            "false_positives_per_1000": 83.90197020663143,
+            "review_fraction": 0.0,
+            "daily_reviews": 0.0,
+            "daily_review_hours": 0.0,
+            "reviewers_needed": 0,
+            "within_capacity": true,
+            "sensitivity": 0.956474428726877,
+            "specificity": 0.9067755886592984
+          },
+          "hybrid": {
+            "lower": 0.01,
+            "upper": 0.21,
+            "observed_actions": [
+              [
+                1720,
+                310,
+                51
+              ],
+              [
+                17,
+                133,
+                769
+              ]
+            ],
+            "expected_actions_per_1000": [
+              [
+                743.8731379144642,
+                134.07015857760692,
+                22.05670350792888
+              ],
+              [
+                1.849836779107726,
+                14.472252448313384,
+                83.6779107725789
+              ]
+            ],
+            "expected_resolved_confusion_per_1000": [
+              [
+                864.5362806343105,
+                35.46371936568957
+              ],
+              [
+                3.297062023939064,
+                96.70293797606094
+              ]
+            ],
+            "cost_per_1000": 2842.208818163612,
+            "error_cost_per_1000": 2535.1239961117712,
+            "review_cost_per_1000": 297.0848220518406,
+            "inference_cost_per_1000": 10.0,
+            "false_negatives_per_1000": 3.297062023939064,
+            "false_positives_per_1000": 35.46371936568957,
+            "review_fraction": 0.1485424110259203,
+            "daily_reviews": 29.708482205184062,
+            "daily_review_hours": 0.990282740172802,
+            "reviewers_needed": 1,
+            "within_capacity": true,
+            "sensitivity": 0.9670293797606093,
+            "specificity": 0.960595867371456
+          }
+        },
+        "completed_epochs": 32,
+        "best_epoch": 12,
+        "weights_sha256": "a2fe4fe9c8ad0d2aebc844e17c6164ca046f512d0fced4791d345fb16216d577",
+        "validation_predictions_sha256": "7b526d626ce68d4aaac9ddfc7a2c96764e518fe34bffcddb2dc9f9a353521ff4"
+      },
+      "attempt_root": "experiments/model_study/candidates/n768_adamw_control/attempt_01",
+      "actual_batch": 16
+    },
+    {
+      "id": "n1024_resolution",
+      "model": "yolo11n.pt",
+      "imgsz": 1024,
+      "changes": [
+        "Same corrected protocol as n768",
+        "Use the published 1024-pixel image resolution"
+      ],
+      "status": "validation_ready",
+      "epochs": 100,
+      "patience": 20,
+      "seed": 42,
+      "validation": {
+        "map50": 0.1858366987891704,
+        "map50_95": 0.09121005485977969,
+        "hybrid_cost_per_1000": 2711.855065704056,
+        "hybrid_daily_reviews": 27.022090639230846,
+        "binary_cost_per_1000": 4029.6066384339583,
+        "per_class": [
+          {
+            "class_id": 0,
+            "class_name": "Aortic enlargement",
+            "ap50": 0.8550196074634338,
+            "ap50_95": 0.4321285311732578,
+            "precision_at_max_f1": 0.5301644131093354,
+            "recall_at_max_f1": 0.9034810126582279,
+            "instances": 632,
+            "images": 632
+          },
+          {
+            "class_id": 1,
+            "class_name": "Atelectasis",
+            "ap50": 0.05070770928061631,
+            "ap50_95": 0.0134589522180377,
+            "precision_at_max_f1": 1.0,
+            "recall_at_max_f1": 0.0,
+            "instances": 35,
+            "images": 35
+          },
+          {
+            "class_id": 2,
+            "class_name": "Calcification",
+            "ap50": 0.04919865200620879,
+            "ap50_95": 0.02091340065627994,
+            "precision_at_max_f1": 0.22175225205337612,
+            "recall_at_max_f1": 0.09433962264150944,
+            "instances": 106,
+            "images": 106
+          },
+          {
+            "class_id": 3,
+            "class_name": "Cardiomegaly",
+            "ap50": 0.9113439267527308,
+            "ap50_95": 0.5236013180818925,
+            "precision_at_max_f1": 0.559472671048853,
+            "recall_at_max_f1": 0.9473426207682661,
+            "instances": 492,
+            "images": 492
+          },
+          {
+            "class_id": 4,
+            "class_name": "Consolidation",
+            "ap50": 0.08783884695136468,
+            "ap50_95": 0.030423488924199465,
+            "precision_at_max_f1": 0.5813367740642124,
+            "recall_at_max_f1": 0.023250322568519916,
+            "instances": 64,
+            "images": 64
+          },
+          {
+            "class_id": 5,
+            "class_name": "ILD",
+            "ap50": 0.060966604178665354,
+            "ap50_95": 0.02312116457379527,
+            "precision_at_max_f1": 1.0,
+            "recall_at_max_f1": 0.0,
+            "instances": 100,
+            "images": 100
+          },
+          {
+            "class_id": 6,
+            "class_name": "Infiltration",
+            "ap50": 0.10214033726440577,
+            "ap50_95": 0.032058141502559576,
+            "precision_at_max_f1": 0.21118300394818987,
+            "recall_at_max_f1": 0.19834710743801653,
+            "instances": 121,
+            "images": 121
+          },
+          {
+            "class_id": 7,
+            "class_name": "Lung Opacity",
+            "ap50": 0.06280993250177519,
+            "ap50_95": 0.018783569340895784,
+            "precision_at_max_f1": 0.20584846617056252,
+            "recall_at_max_f1": 0.10869565217391304,
+            "instances": 276,
+            "images": 276
+          },
+          {
+            "class_id": 8,
+            "class_name": "Nodule-Mass",
+            "ap50": 0.08919908971498083,
+            "ap50_95": 0.038961288910127345,
+            "precision_at_max_f1": 0.20706605181401674,
+            "recall_at_max_f1": 0.13333333333333333,
+            "instances": 180,
+            "images": 180
+          },
+          {
+            "class_id": 9,
+            "class_name": "Other lesion",
+            "ap50": 0.008438089055481723,
+            "ap50_95": 0.0024282345166682894,
+            "precision_at_max_f1": 0.09712825987081396,
+            "recall_at_max_f1": 0.010801023950927349,
+            "instances": 220,
+            "images": 220
+          },
+          {
+            "class_id": 10,
+            "class_name": "Pleural effusion",
+            "ap50": 0.12692557794902787,
+            "ap50_95": 0.0463099969126716,
+            "precision_at_max_f1": 0.128274642987122,
+            "recall_at_max_f1": 0.3253588516746411,
+            "instances": 209,
+            "images": 209
+          },
+          {
+            "class_id": 11,
+            "class_name": "Pleural thickening",
+            "ap50": 0.0478058758038474,
+            "ap50_95": 0.012781180628346605,
+            "precision_at_max_f1": 0.1558716939128481,
+            "recall_at_max_f1": 0.017632241813602016,
+            "instances": 397,
+            "images": 397
+          },
+          {
+            "class_id": 12,
+            "class_name": "Pneumothorax",
+            "ap50": 0.1025839216857084,
+            "ap50_95": 0.06896459162948729,
+            "precision_at_max_f1": 1.0,
+            "recall_at_max_f1": 0.0,
+            "instances": 21,
+            "images": 21
+          },
+          {
+            "class_id": 13,
+            "class_name": "Pulmonary fibrosis",
+            "ap50": 0.046735612440138644,
+            "ap50_95": 0.013006908968696962,
+            "precision_at_max_f1": 0.08782192547863607,
+            "recall_at_max_f1": 0.18495297805642633,
+            "instances": 319,
+            "images": 319
+          }
+        ],
+        "hypothetical_scenario": {
+          "prevalence": 0.1,
+          "false_positive_eur": 25.0,
+          "false_negative_eur": 500.0,
+          "review_minutes": 2.0,
+          "reviewer_hourly_eur": 60.0,
+          "reviewer_sensitivity": 0.9,
+          "reviewer_specificity": 0.9,
+          "daily_images": 200,
+          "reviewers_available": 1,
+          "review_hours_per_person": 2.0,
+          "inference_eur_per_image": 0.01
+        },
+        "policy_proposal_not_adopted": {
+          "binary": {
+            "lower": 0.04,
+            "upper": 0.04,
+            "observed_actions": [
+              [
+                1830,
+                0,
+                251
+              ],
+              [
+                24,
+                0,
+                895
+              ]
+            ],
+            "expected_actions_per_1000": [
+              [
+                791.4464199903892,
+                0.0,
+                108.55358000961077
+              ],
+              [
+                2.6115342763873777,
+                0.0,
+                97.38846572361264
+              ]
+            ],
+            "expected_resolved_confusion_per_1000": [
+              [
+                791.4464199903892,
+                108.55358000961077
+              ],
+              [
+                2.6115342763873777,
+                97.38846572361264
+              ]
+            ],
+            "cost_per_1000": 4029.6066384339583,
+            "error_cost_per_1000": 4019.6066384339583,
+            "review_cost_per_1000": 0.0,
+            "inference_cost_per_1000": 10.0,
+            "false_negatives_per_1000": 2.6115342763873777,
+            "false_positives_per_1000": 108.55358000961077,
+            "review_fraction": 0.0,
+            "daily_reviews": 0.0,
+            "daily_review_hours": 0.0,
+            "reviewers_needed": 0,
+            "within_capacity": true,
+            "sensitivity": 0.9738846572361263,
+            "specificity": 0.8793849111004325
+          },
+          "hybrid": {
+            "lower": 0.02,
+            "upper": 0.15,
+            "observed_actions": [
+              [
+                1691,
+                288,
+                102
+              ],
+              [
+                9,
+                97,
+                813
+              ]
+            ],
+            "expected_actions_per_1000": [
+              [
+                731.3310908217204,
+                124.5555021624219,
+                44.11340701585776
+              ],
+              [
+                0.9793253536452666,
+                10.55495103373232,
+                88.46572361262243
+              ]
+            ],
+            "expected_resolved_confusion_per_1000": [
+              [
+                843.4310427679002,
+                56.56895723209995
+              ],
+              [
+                2.0348204570184985,
+                97.96517954298152
+              ]
+            ],
+            "cost_per_1000": 2711.855065704056,
+            "error_cost_per_1000": 2431.6341593117477,
+            "review_cost_per_1000": 270.22090639230845,
+            "inference_cost_per_1000": 10.0,
+            "false_negatives_per_1000": 2.0348204570184985,
+            "false_positives_per_1000": 56.56895723209995,
+            "review_fraction": 0.13511045319615422,
+            "daily_reviews": 27.022090639230846,
+            "daily_review_hours": 0.9007363546410282,
+            "reviewers_needed": 1,
+            "within_capacity": true,
+            "sensitivity": 0.9796517954298151,
+            "specificity": 0.9371456030754445
+          }
+        },
+        "completed_epochs": 30,
+        "best_epoch": 10,
+        "weights_sha256": "b01a44d932c0dfde35e00b2dccb25eb512b95d23e557183f3413831973cbe778",
+        "validation_predictions_sha256": "5ffaa9e014338c0833d207b640b5363c322c95538e9bfbd168ba6c559e7e52cb"
+      },
+      "attempt_root": "experiments/model_study/candidates/n1024_resolution/attempt_01",
+      "actual_batch": 16
+    },
+    {
+      "id": "s1024_capacity",
+      "model": "yolo11s.pt",
+      "imgsz": 1024,
+      "changes": [
+        "Same corrected protocol and 1024 resolution",
+        "Larger YOLO11s capacity"
+      ],
+      "status": "validation_ready",
+      "epochs": 100,
+      "patience": 20,
+      "seed": 42,
+      "validation": {
+        "map50": 0.18242991397408437,
+        "map50_95": 0.0853588009035044,
+        "hybrid_cost_per_1000": 3364.2971305228557,
+        "hybrid_daily_reviews": 17.15424125945978,
+        "binary_cost_per_1000": 4413.573133574457,
+        "per_class": [
+          {
+            "class_id": 0,
+            "class_name": "Aortic enlargement",
+            "ap50": 0.8249441259301683,
+            "ap50_95": 0.40031133444573436,
+            "precision_at_max_f1": 0.6856330725123547,
+            "recall_at_max_f1": 0.8876582278481012,
+            "instances": 632,
+            "images": 632
+          },
+          {
+            "class_id": 1,
+            "class_name": "Atelectasis",
+            "ap50": 0.08154835639813615,
+            "ap50_95": 0.02217062618561267,
+            "precision_at_max_f1": 0.37710066259372155,
+            "recall_at_max_f1": 0.11428571428571428,
+            "instances": 35,
+            "images": 35
+          },
+          {
+            "class_id": 2,
+            "class_name": "Calcification",
+            "ap50": 0.06689505975144422,
+            "ap50_95": 0.030396827707556046,
+            "precision_at_max_f1": 0.12178376803856115,
+            "recall_at_max_f1": 0.12264150943396226,
+            "instances": 106,
+            "images": 106
+          },
+          {
+            "class_id": 3,
+            "class_name": "Cardiomegaly",
+            "ap50": 0.8986423245548113,
+            "ap50_95": 0.4906249282018863,
+            "precision_at_max_f1": 0.6693704299051815,
+            "recall_at_max_f1": 0.9390243902439024,
+            "instances": 492,
+            "images": 492
+          },
+          {
+            "class_id": 4,
+            "class_name": "Consolidation",
+            "ap50": 0.04604088564464365,
+            "ap50_95": 0.015711716053575835,
+            "precision_at_max_f1": 0.08711556690910555,
+            "recall_at_max_f1": 0.015625,
+            "instances": 64,
+            "images": 64
+          },
+          {
+            "class_id": 5,
+            "class_name": "ILD",
+            "ap50": 0.05392146447033599,
+            "ap50_95": 0.02327100562755096,
+            "precision_at_max_f1": 0.1488667290453912,
+            "recall_at_max_f1": 0.13,
+            "instances": 100,
+            "images": 100
+          },
+          {
+            "class_id": 6,
+            "class_name": "Infiltration",
+            "ap50": 0.11131842896791577,
+            "ap50_95": 0.042717629805709624,
+            "precision_at_max_f1": 0.1548243929338255,
+            "recall_at_max_f1": 0.19008264462809918,
+            "instances": 121,
+            "images": 121
+          },
+          {
+            "class_id": 7,
+            "class_name": "Lung Opacity",
+            "ap50": 0.04360901506828288,
+            "ap50_95": 0.01574860681501564,
+            "precision_at_max_f1": 0.1588315564675447,
+            "recall_at_max_f1": 0.07246376811594203,
+            "instances": 276,
+            "images": 276
+          },
+          {
+            "class_id": 8,
+            "class_name": "Nodule-Mass",
+            "ap50": 0.08938991318289047,
+            "ap50_95": 0.0387992178173411,
+            "precision_at_max_f1": 0.19182874724001997,
+            "recall_at_max_f1": 0.12222222222222222,
+            "instances": 180,
+            "images": 180
+          },
+          {
+            "class_id": 9,
+            "class_name": "Other lesion",
+            "ap50": 0.0072437737180905196,
+            "ap50_95": 0.002255227719874224,
+            "precision_at_max_f1": 0.03569213851188234,
+            "recall_at_max_f1": 0.01818181818181818,
+            "instances": 220,
+            "images": 220
+          },
+          {
+            "class_id": 10,
+            "class_name": "Pleural effusion",
+            "ap50": 0.18040818247825133,
+            "ap50_95": 0.07033494098196998,
+            "precision_at_max_f1": 0.17898888394270757,
+            "recall_at_max_f1": 0.3588516746411483,
+            "instances": 209,
+            "images": 209
+          },
+          {
+            "class_id": 11,
+            "class_name": "Pleural thickening",
+            "ap50": 0.05410802656031266,
+            "ap50_95": 0.013853336605453431,
+            "precision_at_max_f1": 0.11567487055819765,
+            "recall_at_max_f1": 0.16876574307304787,
+            "instances": 397,
+            "images": 397
+          },
+          {
+            "class_id": 12,
+            "class_name": "Pneumothorax",
+            "ap50": 0.04724237486713105,
+            "ap50_95": 0.01648959348797973,
+            "precision_at_max_f1": 0.1277936803222424,
+            "recall_at_max_f1": 0.09523809523809523,
+            "instances": 21,
+            "images": 21
+          },
+          {
+            "class_id": 13,
+            "class_name": "Pulmonary fibrosis",
+            "ap50": 0.048706864044767643,
+            "ap50_95": 0.012338221193801562,
+            "precision_at_max_f1": 0.08048332745393502,
+            "recall_at_max_f1": 0.1868551584940583,
+            "instances": 319,
+            "images": 319
+          }
+        ],
+        "hypothetical_scenario": {
+          "prevalence": 0.1,
+          "false_positive_eur": 25.0,
+          "false_negative_eur": 500.0,
+          "review_minutes": 2.0,
+          "reviewer_hourly_eur": 60.0,
+          "reviewer_sensitivity": 0.9,
+          "reviewer_specificity": 0.9,
+          "daily_images": 200,
+          "reviewers_available": 1,
+          "review_hours_per_person": 2.0,
+          "inference_eur_per_image": 0.01
+        },
+        "policy_proposal_not_adopted": {
+          "binary": {
+            "lower": 0.02,
+            "upper": 0.02,
+            "observed_actions": [
+              [
+                1875,
+                0,
+                206
+              ],
+              [
+                40,
+                0,
+                879
+              ]
+            ],
+            "expected_actions_per_1000": [
+              [
+                810.9082172032677,
+                0.0,
+                89.09178279673235
+              ],
+              [
+                4.352557127312296,
+                0.0,
+                95.64744287268772
+              ]
+            ],
+            "expected_resolved_confusion_per_1000": [
+              [
+                810.9082172032677,
+                89.09178279673235
+              ],
+              [
+                4.352557127312296,
+                95.64744287268772
+              ]
+            ],
+            "cost_per_1000": 4413.573133574457,
+            "error_cost_per_1000": 4403.573133574457,
+            "review_cost_per_1000": 0.0,
+            "inference_cost_per_1000": 10.0,
+            "false_negatives_per_1000": 4.352557127312296,
+            "false_positives_per_1000": 89.09178279673235,
+            "review_fraction": 0.0,
+            "daily_reviews": 0.0,
+            "daily_review_hours": 0.0,
+            "reviewers_needed": 0,
+            "within_capacity": true,
+            "sensitivity": 0.956474428726877,
+            "specificity": 0.9010091302258529
+          },
+          "hybrid": {
+            "lower": 0.01,
+            "upper": 0.1,
+            "observed_actions": [
+              [
+                1802,
+                187,
+                92
+              ],
+              [
+                32,
+                45,
+                842
+              ]
+            ],
+            "expected_actions_per_1000": [
+              [
+                779.3368572801538,
+                80.87457952907256,
+                39.788563190773665
+              ],
+              [
+                3.4820457018498367,
+                4.896626768226334,
+                91.62132752992385
+              ]
+            ],
+            "expected_resolved_confusion_per_1000": [
+              [
+                852.1239788563191,
+                47.876021143680916
+              ],
+              [
+                3.97170837867247,
+                96.02829162132754
+              ]
+            ],
+            "cost_per_1000": 3364.2971305228557,
+            "error_cost_per_1000": 3182.754717928258,
+            "review_cost_per_1000": 171.5424125945978,
+            "inference_cost_per_1000": 10.0,
+            "false_negatives_per_1000": 3.97170837867247,
+            "false_positives_per_1000": 47.876021143680916,
+            "review_fraction": 0.0857712062972989,
+            "daily_reviews": 17.15424125945978,
+            "daily_review_hours": 0.5718080419819926,
+            "reviewers_needed": 1,
+            "within_capacity": true,
+            "sensitivity": 0.9602829162132752,
+            "specificity": 0.9468044209514657
+          }
+        },
+        "completed_epochs": 36,
+        "best_epoch": 16,
+        "weights_sha256": "6668ed76807c8cbe5193c92b9d45e7cdadc2823dd1a1adca77136db736563c9c",
+        "validation_predictions_sha256": "51b28b3e184c03996b6dfa899471b83361a75cdf95cbc4474424b5648c7e7b46"
+      },
+      "attempt_root": "experiments/model_study/candidates/s1024_capacity/attempt_01",
+      "actual_batch": 8
+    },
+    {
+      "id": "s1280_feature_scale",
+      "model": "yolo11s.pt",
+      "imgsz": 1280,
+      "changes": [
+        "Conditional on remaining time and memory",
+        "Upscales 1024 source images; adds no source detail",
+        "Feature-scale experiment"
+      ],
+      "status": "validation_ready",
+      "epochs": 100,
+      "patience": 20,
+      "seed": 42,
+      "validation": {
+        "map50": 0.17890972121537294,
+        "map50_95": 0.08656604785891026,
+        "hybrid_cost_per_1000": 3105.530680978583,
+        "hybrid_daily_reviews": 17.396403231684776,
+        "binary_cost_per_1000": 3968.544560114074,
+        "per_class": [
+          {
+            "class_id": 0,
+            "class_name": "Aortic enlargement",
+            "ap50": 0.8520991339727916,
+            "ap50_95": 0.42231921356625124,
+            "precision_at_max_f1": 0.6723974510783651,
+            "recall_at_max_f1": 0.865506329113924,
+            "instances": 632,
+            "images": 632
+          },
+          {
+            "class_id": 1,
+            "class_name": "Atelectasis",
+            "ap50": 0.0663510738572346,
+            "ap50_95": 0.025406610417802282,
+            "precision_at_max_f1": 0.3623148315329737,
+            "recall_at_max_f1": 0.08571428571428572,
+            "instances": 35,
+            "images": 35
+          },
+          {
+            "class_id": 2,
+            "class_name": "Calcification",
+            "ap50": 0.0643164898835176,
+            "ap50_95": 0.026985431892699262,
+            "precision_at_max_f1": 0.15104480539519732,
+            "recall_at_max_f1": 0.10377358490566038,
+            "instances": 106,
+            "images": 106
+          },
+          {
+            "class_id": 3,
+            "class_name": "Cardiomegaly",
+            "ap50": 0.8858045856185249,
+            "ap50_95": 0.4944515959899599,
+            "precision_at_max_f1": 0.5897288423568036,
+            "recall_at_max_f1": 0.9186991869918699,
+            "instances": 492,
+            "images": 492
+          },
+          {
+            "class_id": 4,
+            "class_name": "Consolidation",
+            "ap50": 0.05998563014836671,
+            "ap50_95": 0.01668110719438105,
+            "precision_at_max_f1": 0.29337293544006676,
+            "recall_at_max_f1": 0.046875,
+            "instances": 64,
+            "images": 64
+          },
+          {
+            "class_id": 5,
+            "class_name": "ILD",
+            "ap50": 0.06850746110749024,
+            "ap50_95": 0.02849116845068328,
+            "precision_at_max_f1": 0.19582202925122566,
+            "recall_at_max_f1": 0.16,
+            "instances": 100,
+            "images": 100
+          },
+          {
+            "class_id": 6,
+            "class_name": "Infiltration",
+            "ap50": 0.06092014215576409,
+            "ap50_95": 0.023634078733315265,
+            "precision_at_max_f1": 0.13172216960851704,
+            "recall_at_max_f1": 0.1322314049586777,
+            "instances": 121,
+            "images": 121
+          },
+          {
+            "class_id": 7,
+            "class_name": "Lung Opacity",
+            "ap50": 0.046345719154854956,
+            "ap50_95": 0.015236382413006793,
+            "precision_at_max_f1": 0.1898578763886225,
+            "recall_at_max_f1": 0.06159420289855073,
+            "instances": 276,
+            "images": 276
+          },
+          {
+            "class_id": 8,
+            "class_name": "Nodule-Mass",
+            "ap50": 0.10688627985288035,
+            "ap50_95": 0.046164354994431375,
+            "precision_at_max_f1": 0.24286494579813028,
+            "recall_at_max_f1": 0.15,
+            "instances": 180,
+            "images": 180
+          },
+          {
+            "class_id": 9,
+            "class_name": "Other lesion",
+            "ap50": 0.012235849840401918,
+            "ap50_95": 0.0048552891438490104,
+            "precision_at_max_f1": 0.07409782763410078,
+            "recall_at_max_f1": 0.022727272727272728,
+            "instances": 220,
+            "images": 220
+          },
+          {
+            "class_id": 10,
+            "class_name": "Pleural effusion",
+            "ap50": 0.11386297081181332,
+            "ap50_95": 0.0366378194589331,
+            "precision_at_max_f1": 0.19039092444133893,
+            "recall_at_max_f1": 0.23291772525092122,
+            "instances": 209,
+            "images": 209
+          },
+          {
+            "class_id": 11,
+            "class_name": "Pleural thickening",
+            "ap50": 0.049037135413851546,
+            "ap50_95": 0.012362797252106778,
+            "precision_at_max_f1": 0.15625942402133972,
+            "recall_at_max_f1": 0.07304785894206549,
+            "instances": 397,
+            "images": 397
+          },
+          {
+            "class_id": 12,
+            "class_name": "Pneumothorax",
+            "ap50": 0.07000937590134684,
+            "ap50_95": 0.04456393340775876,
+            "precision_at_max_f1": 0.7431335876525387,
+            "recall_at_max_f1": 0.047619047619047616,
+            "instances": 21,
+            "images": 21
+          },
+          {
+            "class_id": 13,
+            "class_name": "Pulmonary fibrosis",
+            "ap50": 0.04837424929638272,
+            "ap50_95": 0.01413488710956563,
+            "precision_at_max_f1": 0.15423900648155872,
+            "recall_at_max_f1": 0.13479623824451412,
+            "instances": 319,
+            "images": 319
+          }
+        ],
+        "hypothetical_scenario": {
+          "prevalence": 0.1,
+          "false_positive_eur": 25.0,
+          "false_negative_eur": 500.0,
+          "review_minutes": 2.0,
+          "reviewer_hourly_eur": 60.0,
+          "reviewer_sensitivity": 0.9,
+          "reviewer_specificity": 0.9,
+          "daily_images": 200,
+          "reviewers_available": 1,
+          "review_hours_per_person": 2.0,
+          "inference_eur_per_image": 0.01
+        },
+        "policy_proposal_not_adopted": {
+          "binary": {
+            "lower": 0.02,
+            "upper": 0.02,
+            "observed_actions": [
+              [
+                1891,
+                0,
+                190
+              ],
+              [
+                35,
+                0,
+                884
+              ]
+            ],
+            "expected_actions_per_1000": [
+              [
+                817.8279673234023,
+                0.0,
+                82.17203267659778
+              ],
+              [
+                3.8084874863982594,
+                0.0,
+                96.19151251360175
+              ]
+            ],
+            "expected_resolved_confusion_per_1000": [
+              [
+                817.8279673234023,
+                82.17203267659778
+              ],
+              [
+                3.8084874863982594,
+                96.19151251360175
+              ]
+            ],
+            "cost_per_1000": 3968.544560114074,
+            "error_cost_per_1000": 3958.544560114074,
+            "review_cost_per_1000": 0.0,
+            "inference_cost_per_1000": 10.0,
+            "false_negatives_per_1000": 3.8084874863982594,
+            "false_positives_per_1000": 82.17203267659778,
+            "review_fraction": 0.0,
+            "daily_reviews": 0.0,
+            "daily_review_hours": 0.0,
+            "reviewers_needed": 0,
+            "within_capacity": true,
+            "sensitivity": 0.9619151251360174,
+            "specificity": 0.908697741470447
+          },
+          "hybrid": {
+            "lower": 0.01,
+            "upper": 0.07,
+            "observed_actions": [
+              [
+                1806,
+                182,
+                93
+              ],
+              [
+                24,
+                76,
+                819
+              ]
+            ],
+            "expected_actions_per_1000": [
+              [
+                781.0667948101874,
+                78.71215761653052,
+                40.22104757328208
+              ],
+              [
+                2.6115342763873777,
+                8.269858541893363,
+                89.11860718171927
+              ]
+            ],
+            "expected_resolved_confusion_per_1000": [
+              [
+                851.9077366650648,
+                48.092263334935126
+              ],
+              [
+                3.438520130576714,
+                96.5614798694233
+              ]
+            ],
+            "cost_per_1000": 3105.530680978583,
+            "error_cost_per_1000": 2921.566648661735,
+            "review_cost_per_1000": 173.96403231684775,
+            "inference_cost_per_1000": 10.0,
+            "false_negatives_per_1000": 3.438520130576714,
+            "false_positives_per_1000": 48.092263334935126,
+            "review_fraction": 0.08698201615842388,
+            "daily_reviews": 17.396403231684776,
+            "daily_review_hours": 0.5798801077228258,
+            "reviewers_needed": 1,
+            "within_capacity": true,
+            "sensitivity": 0.9656147986942328,
+            "specificity": 0.946564151850072
+          }
+        },
+        "completed_epochs": 35,
+        "best_epoch": 15,
+        "weights_sha256": "2b28400cde691ce53a257b05c881f47fdc7f90f8a08dd5174947c6b2fb43536d",
+        "validation_predictions_sha256": "166c655109fe0ffe0c89e1ae581d0d05c9e160cef5841236c54f964edadfeb6e"
+      },
+      "attempt_root": "experiments/model_study/candidates/s1280_feature_scale/attempt_01",
+      "actual_batch": 4
+    }
+  ],
+  "selected_candidate_id": "n1024_resolution",
+  "selected_weights_sha256": "b01a44d932c0dfde35e00b2dccb25eb512b95d23e557183f3413831973cbe778",
+  "promotion_authorised": true,
+  "limitations": [
+    "The original baseline test has already been examined; further work is development, not a fresh blind test.",
+    "No study worker may infer on or evaluate test images.",
+    "The fixed candidate set is not a global hyperparameter optimum or clinical validation.",
+    "The 1280 candidate changes feature scale by upsampling 1024 images; it adds no source detail.",
+    "Epoch-boundary time stops can end before 100 epochs; all actual counts and stop reasons are saved.",
+    "Candidates share the corrected recipe; differences versus the older baseline are not single-factor causal estimates."
+  ],
+  "validation_ranking": [
+    "n1024_resolution",
+    "n768_adamw_control",
+    "s1280_feature_scale",
+    "s1024_capacity",
+    "original_baseline"
+  ],
+  "recommended_candidate_id": "n1024_resolution",
+  "recommendation_note": "Point-estimate ranking only; original baseline participates. Review class/cost tradeoffs and instability. No model or new policy is adopted automatically.",
+  "adoption": {
+    "approved": true,
+    "candidate_id": "n1024_resolution",
+    "weights_sha256": "b01a44d932c0dfde35e00b2dccb25eb512b95d23e557183f3413831973cbe778",
+    "user_reply_verbatim": "Use the recommended model and its validation-selected boundaries",
+    "approved_at_utc": "2026-10-26T08:58:46.284507+00:00",
+    "previous_test_already_exposed": true,
+    "evaluation_authorised": true,
+    "clinical_deployment_authorised": false,
+    "baseline_archive": "history/run_20261026T085846Z_dc042c",
+    "adopted_thresholds": {
+      "binary_threshold": 0.04,
+      "lower": 0.02,
+      "upper": 0.15
+    },
+    "config_note": "Candidate config preserved byte-for-byte; its test_inference_authorised=false records the completed validation-only study phase. This later human adoption authorises root evaluation."
+  }
+}

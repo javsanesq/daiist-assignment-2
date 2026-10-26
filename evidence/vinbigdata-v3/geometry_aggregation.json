@@ -1,0 +1,971 @@
+{
+  "images_compared": 4036,
+  "summary": {
+    "first_source_row": {
+      "median_mean_absolute_error": 0.00024236916870130077,
+      "p90_mean_absolute_error": 0.0003191340602989305,
+      "images_max_error_below_one_1024_pixel": 4003,
+      "images_max_error_below_two_1024_pixels": 4036
+    },
+    "last_source_row": {
+      "median_mean_absolute_error": 0.015370139613504665,
+      "p90_mean_absolute_error": 0.10898416898330883,
+      "images_max_error_below_one_1024_pixel": 5,
+      "images_max_error_below_two_1024_pixels": 14
+    },
+    "mean_coordinates": {
+      "median_mean_absolute_error": 0.010951892752194213,
+      "p90_mean_absolute_error": 0.0720568927056032,
+      "images_max_error_below_one_1024_pixel": 11,
+      "images_max_error_below_two_1024_pixels": 47
+    },
+    "median_coordinates": {
+      "median_mean_absolute_error": 0.00815079523381938,
+      "p90_mean_absolute_error": 0.0721632212424626,
+      "images_max_error_below_one_1024_pixel": 44,
+      "images_max_error_below_two_1024_pixels": 107
+    },
+    "union_enclosure": {
+      "median_mean_absolute_error": 0.015608112021281692,
+      "p90_mean_absolute_error": 0.09737588749237275,
+      "images_max_error_below_one_1024_pixel": 64,
+      "images_max_error_below_two_1024_pixels": 110
+    }
+  },
+  "method": "For images with at least two classes and repeated source annotations, compare first/last/mean/median/union source-box rules with export boxes using a fitted scale and offset per axis. Coordinates are normalised; one export pixel = 1/1024.",
+  "limitations": [
+    "Source dimensions absent from CSV, so a fitted affine transform is used rather than independent verification of the exact resize recipe.",
+    "Matching geometry identifies a plausible retained annotation rule, not the undocumented uploader code.",
+    "No annotation changes were made."
+  ],
+  "examples": [
+    {
+      "image": "train\\images\\0007d316f756b3fa0baea2ff514ce945_png.rf.4093e487a6dd4a898c3259e0cc9029fb.jpg",
+      "source_id": "0007d316f756b3fa0baea2ff514ce945",
+      "classes": 5,
+      "fits": {
+        "first_source_row": {
+          "mean_absolute_residual_normalised": 0.00023965539685079918,
+          "max_absolute_residual_normalised": 0.0006190815945249506,
+          "x_scale_offset": [
+            0.00034656911453991284,
+            0.10050372822293731
+          ],
+          "y_scale_offset": [
+            0.0003473406123876654,
+            -0.00032898172294497553
+          ]
+        },
+        "last_source_row": {
+          "mean_absolute_residual_normalised": 0.07350679065798511,
+          "max_absolute_residual_normalised": 0.2434386995154353,
+          "x_scale_offset": [
+            7.248216059365273e-05,
+            0.5146915205612804
+          ],
+          "y_scale_offset": [
+            0.0003219831851987638,
+            0.027350731956554852
+          ]
+        },
+        "mean_coordinates": {
+          "mean_absolute_residual_normalised": 0.04975413419942962,
+          "max_absolute_residual_normalised": 0.15514170940451,
+          "x_scale_offset": [
+            0.0003574597240958705,
+            0.15984641544730824
+          ],
+          "y_scale_offset": [
+            0.00034233811634004597,
+            0.0022185155819950397
+          ]
+        },
+        "median_coordinates": {
+          "mean_absolute_residual_normalised": 0.05693567558646255,
+          "max_absolute_residual_normalised": 0.1460814755594465,
+          "x_scale_offset": [
+            0.00031042924801388615,
+            0.22491994630601514
+          ],
+          "y_scale_offset": [
+            0.00034585548252451194,
+            -0.004556043597203576
+          ]
+        },
+        "union_enclosure": {
+          "mean_absolute_residual_normalised": 0.05049303976475057,
+          "max_absolute_residual_normalised": 0.26508477120689655,
+          "x_scale_offset": [
+            0.00017167714268701202,
+            0.383790613705552
+          ],
+          "y_scale_offset": [
+            0.0003478305571133988,
+            -0.004536658947831076
+          ]
+        }
+      }
+    },
+    {
+      "image": "train\\images\\000d68e42b71d3eac10ccc077aba07c1_png.rf.e4e1ca59097c1dc728ca4ab5f41e3760.jpg",
+      "source_id": "000d68e42b71d3eac10ccc077aba07c1",
+      "classes": 5,
+      "fits": {
+        "first_source_row": {
+          "mean_absolute_residual_normalised": 0.0003213552634553147,
+          "max_absolute_residual_normalised": 0.0006812261714733703,
+          "x_scale_offset": [
+            0.00034708517593710876,
+            0.09965324716676038
+          ],
+          "y_scale_offset": [
+            0.0003469778672230801,
+            -6.412363089074063e-05
+          ]
+        },
+        "last_source_row": {
+          "mean_absolute_residual_normalised": 0.1392766214328502,
+          "max_absolute_residual_normalised": 0.2983570428941695,
+          "x_scale_offset": [
+            0.00023620652970038559,
+            0.175940078545976
+          ],
+          "y_scale_offset": [
+            4.1986433115113104e-05,
+            0.2111932077471947
+          ]
+        },
+        "mean_coordinates": {
+          "mean_absolute_residual_normalised": 0.0658928247818614,
+          "max_absolute_residual_normalised": 0.2531666510566778,
+          "x_scale_offset": [
+            0.0005613508848448423,
+            -0.25081914044726467
+          ],
+          "y_scale_offset": [
+            0.0003945871237325623,
+            -0.02647724353258912
+          ]
+        },
+        "median_coordinates": {
+          "mean_absolute_residual_normalised": 0.07005723099462283,
+          "max_absolute_residual_normalised": 0.2673317122882497,
+          "x_scale_offset": [
+            0.0004576140794141238,
+            -0.12982113846441634
+          ],
+          "y_scale_offset": [
+            0.0003743128790570999,
+            -0.014953509885989955
+          ]
+        },
+        "union_enclosure": {
+          "mean_absolute_residual_normalised": 0.08096596211313187,
+          "max_absolute_residual_normalised": 0.28051847318922374,
+          "x_scale_offset": [
+            0.00022580945828483802,
+            0.17004310796665373
+          ],
+          "y_scale_offset": [
+            0.00021778310452102892,
+            0.0768482688300881
+          ]
+        }
+      }
+    },
+    {
+      "image": "train\\images\\00150343289f317a0ad5629d5b7d9ef9_png.rf.b791af4bb80a2f8ce6f8f1fa266bf37f.jpg",
+      "source_id": "00150343289f317a0ad5629d5b7d9ef9",
+      "classes": 7,
+      "fits": {
+        "first_source_row": {
+          "mean_absolute_residual_normalised": 0.0002889434680745611,
+          "max_absolute_residual_normalised": 0.0007930528952114213,
+          "x_scale_offset": [
+            0.0003957331053400744,
+            0.0003691571769517586
+          ],
+          "y_scale_offset": [
+            0.00039546077637228795,
+            0.0034878609760597766
+          ]
+        },
+        "last_source_row": {
+          "mean_absolute_residual_normalised": 0.118302343705774,
+          "max_absolute_residual_normalised": 0.4947620146205033,
+          "x_scale_offset": [
+            -7.3346164773452095e-06,
+            0.6104132543649704
+          ],
+          "y_scale_offset": [
+            0.00040829915584964844,
+            -0.002834905794199361
+          ]
+        },
+        "mean_coordinates": {
+          "mean_absolute_residual_normalised": 0.08012462382252619,
+          "max_absolute_residual_normalised": 0.4223321286416126,
+          "x_scale_offset": [
+            0.0003924048278593567,
+            0.04146467180017293
+          ],
+          "y_scale_offset": [
+            0.00040147720733177086,
+            -0.0009265472035284379
+          ]
+        },
+        "median_coordinates": {
+          "mean_absolute_residual_normalised": 0.08041235401069642,
+          "max_absolute_residual_normalised": 0.43412586448975854,
+          "x_scale_offset": [
+            0.00039150470941406036,
+            0.04108815936122643
+          ],
+          "y_scale_offset": [
+            0.00040274326785747253,
+            -0.0018137174454993415
+          ]
+        },
+        "union_enclosure": {
+          "mean_absolute_residual_normalised": 0.09890969850659002,
+          "max_absolute_residual_normalised": 0.5604721232557286,
+          "x_scale_offset": [
+            0.0001383526029381187,
+            0.4039311708509417
+          ],
+          "y_scale_offset": [
+            0.00038206583270548677,
+            0.02016901667065023
+          ]
+        }
+      }
+    },
+    {
+      "image": "train\\images\\001d127bad87592efe45a5c7678f8b8d_png.rf.3efb0e447dd042c8b6575b7445adac1e.jpg",
+      "source_id": "001d127bad87592efe45a5c7678f8b8d",
+      "classes": 2,
+      "fits": {
+        "first_source_row": {
+          "mean_absolute_residual_normalised": 0.00012971186397843504,
+          "max_absolute_residual_normalised": 0.00022181932922876735,
+          "x_scale_offset": [
+            0.00032580849353889337,
+            -0.000802605284254841
+          ],
+          "y_scale_offset": [
+            0.00032471261371554177,
+            0.0008206032673897239
+          ]
+        },
+        "last_source_row": {
+          "mean_absolute_residual_normalised": 0.08646258591525083,
+          "max_absolute_residual_normalised": 0.19581251230090746,
+          "x_scale_offset": [
+            -5.637382807061329e-05,
+            0.6037323845083931
+          ],
+          "y_scale_offset": [
+            0.00023442184387049384,
+            0.0755350559896718
+          ]
+        },
+        "mean_coordinates": {
+          "mean_absolute_residual_normalised": 0.03272654555290991,
+          "max_absolute_residual_normalised": 0.10453418263790659,
+          "x_scale_offset": [
+            0.0006937565207489362,
+            -0.39542488176334156
+          ],
+          "y_scale_offset": [
+            0.00031841988237387483,
+            0.017058587556429923
+          ]
+        },
+        "median_coordinates": {
+          "mean_absolute_residual_normalised": 0.08903424085857771,
+          "max_absolute_residual_normalised": 0.16007108389779456,
+          "x_scale_offset": [
+            0.00030298992568289246,
+            0.18058346679719336
+          ],
+          "y_scale_offset": [
+            0.0002558102487331485,
+            0.06595335563690356
+          ]
+        },
+        "union_enclosure": {
+          "mean_absolute_residual_normalised": 0.07545413120539335,
+          "max_absolute_residual_normalised": 0.1988054061700965,
+          "x_scale_offset": [
+            0.0001422754817736799,
+            0.34637624587178606
+          ],
+          "y_scale_offset": [
+            0.0002326901062334669,
+            0.07704305656260244
+          ]
+        }
+      }
+    },
+    {
+      "image": "train\\images\\0046f681f078851293c4e710c4466058_png.rf.4347d94082c902415b9b6ec432341922.jpg",
+      "source_id": "0046f681f078851293c4e710c4466058",
+      "classes": 4,
+      "fits": {
+        "first_source_row": {
+          "mean_absolute_residual_normalised": 0.00030467459497688677,
+          "max_absolute_residual_normalised": 0.0007125134891671214,
+          "x_scale_offset": [
+            0.0003471462395877132,
+            0.0995184478175252
+          ],
+          "y_scale_offset": [
+            0.0003467504109265971,
+            0.00017959717204380082
+          ]
+        },
+        "last_source_row": {
+          "mean_absolute_residual_normalised": 0.06729747748034517,
+          "max_absolute_residual_normalised": 0.25041908748585917,
+          "x_scale_offset": [
+            0.0002057297490460177,
+            0.3307693016905143
+          ],
+          "y_scale_offset": [
+            0.0003326303867121698,
+            0.011468844616003303
+          ]
+        },
+        "mean_coordinates": {
+          "mean_absolute_residual_normalised": 0.04842827821376802,
+          "max_absolute_residual_normalised": 0.1437904270675292,
+          "x_scale_offset": [
+            0.0004622197694746049,
+            0.08651272604311733
+          ],
+          "y_scale_offset": [
+            0.0003919223603445399,
+            -0.02623147956197558
+          ]
+        },
+        "median_coordinates": {
+          "mean_absolute_residual_normalised": 0.060875018851086954,
+          "max_absolute_residual_normalised": 0.2175594082712793,
+          "x_scale_offset": [
+            0.00038855264967107097,
+            0.1795622535658758
+          ],
+          "y_scale_offset": [
+            0.0003513029913788028,
+            -0.0036643381413392524
+          ]
+        },
+        "union_enclosure": {
+          "mean_absolute_residual_normalised": 0.05747458763020616,
+          "max_absolute_residual_normalised": 0.2082460386373633,
+          "x_scale_offset": [
+            0.00020044812698907913,
+            0.33217022541185687
+          ],
+          "y_scale_offset": [
+            0.0003158297847848551,
+            0.019892065929628874
+          ]
+        }
+      }
+    },
+    {
+      "image": "train\\images\\009d4c31ebf87e51c5c8c160a4bd8006_png.rf.40e458515a31bf9a7ab911e0ad19373d.jpg",
+      "source_id": "009d4c31ebf87e51c5c8c160a4bd8006",
+      "classes": 5,
+      "fits": {
+        "first_source_row": {
+          "mean_absolute_residual_normalised": 0.00029985106666123443,
+          "max_absolute_residual_normalised": 0.0006228065141679062,
+          "x_scale_offset": [
+            0.00034581136044104,
+            0.022711903306180184
+          ],
+          "y_scale_offset": [
+            0.00034540369536939313,
+            0.0008887649049352245
+          ]
+        },
+        "last_source_row": {
+          "mean_absolute_residual_normalised": 0.011322580566213727,
+          "max_absolute_residual_normalised": 0.06904238778803201,
+          "x_scale_offset": [
+            0.0003429014577243728,
+            0.029293858631802453
+          ],
+          "y_scale_offset": [
+            0.00036749705508654806,
+            -0.031071180650757167
+          ]
+        },
+        "mean_coordinates": {
+          "mean_absolute_residual_normalised": 0.029824201687149526,
+          "max_absolute_residual_normalised": 0.1358239375210732,
+          "x_scale_offset": [
+            0.0003509481932864785,
+            -0.0112864881094436
+          ],
+          "y_scale_offset": [
+            0.0003580747298710604,
+            -0.025436531208643986
+          ]
+        },
+        "median_coordinates": {
+          "mean_absolute_residual_normalised": 0.006223999165509799,
+          "max_absolute_residual_normalised": 0.052653423130019195,
+          "x_scale_offset": [
+            0.0003460694786213833,
+            0.0221291451676361
+          ],
+          "y_scale_offset": [
+            0.0003591411400265713,
+            -0.02670537485067061
+          ]
+        },
+        "union_enclosure": {
+          "mean_absolute_residual_normalised": 0.03221259654967727,
+          "max_absolute_residual_normalised": 0.25118683304356015,
+          "x_scale_offset": [
+            0.0002850187685149741,
+            0.07588971131982679
+          ],
+          "y_scale_offset": [
+            0.0003371883966641297,
+            0.008076211939467517
+          ]
+        }
+      }
+    },
+    {
+      "image": "train\\images\\009d837e29ba400e03856cf8d6a5b545_png.rf.3561557b60b5c7e54beb81d2390b6910.jpg",
+      "source_id": "009d837e29ba400e03856cf8d6a5b545",
+      "classes": 2,
+      "fits": {
+        "first_source_row": {
+          "mean_absolute_residual_normalised": 0.0001549471099707815,
+          "max_absolute_residual_normalised": 0.00030368892526935753,
+          "x_scale_offset": [
+            0.00034700855757815546,
+            0.09998184297091461
+          ],
+          "y_scale_offset": [
+            0.00034674307946117283,
+            0.0005398470576306597
+          ]
+        },
+        "last_source_row": {
+          "mean_absolute_residual_normalised": 0.0255350736036054,
+          "max_absolute_residual_normalised": 0.06920559245683944,
+          "x_scale_offset": [
+            -3.686253599315966e-05,
+            0.617806488533271
+          ],
+          "y_scale_offset": [
+            0.00033310905978470437,
+            -0.002261941567717674
+          ]
+        },
+        "mean_coordinates": {
+          "mean_absolute_residual_normalised": 0.022100807181317947,
+          "max_absolute_residual_normalised": 0.07034680485357969,
+          "x_scale_offset": [
+            7.429820083630955e-05,
+            0.49350269651734135
+          ],
+          "y_scale_offset": [
+            0.00033287228980321317,
+            0.001806027642370931
+          ]
+        },
+        "median_coordinates": {
+          "mean_absolute_residual_normalised": 0.022568442984970637,
+          "max_absolute_residual_normalised": 0.06968406292860818,
+          "x_scale_offset": [
+            8.236958415047193e-05,
+            0.48423360127423615
+          ],
+          "y_scale_offset": [
+            0.0003254881141270933,
+            0.004818961606409771
+          ]
+        },
+        "union_enclosure": {
+          "mean_absolute_residual_normalised": 0.024055509304953898,
+          "max_absolute_residual_normalised": 0.06009355687721207,
+          "x_scale_offset": [
+            6.654538788018501e-05,
+            0.5036515922362436
+          ],
+          "y_scale_offset": [
+            0.0003194206091774681,
+            0.00487542129139671
+          ]
+        }
+      }
+    },
+    {
+      "image": "train\\images\\00aca42a24e4ea6066cca2546150c36e_png.rf.a3199f5306a26556a7fedb434079cb1a.jpg",
+      "source_id": "00aca42a24e4ea6066cca2546150c36e",
+      "classes": 5,
+      "fits": {
+        "first_source_row": {
+          "mean_absolute_residual_normalised": 0.0003033510915163226,
+          "max_absolute_residual_normalised": 0.0007469754049598265,
+          "x_scale_offset": [
+            0.0003251380350650708,
+            0.013494063778323153
+          ],
+          "y_scale_offset": [
+            0.0003248774297391929,
+            0.00025049544944284784
+          ]
+        },
+        "last_source_row": {
+          "mean_absolute_residual_normalised": 0.11078271666240198,
+          "max_absolute_residual_normalised": 0.32750730941029293,
+          "x_scale_offset": [
+            -3.998764417630645e-06,
+            0.6157742769811366
+          ],
+          "y_scale_offset": [
+            0.00031858086002570885,
+            0.022804083999084925
+          ]
+        },
+        "mean_coordinates": {
+          "mean_absolute_residual_normalised": 0.06387279000230861,
+          "max_absolute_residual_normalised": 0.25911819383762885,
+          "x_scale_offset": [
+            0.00028002097239925033,
+            0.11502737968772246
+          ],
+          "y_scale_offset": [
+            0.0003316125625882711,
+            -0.00126123245282576
+          ]
+        },
+        "median_coordinates": {
+          "mean_absolute_residual_normalised": 0.06371493147291407,
+          "max_absolute_residual_normalised": 0.2589276135044721,
+          "x_scale_offset": [
+            0.0002799187077946856,
+            0.11534773380407191
+          ],
+          "y_scale_offset": [
+            0.0003310064071038001,
+            0.0005666447172475002
+          ]
+        },
+        "union_enclosure": {
+          "mean_absolute_residual_normalised": 0.0925901526760618,
+          "max_absolute_residual_normalised": 0.31544706422469265,
+          "x_scale_offset": [
+            0.00013771759217569225,
+            0.3676342947120991
+          ],
+          "y_scale_offset": [
+            0.0003125061261283967,
+            0.03302296869963351
+          ]
+        }
+      }
+    },
+    {
+      "image": "train\\images\\00f2f97f74e086e1f82acc285ee4a5c5_png.rf.038a8cc7f9c31141747bed1d87021bfd.jpg",
+      "source_id": "00f2f97f74e086e1f82acc285ee4a5c5",
+      "classes": 5,
+      "fits": {
+        "first_source_row": {
+          "mean_absolute_residual_normalised": 0.00028159248060252576,
+          "max_absolute_residual_normalised": 0.0005703366797353837,
+          "x_scale_offset": [
+            0.00034731512683680425,
+            0.09947002523311216
+          ],
+          "y_scale_offset": [
+            0.00034710354623217573,
+            -8.970718614839493e-05
+          ]
+        },
+        "last_source_row": {
+          "mean_absolute_residual_normalised": 0.021550108865962463,
+          "max_absolute_residual_normalised": 0.09099372912294201,
+          "x_scale_offset": [
+            0.00030357139352516714,
+            0.1403341940970657
+          ],
+          "y_scale_offset": [
+            0.0003410983955804653,
+            -0.0038257681319719076
+          ]
+        },
+        "mean_coordinates": {
+          "mean_absolute_residual_normalised": 0.014746895903767604,
+          "max_absolute_residual_normalised": 0.07675771219559169,
+          "x_scale_offset": [
+            0.0003471370245373655,
+            0.11176507549109985
+          ],
+          "y_scale_offset": [
+            0.0003514944025844278,
+            -0.009977884597069876
+          ]
+        },
+        "median_coordinates": {
+          "mean_absolute_residual_normalised": 0.008090166886619624,
+          "max_absolute_residual_normalised": 0.07300489634745111,
+          "x_scale_offset": [
+            0.0003483628647944366,
+            0.09874625953655736
+          ],
+          "y_scale_offset": [
+            0.0003474128204280294,
+            -0.008055669938161883
+          ]
+        },
+        "union_enclosure": {
+          "mean_absolute_residual_normalised": 0.037399420096027494,
+          "max_absolute_residual_normalised": 0.18364024722948608,
+          "x_scale_offset": [
+            0.00023153080621209765,
+            0.24434946249734488
+          ],
+          "y_scale_offset": [
+            0.0003419619013601785,
+            -0.00500361179565055
+          ]
+        }
+      }
+    },
+    {
+      "image": "train\\images\\010018c93ed33ae56ed048ee54867e46_png.rf.24d4c3ea93aa60938c4b46b4f6f9bf4b.jpg",
+      "source_id": "010018c93ed33ae56ed048ee54867e46",
+      "classes": 5,
+      "fits": {
+        "first_source_row": {
+          "mean_absolute_residual_normalised": 0.0002756390139131565,
+          "max_absolute_residual_normalised": 0.0005111788468358247,
+          "x_scale_offset": [
+            0.0003259573339450702,
+            0.042089779178743035
+          ],
+          "y_scale_offset": [
+            0.0003256691550147394,
+            0.00047468266173983327
+          ]
+        },
+        "last_source_row": {
+          "mean_absolute_residual_normalised": 0.1419753630446158,
+          "max_absolute_residual_normalised": 0.32440747039080525,
+          "x_scale_offset": [
+            0.00023722941670103337,
+            0.1878478715743889
+          ],
+          "y_scale_offset": [
+            0.00010806815716406052,
+            0.3347283977098679
+          ]
+        },
+        "mean_coordinates": {
+          "mean_absolute_residual_normalised": 0.09196758018004883,
+          "max_absolute_residual_normalised": 0.2616141536077753,
+          "x_scale_offset": [
+            0.00037929346272046275,
+            -0.05206549868403763
+          ],
+          "y_scale_offset": [
+            0.00032825499537669734,
+            0.04865523681535872
+          ]
+        },
+        "median_coordinates": {
+          "mean_absolute_residual_normalised": 0.0994377094801985,
+          "max_absolute_residual_normalised": 0.32591420274856736,
+          "x_scale_offset": [
+            0.00039520019727970387,
+            -0.08598230237630414
+          ],
+          "y_scale_offset": [
+            0.00012952899553243406,
+            0.3133559443295856
+          ]
+        },
+        "union_enclosure": {
+          "mean_absolute_residual_normalised": 0.1183233878059976,
+          "max_absolute_residual_normalised": 0.4029234622854221,
+          "x_scale_offset": [
+            0.00015291708970618822,
+            0.2653130319408949
+          ],
+          "y_scale_offset": [
+            0.00020919434313987483,
+            0.1900930039191791
+          ]
+        }
+      }
+    }
+  ],
+  "source_box_selection_summary": {
+    "source_image_class_groups": 15365,
+    "export_boxes": 15365,
+    "all_export_image_class_groups_have_exactly_one_box": true,
+    "first_source_row_radiologist_distribution": {
+      "R10": 4624,
+      "R9": 6317,
+      "R17": 33,
+      "R8": 3600,
+      "R15": 149,
+      "R14": 170,
+      "R11": 137,
+      "R16": 106,
+      "R13": 159,
+      "R12": 69,
+      "R2": 1
+    },
+    "image_class_groups_with_additional_same_reader_low_overlap_box": 2782,
+    "distinct_images_with_additional_same_reader_low_overlap_box": 1697,
+    "additional_same_reader_low_overlap_boxes": 3856,
+    "affected_image_class_groups_by_class": {
+      "Pleural thickening": 815,
+      "ILD": 222,
+      "Pulmonary fibrosis": 537,
+      "Other lesion": 214,
+      "Lung Opacity": 233,
+      "Pleural effusion": 202,
+      "Nodule/Mass": 237,
+      "Calcification": 95,
+      "Infiltration": 170,
+      "Pneumothorax": 8,
+      "Atelectasis": 9,
+      "Aortic enlargement": 3,
+      "Consolidation": 31,
+      "Cardiomegaly": 6
+    },
+    "interpretation": "These source annotations provide concrete additional same-class regions that an export retaining one first box per class does not retain. IoU < 0.1 describes annotation separation only, not a diagnosis of separate clinical lesions. Additional boxes from other readers may be alternative annotations of the same finding.",
+    "examples": [
+      {
+        "image_id": "1c32170b4af4ce1a3030eb8167753b06",
+        "class_name": "Pleural thickening",
+        "selected_first_source_row": {
+          "image_id": "1c32170b4af4ce1a3030eb8167753b06",
+          "class_name": "Pleural thickening",
+          "class_id": "11",
+          "rad_id": "R9",
+          "x_min": "627.0",
+          "y_min": "357.0",
+          "x_max": "947.0",
+          "y_max": "433.0"
+        },
+        "other_same_reader_boxes_iou_below_point_one": [
+          {
+            "image_id": "1c32170b4af4ce1a3030eb8167753b06",
+            "class_name": "Pleural thickening",
+            "class_id": "11",
+            "rad_id": "R9",
+            "x_min": "1780.0",
+            "y_min": "361.0",
+            "x_max": "2047.0",
+            "y_max": "612.0"
+          }
+        ]
+      },
+      {
+        "image_id": "0c7a38f293d5f5e4846aa4ca6db4daf1",
+        "class_name": "ILD",
+        "selected_first_source_row": {
+          "image_id": "0c7a38f293d5f5e4846aa4ca6db4daf1",
+          "class_name": "ILD",
+          "class_id": "5",
+          "rad_id": "R17",
+          "x_min": "1347.0",
+          "y_min": "245.0",
+          "x_max": "2188.0",
+          "y_max": "2169.0"
+        },
+        "other_same_reader_boxes_iou_below_point_one": [
+          {
+            "image_id": "0c7a38f293d5f5e4846aa4ca6db4daf1",
+            "class_name": "ILD",
+            "class_id": "5",
+            "rad_id": "R17",
+            "x_min": "87.0",
+            "y_min": "196.0",
+            "x_max": "1013.0",
+            "y_max": "2129.0"
+          }
+        ]
+      },
+      {
+        "image_id": "afb6230703512afc370f236e8fe98806",
+        "class_name": "Pulmonary fibrosis",
+        "selected_first_source_row": {
+          "image_id": "afb6230703512afc370f236e8fe98806",
+          "class_name": "Pulmonary fibrosis",
+          "class_id": "13",
+          "rad_id": "R9",
+          "x_min": "1857.0",
+          "y_min": "1607.0",
+          "x_max": "2126.0",
+          "y_max": "2036.0"
+        },
+        "other_same_reader_boxes_iou_below_point_one": [
+          {
+            "image_id": "afb6230703512afc370f236e8fe98806",
+            "class_name": "Pulmonary fibrosis",
+            "class_id": "13",
+            "rad_id": "R9",
+            "x_min": "486.0",
+            "y_min": "1594.0",
+            "x_max": "1002.0",
+            "y_max": "1918.0"
+          }
+        ]
+      },
+      {
+        "image_id": "347180362348e522905047dde655b6d7",
+        "class_name": "Pleural thickening",
+        "selected_first_source_row": {
+          "image_id": "347180362348e522905047dde655b6d7",
+          "class_name": "Pleural thickening",
+          "class_id": "11",
+          "rad_id": "R9",
+          "x_min": "1155.0",
+          "y_min": "204.0",
+          "x_max": "1414.0",
+          "y_max": "268.0"
+        },
+        "other_same_reader_boxes_iou_below_point_one": [
+          {
+            "image_id": "347180362348e522905047dde655b6d7",
+            "class_name": "Pleural thickening",
+            "class_id": "11",
+            "rad_id": "R9",
+            "x_min": "646.0",
+            "y_min": "198.0",
+            "x_max": "855.0",
+            "y_max": "245.0"
+          }
+        ]
+      },
+      {
+        "image_id": "c394eadea89e5795c8037280492d116d",
+        "class_name": "Other lesion",
+        "selected_first_source_row": {
+          "image_id": "c394eadea89e5795c8037280492d116d",
+          "class_name": "Other lesion",
+          "class_id": "9",
+          "rad_id": "R9",
+          "x_min": "0.0",
+          "y_min": "839.0",
+          "x_max": "274.0",
+          "y_max": "2168.0"
+        },
+        "other_same_reader_boxes_iou_below_point_one": [
+          {
+            "image_id": "c394eadea89e5795c8037280492d116d",
+            "class_name": "Other lesion",
+            "class_id": "9",
+            "rad_id": "R9",
+            "x_min": "422.0",
+            "y_min": "54.0",
+            "x_max": "1760.0",
+            "y_max": "579.0"
+          },
+          {
+            "image_id": "c394eadea89e5795c8037280492d116d",
+            "class_name": "Other lesion",
+            "class_id": "9",
+            "rad_id": "R9",
+            "x_min": "328.0",
+            "y_min": "756.0",
+            "x_max": "902.0",
+            "y_max": "1754.0"
+          }
+        ]
+      },
+      {
+        "image_id": "be1bb194dfb986bf7554b491852b8901",
+        "class_name": "Lung Opacity",
+        "selected_first_source_row": {
+          "image_id": "be1bb194dfb986bf7554b491852b8901",
+          "class_name": "Lung Opacity",
+          "class_id": "7",
+          "rad_id": "R9",
+          "x_min": "2233.0",
+          "y_min": "1536.0",
+          "x_max": "2518.0",
+          "y_max": "1827.0"
+        },
+        "other_same_reader_boxes_iou_below_point_one": [
+          {
+            "image_id": "be1bb194dfb986bf7554b491852b8901",
+            "class_name": "Lung Opacity",
+            "class_id": "7",
+            "rad_id": "R9",
+            "x_min": "651.0",
+            "y_min": "1128.0",
+            "x_max": "1255.0",
+            "y_max": "1741.0"
+          }
+        ]
+      },
+      {
+        "image_id": "8ae85268313b0db2f58d2193aab645c9",
+        "class_name": "Other lesion",
+        "selected_first_source_row": {
+          "image_id": "8ae85268313b0db2f58d2193aab645c9",
+          "class_name": "Other lesion",
+          "class_id": "9",
+          "rad_id": "R10",
+          "x_min": "1898.0",
+          "y_min": "850.0",
+          "x_max": "2401.0",
+          "y_max": "2074.0"
+        },
+        "other_same_reader_boxes_iou_below_point_one": [
+          {
+            "image_id": "8ae85268313b0db2f58d2193aab645c9",
+            "class_name": "Other lesion",
+            "class_id": "9",
+            "rad_id": "R10",
+            "x_min": "778.0",
+            "y_min": "871.0",
+            "x_max": "1348.0",
+            "y_max": "2018.0"
+          }
+        ]
+      },
+      {
+        "image_id": "04bb8bd7ee6f88a16623fe5c6dd4da91",
+        "class_name": "Pleural effusion",
+        "selected_first_source_row": {
+          "image_id": "04bb8bd7ee6f88a16623fe5c6dd4da91",
+          "class_name": "Pleural effusion",
+          "class_id": "10",
+          "rad_id": "R10",
+          "x_min": "655.0",
+          "y_min": "1188.0",
+          "x_max": "1354.0",
+          "y_max": "2049.0"
+        },
+        "other_same_reader_boxes_iou_below_point_one": [
+          {
+            "image_id": "04bb8bd7ee6f88a16623fe5c6dd4da91",
+            "class_name": "Pleural effusion",
+            "class_id": "10",
+            "rad_id": "R10",
+            "x_min": "2081.0",
+            "y_min": "1290.0",
+            "x_max": "2566.0",
+            "y_max": "1946.0"
+          }
+        ]
+      }
+    ]
+  }
+}

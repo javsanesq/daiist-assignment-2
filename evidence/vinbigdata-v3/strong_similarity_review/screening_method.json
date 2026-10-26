@@ -1,0 +1,18 @@
+{
+  "all_cross_split_dhash_candidate_pairs": 323220,
+  "unique_images_in_candidates": 11183,
+  "cheap_features": "Grayscale; remove outside black padding using >8 intensity occupancy; resize to 64 x 64 px; exclude 4 px outer margin; intensity and Gaussian-sigma-2 high-pass detail vectors each zero-centred and L2-normalised.",
+  "all_pair_scoring": "Vectorised row-wise dot products in batches of 1024; correlation scores for every supplied candidate.",
+  "shortlist_rule": "Union of top 800 by 0.7*detail+0.3*intensity, top 100 detail, top 100 intensity, plus all intensity >=0.985 AND detail >=0.90.",
+  "very_high_correlation_pairs": 0,
+  "expensive_pairs": 822,
+  "not_compared_expensively": 322398,
+  "expensive_check": "256 px SSIM and ORB ratio+reciprocal matching with homography RANSAC; top 20 paired previews.",
+  "limits": [
+    "Similarity does not prove duplicate images or patient identity.",
+    "Large transformations can suppress cheap correlation and evade the shortlist.",
+    "Only the initial dHash candidates were screened; absence of verified duplicates is not proof of independence.",
+    "Shared chest anatomy may create high scores and needs visual review.",
+    "No source images, labels or splits were changed."
+  ]
+}

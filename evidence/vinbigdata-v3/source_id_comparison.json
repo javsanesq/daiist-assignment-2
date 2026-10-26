@@ -1,0 +1,62 @@
+{
+  "dataset_root": "C:\\Users\\Usuario\\Desktop\\DAIIST_Assignment_2_Windows_Handoff\\daiist-assignment-2\\datasets\\vinbigdata-v3",
+  "source_csv": "C:\\Users\\Usuario\\Desktop\\DAIIST_Assignment_2_Windows_Handoff\\daiist-assignment-2\\evidence\\source-vinbig\\github_train_full.download",
+  "source_csv_sha256": "d3c52e5b96a73b9263e535ee803dde7fd053e4c8c6a50faf6b00f7dd8f5e2a80",
+  "source_annotation_rows": 67914,
+  "source_image_ids": 15000,
+  "export_images": 14998,
+  "split_summary": {
+    "train": {
+      "images": 10499,
+      "matched_source_ids": 10499,
+      "empty_export_images": 7448,
+      "empty_export_and_source_no_finding": 7448,
+      "empty_export_but_source_abnormal": 0,
+      "nonempty_export_but_source_no_finding": 0,
+      "class_set_match_images": 10499,
+      "raw_reader_class_count_match_images": 7470,
+      "unique_class_box_count_match_images": 7470,
+      "source_abnormal_rows": 25055,
+      "export_box_rows": 10648
+    },
+    "val": {
+      "images": 3000,
+      "matched_source_ids": 3000,
+      "empty_export_images": 2081,
+      "empty_export_and_source_no_finding": 2081,
+      "empty_export_but_source_abnormal": 0,
+      "nonempty_export_but_source_no_finding": 0,
+      "class_set_match_images": 3000,
+      "raw_reader_class_count_match_images": 2086,
+      "unique_class_box_count_match_images": 2086,
+      "source_abnormal_rows": 7353,
+      "export_box_rows": 3172
+    },
+    "test": {
+      "images": 1499,
+      "matched_source_ids": 1499,
+      "empty_export_images": 1075,
+      "empty_export_and_source_no_finding": 1075,
+      "empty_export_but_source_abnormal": 0,
+      "nonempty_export_but_source_no_finding": 0,
+      "class_set_match_images": 1499,
+      "raw_reader_class_count_match_images": 1077,
+      "unique_class_box_count_match_images": 1077,
+      "source_abnormal_rows": 3688,
+      "export_box_rows": 1545
+    }
+  },
+  "unmatched_export_images": [],
+  "source_ids_absent_from_export": [
+    "ddbe41935f4c7c4c6624654585e12652",
+    "f652652f33d50987fec8a4b136433edd"
+  ],
+  "repeated_source_ids": {},
+  "class_set_mismatch_images": [],
+  "limitations": [
+    "CSV provenance must be reported as a mirror when not retrieved directly from the competition.",
+    "Raw source rows contain multiple radiologist boxes; matching class counts alone does not prove coordinate identity or adjudication quality.",
+    "Source image IDs are anonymised image-instance identifiers, not verified patient IDs.",
+    "No source images, labels or splits were altered."
+  ]
+}

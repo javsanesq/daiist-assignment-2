@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "approved": true,
+  "policy_rule_approved": true,
+  "selection_rule": "validation_grid_minimum_with_capacity",
+  "adopted_thresholds": {
+    "binary_threshold": 0.04,
+    "lower": 0.02,
+    "upper": 0.15
+  },
+  "values": {
+    "prevalence": 0.1,
+    "false_positive_eur": 25.0,
+    "false_negative_eur": 500.0,
+    "review_minutes": 2.0,
+    "reviewer_hourly_eur": 60.0,
+    "reviewer_sensitivity": 0.9,
+    "reviewer_specificity": 0.9,
+    "daily_images": 200,
+    "reviewers_available": 1,
+    "review_hours_per_person": 2.0,
+    "inference_eur_per_image": 0.01
+  },
+  "rationale": {
+    "user_verbatim": "Missed priority case will always cost more given the fact that potentially ignoring something that is wrong will always be more complicated/expensive to solve than flagging something and it turn out to be nothing",
+    "interpretation": "This motivates the adopted 20:1 hypothetical priority-error penalty ratio; it is not a measured clinical harm estimate or a universal claim. All cases still receive clinical assessment.",
+    "operating_scenario_decision": "Adopt this hypothetical operating scenario and test alternatives",
+    "staffing_justification_status": "Hypothetical resource allocation adopted by Javier; no observed service staffing or measured review time claimed.",
+    "reviewer_accuracy_decision": "Use 90% reviewer accuracy: less optimistic, about 41 checks/day",
+    "least_trusted_assumption": "Whether reviewers really achieve 95% accuracy on these cases",
+    "policy_approval": "Adopt the validation minimum-cost rule with capacity after comparing the 90% and 95% reviewer scenarios; keep selected boundaries fixed for held-out test."
+  },
+  "assumption_notes": [
+    "All euro amounts, workload, prevalence, reviewer accuracy and staffing are hypothetical scenario assumptions approved by Javier.",
+    "TP and TN incremental error costs are zero because shared routine clinical assessment is excluded equally from alternatives, not claimed free.",
+    "A review costs 2/60 * 60 = EUR 2.00. One person assigned 2 hours can perform 60 two-minute checks/day.",
+    "Reviewer 90% sensitivity/specificity are unmeasured assumptions, including for uncertain model cases.",
+    "After validation discussion Javier chose the less optimistic 90% reviewer reference and approved freezing its minimum-cost feasible grid policy before held-out test inference."
+  ],
+  "policy_approved_at_utc": "2026-10-26T08:58:46.284507+00:00",
+  "model_study_note": "Candidate adopted by Javier after validation-only comparison; boundaries fixed before this checkpoint test inference. Prior baseline test exposure disclosed.",
+  "model_study_adoption": {
+    "approved": true,
+    "candidate_id": "n1024_resolution",
+    "weights_sha256": "b01a44d932c0dfde35e00b2dccb25eb512b95d23e557183f3413831973cbe778",
+    "user_reply_verbatim": "Use the recommended model and its validation-selected boundaries",
+    "approved_at_utc": "2026-10-26T08:58:46.284507+00:00",
+    "previous_test_already_exposed": true,
+    "evaluation_authorised": true,
+    "clinical_deployment_authorised": false,
+    "baseline_archive": "history/run_20261026T085846Z_dc042c",
+    "adopted_thresholds": {
+      "binary_threshold": 0.04,
+      "lower": 0.02,
+      "upper": 0.15
+    },
+    "config_note": "Candidate config preserved byte-for-byte; its test_inference_authorised=false records the completed validation-only study phase. This later human adoption authorises root evaluation."
+  }
+}

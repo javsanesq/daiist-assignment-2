@@ -1,0 +1,771 @@
+{
+  "schema_version": 1,
+  "evaluation_split": "test",
+  "hypothetical_operating_projection": true,
+  "test_optimization": false,
+  "scenario": {
+    "prevalence": 0.1,
+    "false_positive_eur": 25.0,
+    "false_negative_eur": 500.0,
+    "review_minutes": 2.0,
+    "reviewer_hourly_eur": 60.0,
+    "reviewer_sensitivity": 0.9,
+    "reviewer_specificity": 0.9,
+    "daily_images": 200,
+    "reviewers_available": 1,
+    "review_hours_per_person": 2.0,
+    "inference_eur_per_image": 0.01
+  },
+  "provenance": {
+    "validation_predictions_sha256": "5ffaa9e014338c0833d207b640b5363c322c95538e9bfbd168ba6c559e7e52cb",
+    "test_predictions_sha256": "7ca77924fa995c19199d231b8965081bc32d9b0e344a859271d7ddb989d40026",
+    "frozen_policy_sha256": "0a9a929d2bcb80f51ba8490fd481df4156d0c4cbcdfba67f19153b3219cbb40d",
+    "scenario_sha256": "22fd2195a794794d45b73fbf1271bb207cf02b15ea4fa3569af55ac1966debab",
+    "weights_sha256": "b01a44d932c0dfde35e00b2dccb25eb512b95d23e557183f3413831973cbe778",
+    "manifest_sha256": "13c2bcbdf29a04c8be1568b07dba737846f64262ab434cf0b067ec0ce38fdc43",
+    "config_sha256": "f4a02773eb761bd6877debd57db6f8ee35dcac8a87c25e4609e20aa11eda84a1",
+    "frozen_at_utc": "2026-10-26T08:58:49.105350+00:00",
+    "inference": {
+      "conf": 0.001,
+      "iou": 0.7,
+      "max_det": 300,
+      "imgsz": 1024
+    }
+  },
+  "target": {
+    "class_names": [
+      "Aortic enlargement",
+      "Atelectasis",
+      "Calcification",
+      "Cardiomegaly",
+      "Consolidation",
+      "ILD",
+      "Infiltration",
+      "Lung Opacity",
+      "Nodule-Mass",
+      "Other lesion",
+      "Pleural effusion",
+      "Pleural thickening",
+      "Pneumothorax",
+      "Pulmonary fibrosis"
+    ],
+    "positive_class_ids": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "definition": "At least one annotated target box; priority proxy, not clinical urgency",
+    "score": "Maximum target prediction confidence, or zero if no target prediction"
+  },
+  "sample": {
+    "validation_images": 3000,
+    "test_images": 1499,
+    "test_annotated_positives": 424,
+    "test_annotated_negatives": 1075,
+    "observed_test_prevalence": 0.2828552368245497,
+    "projected_operating_prevalence": 0.1
+  },
+  "matrix_conventions": {
+    "observed_actions": {
+      "rows": [
+        "annotated_negative",
+        "annotated_positive"
+      ],
+      "columns": [
+        "routine",
+        "human_priority_review",
+        "accelerated_clinical_review"
+      ],
+      "units": "Observed image counts; reviewed outcomes unresolved"
+    },
+    "expected_actions_per_1000": {
+      "rows": [
+        "annotated_negative",
+        "annotated_positive"
+      ],
+      "columns": [
+        "routine",
+        "human_priority_review",
+        "accelerated_clinical_review"
+      ],
+      "units": "Hypothetical expected counts per 1000 operating images"
+    },
+    "expected_resolved_confusion_per_1000": {
+      "rows": [
+        "annotated_negative",
+        "annotated_positive"
+      ],
+      "columns": [
+        "routine",
+        "accelerated"
+      ],
+      "units": "Hypothetical expected counts using assumed reviewer accuracy; not observed reviewer decisions"
+    }
+  },
+  "frozen_thresholds": {
+    "binary": {
+      "lower": 0.04,
+      "upper": 0.04
+    },
+    "hybrid": {
+      "lower": 0.02,
+      "upper": 0.15
+    }
+  },
+  "alternatives": [
+    {
+      "policy": "Routine queue for all (no added triage)",
+      "lower": 1.001,
+      "upper": 1.001,
+      "observed_actions": [
+        [
+          1075,
+          0,
+          0
+        ],
+        [
+          424,
+          0,
+          0
+        ]
+      ],
+      "expected_actions_per_1000": [
+        [
+          900.0,
+          0.0,
+          0.0
+        ],
+        [
+          100.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "expected_resolved_confusion_per_1000": [
+        [
+          900.0,
+          0.0
+        ],
+        [
+          100.0,
+          0.0
+        ]
+      ],
+      "cost_per_1000": 50000.0,
+      "error_cost_per_1000": 50000.0,
+      "review_cost_per_1000": 0.0,
+      "inference_cost_per_1000": 0.0,
+      "false_negatives_per_1000": 100.0,
+      "false_positives_per_1000": 0.0,
+      "review_fraction": 0.0,
+      "daily_reviews": 0.0,
+      "daily_review_hours": 0.0,
+      "reviewers_needed": 0,
+      "within_capacity": true,
+      "sensitivity": 0.0,
+      "specificity": 1.0,
+      "policy_id": "routine_all",
+      "basis": "Observed image routing; hypothetical prevalence-weighted resolved outcomes and costs",
+      "uncertainty": {
+        "method": "Marginal Wilson score interval, z=1.96; image-level class-conditional routing",
+        "routing": [
+          {
+            "target": 0,
+            "action": "routine",
+            "count": 1075,
+            "class_total": 1075,
+            "proportion": 1.0,
+            "wilson_95": [
+              0.996439143614781,
+              1.0
+            ]
+          },
+          {
+            "target": 0,
+            "action": "human_priority_review",
+            "count": 0,
+            "class_total": 1075,
+            "proportion": 0.0,
+            "wilson_95": [
+              0.0,
+              0.0035608563852191086
+            ]
+          },
+          {
+            "target": 0,
+            "action": "accelerated_clinical_review",
+            "count": 0,
+            "class_total": 1075,
+            "proportion": 0.0,
+            "wilson_95": [
+              0.0,
+              0.0035608563852191086
+            ]
+          },
+          {
+            "target": 1,
+            "action": "routine",
+            "count": 424,
+            "class_total": 424,
+            "proportion": 1.0,
+            "wilson_95": [
+              0.9910209759873747,
+              1.0
+            ]
+          },
+          {
+            "target": 1,
+            "action": "human_priority_review",
+            "count": 0,
+            "class_total": 424,
+            "proportion": 0.0,
+            "wilson_95": [
+              0.0,
+              0.008979024012625233
+            ]
+          },
+          {
+            "target": 1,
+            "action": "accelerated_clinical_review",
+            "count": 0,
+            "class_total": 424,
+            "proportion": 0.0,
+            "wilson_95": [
+              0.0,
+              0.008979024012625233
+            ]
+          }
+        ],
+        "direct_binary": {
+          "observed_confusion": [
+            [
+              1075,
+              0
+            ],
+            [
+              424,
+              0
+            ]
+          ],
+          "rows": [
+            "negative",
+            "positive"
+          ],
+          "columns": [
+            "routine",
+            "accelerated"
+          ],
+          "sensitivity": {
+            "value": 0.0,
+            "wilson_95": [
+              0.0,
+              0.008979024012625233
+            ],
+            "denominator": 424
+          },
+          "specificity": {
+            "value": 1.0,
+            "wilson_95": [
+              0.996439143614781,
+              1.0
+            ],
+            "denominator": 1075
+          }
+        },
+        "expected_reviewer_outcome_intervals": null
+      },
+      "daily_review_capacity": 60.0,
+      "daily_backlog_if_no_extra_staff": 0.0,
+      "capacity_utilization": 0.0,
+      "daily_cost": 10000.0
+    },
+    {
+      "policy": "Human priority review for all",
+      "lower": 0.0,
+      "upper": 1.001,
+      "observed_actions": [
+        [
+          0,
+          1075,
+          0
+        ],
+        [
+          0,
+          424,
+          0
+        ]
+      ],
+      "expected_actions_per_1000": [
+        [
+          0.0,
+          900.0,
+          0.0
+        ],
+        [
+          0.0,
+          100.0,
+          0.0
+        ]
+      ],
+      "expected_resolved_confusion_per_1000": [
+        [
+          810.0,
+          89.99999999999999
+        ],
+        [
+          9.999999999999998,
+          90.0
+        ]
+      ],
+      "cost_per_1000": 9249.999999999998,
+      "error_cost_per_1000": 7249.999999999998,
+      "review_cost_per_1000": 2000.0,
+      "inference_cost_per_1000": 0.0,
+      "false_negatives_per_1000": 9.999999999999998,
+      "false_positives_per_1000": 89.99999999999999,
+      "review_fraction": 1.0,
+      "daily_reviews": 200.0,
+      "daily_review_hours": 6.666666666666667,
+      "reviewers_needed": 4,
+      "within_capacity": false,
+      "sensitivity": 0.9,
+      "specificity": 0.9,
+      "policy_id": "human_all",
+      "basis": "Observed image routing; hypothetical prevalence-weighted resolved outcomes and costs",
+      "uncertainty": {
+        "method": "Marginal Wilson score interval, z=1.96; image-level class-conditional routing",
+        "routing": [
+          {
+            "target": 0,
+            "action": "routine",
+            "count": 0,
+            "class_total": 1075,
+            "proportion": 0.0,
+            "wilson_95": [
+              0.0,
+              0.0035608563852191086
+            ]
+          },
+          {
+            "target": 0,
+            "action": "human_priority_review",
+            "count": 1075,
+            "class_total": 1075,
+            "proportion": 1.0,
+            "wilson_95": [
+              0.996439143614781,
+              1.0
+            ]
+          },
+          {
+            "target": 0,
+            "action": "accelerated_clinical_review",
+            "count": 0,
+            "class_total": 1075,
+            "proportion": 0.0,
+            "wilson_95": [
+              0.0,
+              0.0035608563852191086
+            ]
+          },
+          {
+            "target": 1,
+            "action": "routine",
+            "count": 0,
+            "class_total": 424,
+            "proportion": 0.0,
+            "wilson_95": [
+              0.0,
+              0.008979024012625233
+            ]
+          },
+          {
+            "target": 1,
+            "action": "human_priority_review",
+            "count": 424,
+            "class_total": 424,
+            "proportion": 1.0,
+            "wilson_95": [
+              0.9910209759873747,
+              1.0
+            ]
+          },
+          {
+            "target": 1,
+            "action": "accelerated_clinical_review",
+            "count": 0,
+            "class_total": 424,
+            "proportion": 0.0,
+            "wilson_95": [
+              0.0,
+              0.008979024012625233
+            ]
+          }
+        ],
+        "direct_binary": null,
+        "expected_reviewer_outcome_intervals": null
+      },
+      "daily_review_capacity": 60.0,
+      "daily_backlog_if_no_extra_staff": 140.0,
+      "capacity_utilization": 3.3333333333333335,
+      "daily_cost": 1849.9999999999995
+    },
+    {
+      "policy": "Model only",
+      "lower": 0.04,
+      "upper": 0.04,
+      "observed_actions": [
+        [
+          956,
+          0,
+          119
+        ],
+        [
+          11,
+          0,
+          413
+        ]
+      ],
+      "expected_actions_per_1000": [
+        [
+          800.3720930232558,
+          0.0,
+          99.62790697674419
+        ],
+        [
+          2.5943396226415096,
+          0.0,
+          97.4056603773585
+        ]
+      ],
+      "expected_resolved_confusion_per_1000": [
+        [
+          800.3720930232558,
+          99.62790697674419
+        ],
+        [
+          2.5943396226415096,
+          97.4056603773585
+        ]
+      ],
+      "cost_per_1000": 3797.8674857393594,
+      "error_cost_per_1000": 3787.8674857393594,
+      "review_cost_per_1000": 0.0,
+      "inference_cost_per_1000": 10.0,
+      "false_negatives_per_1000": 2.5943396226415096,
+      "false_positives_per_1000": 99.62790697674419,
+      "review_fraction": 0.0,
+      "daily_reviews": 0.0,
+      "daily_review_hours": 0.0,
+      "reviewers_needed": 0,
+      "within_capacity": true,
+      "sensitivity": 0.9740566037735848,
+      "specificity": 0.8893023255813954,
+      "policy_id": "model_only",
+      "basis": "Observed image routing; hypothetical prevalence-weighted resolved outcomes and costs",
+      "uncertainty": {
+        "method": "Marginal Wilson score interval, z=1.96; image-level class-conditional routing",
+        "routing": [
+          {
+            "target": 0,
+            "action": "routine",
+            "count": 956,
+            "class_total": 1075,
+            "proportion": 0.8893023255813953,
+            "wilson_95": [
+              0.8691420096643815,
+              0.906690142154755
+            ]
+          },
+          {
+            "target": 0,
+            "action": "human_priority_review",
+            "count": 0,
+            "class_total": 1075,
+            "proportion": 0.0,
+            "wilson_95": [
+              0.0,
+              0.0035608563852191086
+            ]
+          },
+          {
+            "target": 0,
+            "action": "accelerated_clinical_review",
+            "count": 119,
+            "class_total": 1075,
+            "proportion": 0.11069767441860465,
+            "wilson_95": [
+              0.0933098578452451,
+              0.1308579903356185
+            ]
+          },
+          {
+            "target": 1,
+            "action": "routine",
+            "count": 11,
+            "class_total": 424,
+            "proportion": 0.025943396226415096,
+            "wilson_95": [
+              0.014546805353523519,
+              0.04585311835655984
+            ]
+          },
+          {
+            "target": 1,
+            "action": "human_priority_review",
+            "count": 0,
+            "class_total": 424,
+            "proportion": 0.0,
+            "wilson_95": [
+              0.0,
+              0.008979024012625233
+            ]
+          },
+          {
+            "target": 1,
+            "action": "accelerated_clinical_review",
+            "count": 413,
+            "class_total": 424,
+            "proportion": 0.9740566037735849,
+            "wilson_95": [
+              0.9541468816434403,
+              0.9854531946464765
+            ]
+          }
+        ],
+        "direct_binary": {
+          "observed_confusion": [
+            [
+              956,
+              119
+            ],
+            [
+              11,
+              413
+            ]
+          ],
+          "rows": [
+            "negative",
+            "positive"
+          ],
+          "columns": [
+            "routine",
+            "accelerated"
+          ],
+          "sensitivity": {
+            "value": 0.9740566037735849,
+            "wilson_95": [
+              0.9541468816434403,
+              0.9854531946464765
+            ],
+            "denominator": 424
+          },
+          "specificity": {
+            "value": 0.8893023255813953,
+            "wilson_95": [
+              0.8691420096643815,
+              0.906690142154755
+            ],
+            "denominator": 1075
+          }
+        },
+        "expected_reviewer_outcome_intervals": null
+      },
+      "daily_review_capacity": 60.0,
+      "daily_backlog_if_no_extra_staff": 0.0,
+      "capacity_utilization": 0.0,
+      "daily_cost": 759.5734971478719
+    },
+    {
+      "policy": "Model + human review",
+      "lower": 0.02,
+      "upper": 0.15,
+      "observed_actions": [
+        [
+          898,
+          131,
+          46
+        ],
+        [
+          5,
+          50,
+          369
+        ]
+      ],
+      "expected_actions_per_1000": [
+        [
+          751.8139534883721,
+          109.67441860465117,
+          38.51162790697675
+        ],
+        [
+          1.179245283018868,
+          11.79245283018868,
+          87.02830188679245
+        ]
+      ],
+      "expected_resolved_confusion_per_1000": [
+        [
+          850.5209302325582,
+          49.479069767441864
+        ],
+        [
+          2.3584905660377355,
+          97.64150943396226
+        ]
+      ],
+      "cost_per_1000": 2669.1557700745943,
+      "error_cost_per_1000": 2416.2220272049144,
+      "review_cost_per_1000": 242.9337428696797,
+      "inference_cost_per_1000": 10.0,
+      "false_negatives_per_1000": 2.3584905660377355,
+      "false_positives_per_1000": 49.479069767441864,
+      "review_fraction": 0.12146687143483985,
+      "daily_reviews": 24.29337428696797,
+      "daily_review_hours": 0.8097791428989324,
+      "reviewers_needed": 1,
+      "within_capacity": true,
+      "sensitivity": 0.9764150943396227,
+      "specificity": 0.9450232558139535,
+      "policy_id": "model_human",
+      "basis": "Observed image routing; hypothetical prevalence-weighted resolved outcomes and costs",
+      "uncertainty": {
+        "method": "Marginal Wilson score interval, z=1.96; image-level class-conditional routing",
+        "routing": [
+          {
+            "target": 0,
+            "action": "routine",
+            "count": 898,
+            "class_total": 1075,
+            "proportion": 0.8353488372093023,
+            "wilson_95": [
+              0.8119918957790592,
+              0.8563175205430403
+            ]
+          },
+          {
+            "target": 0,
+            "action": "human_priority_review",
+            "count": 131,
+            "class_total": 1075,
+            "proportion": 0.12186046511627907,
+            "wilson_95": [
+              0.10364010447132754,
+              0.14277382691581955
+            ]
+          },
+          {
+            "target": 0,
+            "action": "accelerated_clinical_review",
+            "count": 46,
+            "class_total": 1075,
+            "proportion": 0.04279069767441861,
+            "wilson_95": [
+              0.03223261411606614,
+              0.056604894559906326
+            ]
+          },
+          {
+            "target": 1,
+            "action": "routine",
+            "count": 5,
+            "class_total": 424,
+            "proportion": 0.01179245283018868,
+            "wilson_95": [
+              0.0050471868766320295,
+              0.027304973362110536
+            ]
+          },
+          {
+            "target": 1,
+            "action": "human_priority_review",
+            "count": 50,
+            "class_total": 424,
+            "proportion": 0.1179245283018868,
+            "wilson_95": [
+              0.09060210257203116,
+              0.15210828370176738
+            ]
+          },
+          {
+            "target": 1,
+            "action": "accelerated_clinical_review",
+            "count": 369,
+            "class_total": 424,
+            "proportion": 0.8702830188679245,
+            "wilson_95": [
+              0.8349472945767284,
+              0.8989691829233557
+            ]
+          }
+        ],
+        "direct_binary": null,
+        "expected_reviewer_outcome_intervals": null
+      },
+      "daily_review_capacity": 60.0,
+      "daily_backlog_if_no_extra_staff": 0.0,
+      "capacity_utilization": 0.4048895714494662,
+      "daily_cost": 533.8311540149189
+    }
+  ],
+  "formulas_and_worked_numbers": {
+    "units": {
+      "cost": "EUR per 1000 images",
+      "workload": "images per day",
+      "review_time": "hours per day"
+    },
+    "review_cost": {
+      "formula": "review_minutes / 60 * reviewer_hourly_eur",
+      "substitution": "2.0 / 60 * 60.0",
+      "eur_per_review": 2.0
+    },
+    "capacity": {
+      "formula": "reviewers_available * review_hours_per_person * 60 / review_minutes",
+      "substitution": "1 * 2.0 * 60 / 2.0",
+      "reviews_per_day": 60.0,
+      "maximum_review_fraction": 0.3
+    },
+    "expected_actions": "P(action|annotated class) * assumed class prevalence * 1000",
+    "expected_fp": "direct_accelerated_negatives + reviewed_negatives * (1 - reviewer_specificity)",
+    "expected_fn": "direct_routine_positives + reviewed_positives * (1 - reviewer_sensitivity)",
+    "total_cost": "expected_FP * FP_penalty + expected_FN * FN_penalty + expected_reviews * review_cost + 1000 * inference_cost (model alternatives only)",
+    "staffing": "daily_reviews = review_fraction * daily_images; daily_hours = daily_reviews * review_minutes / 60; people_needed = ceil(daily_hours / hours_per_person)",
+    "hypothetical_routine_all": {
+      "fn_per_1000": 100.0,
+      "fp_per_1000": 0.0,
+      "cost_per_1000": 50000.0
+    },
+    "hypothetical_human_all": {
+      "fn_per_1000": 9.999999999999998,
+      "fp_per_1000": 89.99999999999999,
+      "error_cost_per_1000": 7249.999999999998,
+      "review_cost_per_1000": 2000.0,
+      "cost_per_1000": 9249.999999999998,
+      "daily_review_hours": 6.666666666666667
+    },
+    "cost_scope": "Incremental prioritization only; shared routine clinical assessment is excluded consistently, not assumed free."
+  },
+  "limitations": [
+    "All costs, operating prevalence, workload, review duration and reviewer accuracy are hypothetical assumptions.",
+    "Priority-positive means at least one annotated target finding; it is not clinical urgency or a confirmed patient outcome.",
+    "No finding means none of the target findings annotated, not an assurance that the patient is healthy.",
+    "Score is the maximum target-box confidence and is uncalibrated; a score is not a disease probability.",
+    "Reviewer sensitivity/specificity are assumed constant even on model-selected difficult cases; no reviewer study was performed.",
+    "Wilson intervals are marginal image-level binomial intervals, conditional on the adopted threshold and observed class. They omit selection, label and patient-dependence uncertainty.",
+    "Patient independence is unverified. Correlated images could make image-level intervals too narrow.",
+    "No interval is attached to expected resolved confusion as if reviewer outcomes had been observed.",
+    "Routine clinical assessment is common to all alternatives. Costs cover incremental prioritization and hypothetical priority-error penalties only.",
+    "Sensitivity analyses are one-factor hypothetical projections, not validation of clinical utility or a search on test outcomes."
+  ]
+}

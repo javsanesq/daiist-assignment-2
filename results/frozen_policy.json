@@ -1,0 +1,5443 @@
+{
+  "schema_version": 1,
+  "selection_split": "val",
+  "selected": {
+    "binary": {
+      "lower": 0.04,
+      "upper": 0.04,
+      "observed_actions": [
+        [
+          1830,
+          0,
+          251
+        ],
+        [
+          24,
+          0,
+          895
+        ]
+      ],
+      "expected_actions_per_1000": [
+        [
+          791.4464199903892,
+          0.0,
+          108.55358000961077
+        ],
+        [
+          2.6115342763873777,
+          0.0,
+          97.38846572361264
+        ]
+      ],
+      "expected_resolved_confusion_per_1000": [
+        [
+          791.4464199903892,
+          108.55358000961077
+        ],
+        [
+          2.6115342763873777,
+          97.38846572361264
+        ]
+      ],
+      "cost_per_1000": 4029.6066384339583,
+      "error_cost_per_1000": 4019.6066384339583,
+      "review_cost_per_1000": 0.0,
+      "inference_cost_per_1000": 10.0,
+      "false_negatives_per_1000": 2.6115342763873777,
+      "false_positives_per_1000": 108.55358000961077,
+      "review_fraction": 0.0,
+      "daily_reviews": 0.0,
+      "daily_review_hours": 0.0,
+      "reviewers_needed": 0,
+      "within_capacity": true,
+      "sensitivity": 0.9738846572361263,
+      "specificity": 0.8793849111004325
+    },
+    "hybrid": {
+      "lower": 0.02,
+      "upper": 0.15,
+      "observed_actions": [
+        [
+          1691,
+          288,
+          102
+        ],
+        [
+          9,
+          97,
+          813
+        ]
+      ],
+      "expected_actions_per_1000": [
+        [
+          731.3310908217204,
+          124.5555021624219,
+          44.11340701585776
+        ],
+        [
+          0.9793253536452666,
+          10.55495103373232,
+          88.46572361262243
+        ]
+      ],
+      "expected_resolved_confusion_per_1000": [
+        [
+          843.4310427679002,
+          56.56895723209995
+        ],
+        [
+          2.0348204570184985,
+          97.96517954298152
+        ]
+      ],
+      "cost_per_1000": 2711.855065704056,
+      "error_cost_per_1000": 2431.6341593117477,
+      "review_cost_per_1000": 270.22090639230845,
+      "inference_cost_per_1000": 10.0,
+      "false_negatives_per_1000": 2.0348204570184985,
+      "false_positives_per_1000": 56.56895723209995,
+      "review_fraction": 0.13511045319615422,
+      "daily_reviews": 27.022090639230846,
+      "daily_review_hours": 0.9007363546410282,
+      "reviewers_needed": 1,
+      "within_capacity": true,
+      "sensitivity": 0.9796517954298151,
+      "specificity": 0.9371456030754445
+    },
+    "binary_sweep": [
+      {
+        "lower": 0.0,
+        "upper": 0.0,
+        "observed_actions": [
+          [
+            0,
+            0,
+            2081
+          ],
+          [
+            0,
+            0,
+            919
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            0.0,
+            0.0,
+            900.0
+          ],
+          [
+            0.0,
+            0.0,
+            100.0
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            0.0,
+            900.0
+          ],
+          [
+            0.0,
+            100.0
+          ]
+        ],
+        "cost_per_1000": 22510.0,
+        "error_cost_per_1000": 22500.0,
+        "review_cost_per_1000": 0.0,
+        "inference_cost_per_1000": 10.0,
+        "false_negatives_per_1000": 0.0,
+        "false_positives_per_1000": 900.0,
+        "review_fraction": 0.0,
+        "daily_reviews": 0.0,
+        "daily_review_hours": 0.0,
+        "reviewers_needed": 0,
+        "within_capacity": true,
+        "sensitivity": 1.0,
+        "specificity": 0.0
+      },
+      {
+        "lower": 0.01,
+        "upper": 0.01,
+        "observed_actions": [
+          [
+            1519,
+            0,
+            562
+          ],
+          [
+            5,
+            0,
+            914
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            656.943777030274,
+            0.0,
+            243.05622296972612
+          ],
+          [
+            0.544069640914037,
+            0.0,
+            99.45593035908597
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            656.943777030274,
+            243.05622296972612
+          ],
+          [
+            0.544069640914037,
+            99.45593035908597
+          ]
+        ],
+        "cost_per_1000": 6358.440394700171,
+        "error_cost_per_1000": 6348.440394700171,
+        "review_cost_per_1000": 0.0,
+        "inference_cost_per_1000": 10.0,
+        "false_negatives_per_1000": 0.544069640914037,
+        "false_positives_per_1000": 243.05622296972612,
+        "review_fraction": 0.0,
+        "daily_reviews": 0.0,
+        "daily_review_hours": 0.0,
+        "reviewers_needed": 0,
+        "within_capacity": true,
+        "sensitivity": 0.9945593035908596,
+        "specificity": 0.7299375300336376
+      },
+      {
+        "lower": 0.02,
+        "upper": 0.02,
+        "observed_actions": [
+          [
+            1691,
+            0,
+            390
+          ],
+          [
+            9,
+            0,
+            910
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            731.3310908217204,
+            0.0,
+            168.66890917827968
+          ],
+          [
+            0.9793253536452666,
+            0.0,
+            99.02067464635473
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            731.3310908217204,
+            168.66890917827968
+          ],
+          [
+            0.9793253536452666,
+            99.02067464635473
+          ]
+        ],
+        "cost_per_1000": 4716.385406279625,
+        "error_cost_per_1000": 4706.385406279625,
+        "review_cost_per_1000": 0.0,
+        "inference_cost_per_1000": 10.0,
+        "false_negatives_per_1000": 0.9793253536452666,
+        "false_positives_per_1000": 168.66890917827968,
+        "review_fraction": 0.0,
+        "daily_reviews": 0.0,
+        "daily_review_hours": 0.0,
+        "reviewers_needed": 0,
+        "within_capacity": true,
+        "sensitivity": 0.9902067464635473,
+        "specificity": 0.8125901009130225
+      },
+      {
+        "lower": 0.03,
+        "upper": 0.03,
+        "observed_actions": [
+          [
+            1775,
+            0,
+            306
+          ],
+          [
+            16,
+            0,
+            903
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            767.6597789524267,
+            0.0,
+            132.3402210475733
+          ],
+          [
+            1.7410228509249184,
+            0.0,
+            98.25897714907508
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            767.6597789524267,
+            132.3402210475733
+          ],
+          [
+            1.7410228509249184,
+            98.25897714907508
+          ]
+        ],
+        "cost_per_1000": 4189.016951651792,
+        "error_cost_per_1000": 4179.016951651792,
+        "review_cost_per_1000": 0.0,
+        "inference_cost_per_1000": 10.0,
+        "false_negatives_per_1000": 1.7410228509249184,
+        "false_positives_per_1000": 132.3402210475733,
+        "review_fraction": 0.0,
+        "daily_reviews": 0.0,
+        "daily_review_hours": 0.0,
+        "reviewers_needed": 0,
+        "within_capacity": true,
+        "sensitivity": 0.9825897714907508,
+        "specificity": 0.8529553099471407
+      },
+      {
+        "lower": 0.04,
+        "upper": 0.04,
+        "observed_actions": [
+          [
+            1830,
+            0,
+            251
+          ],
+          [
+            24,
+            0,
+            895
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            791.4464199903892,
+            0.0,
+            108.55358000961077
+          ],
+          [
+            2.6115342763873777,
+            0.0,
+            97.38846572361264
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            791.4464199903892,
+            108.55358000961077
+          ],
+          [
+            2.6115342763873777,
+            97.38846572361264
+          ]
+        ],
+        "cost_per_1000": 4029.6066384339583,
+        "error_cost_per_1000": 4019.6066384339583,
+        "review_cost_per_1000": 0.0,
+        "inference_cost_per_1000": 10.0,
+        "false_negatives_per_1000": 2.6115342763873777,
+        "false_positives_per_1000": 108.55358000961077,
+        "review_fraction": 0.0,
+        "daily_reviews": 0.0,
+        "daily_review_hours": 0.0,
+        "reviewers_needed": 0,
+        "within_capacity": true,
+        "sensitivity": 0.9738846572361263,
+        "specificity": 0.8793849111004325
+      },
+      {
+        "lower": 0.05,
+        "upper": 0.05,
+        "observed_actions": [
+          [
+            1863,
+            0,
+            218
+          ],
+          [
+            32,
+            0,
+            887
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            805.7184046131667,
+            0.0,
+            94.28159538683326
+          ],
+          [
+            3.4820457018498367,
+            0.0,
+            96.51795429815017
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            805.7184046131667,
+            94.28159538683326
+          ],
+          [
+            3.4820457018498367,
+            96.51795429815017
+          ]
+        ],
+        "cost_per_1000": 4108.0627355957495,
+        "error_cost_per_1000": 4098.0627355957495,
+        "review_cost_per_1000": 0.0,
+        "inference_cost_per_1000": 10.0,
+        "false_negatives_per_1000": 3.4820457018498367,
+        "false_positives_per_1000": 94.28159538683326,
+        "review_fraction": 0.0,
+        "daily_reviews": 0.0,
+        "daily_review_hours": 0.0,
+        "reviewers_needed": 0,
+        "within_capacity": true,
+        "sensitivity": 0.9651795429815015,
+        "specificity": 0.8952426717924075
+      },
+      {
+        "lower": 0.06,
+        "upper": 0.06,
+        "observed_actions": [
+          [
+            1894,
+            0,
+            187
+          ],
+          [
+            43,
+            0,
+            876
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            819.1254204709275,
+            0.0,
+            80.87457952907256
+          ],
+          [
+            4.6789989118607185,
+            0.0,
+            95.32100108813928
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            819.1254204709275,
+            80.87457952907256
+          ],
+          [
+            4.6789989118607185,
+            95.32100108813928
+          ]
+        ],
+        "cost_per_1000": 4371.363944157173,
+        "error_cost_per_1000": 4361.363944157173,
+        "review_cost_per_1000": 0.0,
+        "inference_cost_per_1000": 10.0,
+        "false_negatives_per_1000": 4.6789989118607185,
+        "false_positives_per_1000": 80.87457952907256,
+        "review_fraction": 0.0,
+        "daily_reviews": 0.0,
+        "daily_review_hours": 0.0,
+        "reviewers_needed": 0,
+        "within_capacity": true,
+        "sensitivity": 0.9532100108813928,
+        "specificity": 0.9101393560788082
+      },
+      {
+        "lower": 0.07,
+        "upper": 0.07,
+        "observed_actions": [
+          [
+            1913,
+            0,
+            168
+          ],
+          [
+            57,
+            0,
+            862
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            827.3426237385872,
+            0.0,
+            72.6573762614128
+          ],
+          [
+            6.202393906420022,
+            0.0,
+            93.79760609357999
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            827.3426237385872,
+            72.6573762614128
+          ],
+          [
+            6.202393906420022,
+            93.79760609357999
+          ]
+        ],
+        "cost_per_1000": 4927.631359745331,
+        "error_cost_per_1000": 4917.631359745331,
+        "review_cost_per_1000": 0.0,
+        "inference_cost_per_1000": 10.0,
+        "false_negatives_per_1000": 6.202393906420022,
+        "false_positives_per_1000": 72.6573762614128,
+        "review_fraction": 0.0,
+        "daily_reviews": 0.0,
+        "daily_review_hours": 0.0,
+        "reviewers_needed": 0,
+        "within_capacity": true,
+        "sensitivity": 0.9379760609357998,
+        "specificity": 0.9192695819317636
+      },
+      {
+        "lower": 0.08,
+        "upper": 0.08,
+        "observed_actions": [
+          [
+            1928,
+            0,
+            153
+          ],
+          [
+            68,
+            0,
+            851
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            833.8298894762133,
+            0.0,
+            66.17011052378665
+          ],
+          [
+            7.399347116430904,
+            0.0,
+            92.60065288356911
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            833.8298894762133,
+            66.17011052378665
+          ],
+          [
+            7.399347116430904,
+            92.60065288356911
+          ]
+        ],
+        "cost_per_1000": 5363.9263213101185,
+        "error_cost_per_1000": 5353.9263213101185,
+        "review_cost_per_1000": 0.0,
+        "inference_cost_per_1000": 10.0,
+        "false_negatives_per_1000": 7.399347116430904,
+        "false_positives_per_1000": 66.17011052378665,
+        "review_fraction": 0.0,
+        "daily_reviews": 0.0,
+        "daily_review_hours": 0.0,
+        "reviewers_needed": 0,
+        "within_capacity": true,
+        "sensitivity": 0.926006528835691,
+        "specificity": 0.9264776549735704
+      },
+      {
+        "lower": 0.09,
+        "upper": 0.09,
+        "observed_actions": [
+          [
+            1936,
+            0,
+            145
+          ],
+          [
+            73,
+            0,
+            846
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            837.2897645362807,
+            0.0,
+            62.71023546371937
+          ],
+          [
+            7.943416757344941,
+            0.0,
+            92.05658324265507
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            837.2897645362807,
+            62.71023546371937
+          ],
+          [
+            7.943416757344941,
+            92.05658324265507
+          ]
+        ],
+        "cost_per_1000": 5549.464265265455,
+        "error_cost_per_1000": 5539.464265265455,
+        "review_cost_per_1000": 0.0,
+        "inference_cost_per_1000": 10.0,
+        "false_negatives_per_1000": 7.943416757344941,
+        "false_positives_per_1000": 62.71023546371937,
+        "review_fraction": 0.0,
+        "daily_reviews": 0.0,
+        "daily_review_hours": 0.0,
+        "reviewers_needed": 0,
+        "within_capacity": true,
+        "sensitivity": 0.9205658324265507,
+        "specificity": 0.9303219605958674
+      },
+      {
+        "lower": 0.1,
+        "upper": 0.1,
+        "observed_actions": [
+          [
+            1948,
+            0,
+            133
+          ],
+          [
+            80,
+            0,
+            839
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            842.4795771263815,
+            0.0,
+            57.52042287361845
+          ],
+          [
+            8.705114254624592,
+            0.0,
+            91.29488574537542
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            842.4795771263815,
+            57.52042287361845
+          ],
+          [
+            8.705114254624592,
+            91.29488574537542
+          ]
+        ],
+        "cost_per_1000": 5800.567699152757,
+        "error_cost_per_1000": 5790.567699152757,
+        "review_cost_per_1000": 0.0,
+        "inference_cost_per_1000": 10.0,
+        "false_negatives_per_1000": 8.705114254624592,
+        "false_positives_per_1000": 57.52042287361845,
+        "review_fraction": 0.0,
+        "daily_reviews": 0.0,
+        "daily_review_hours": 0.0,
+        "reviewers_needed": 0,
+        "within_capacity": true,
+        "sensitivity": 0.9129488574537541,
+        "specificity": 0.9360884190293128
+      },
+      {
+        "lower": 0.11,
+        "upper": 0.11,
+        "observed_actions": [
+          [
+            1961,
+            0,
+            120
+          ],
+          [
+            84,
+            0,
+            835
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            848.101874098991,
+            0.0,
+            51.89812590100913
+          ],
+          [
+            9.140369967355822,
+            0.0,
+            90.85963003264419
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            848.101874098991,
+            51.89812590100913
+          ],
+          [
+            9.140369967355822,
+            90.85963003264419
+          ]
+        ],
+        "cost_per_1000": 5877.638131203139,
+        "error_cost_per_1000": 5867.638131203139,
+        "review_cost_per_1000": 0.0,
+        "inference_cost_per_1000": 10.0,
+        "false_negatives_per_1000": 9.140369967355822,
+        "false_positives_per_1000": 51.89812590100913,
+        "review_fraction": 0.0,
+        "daily_reviews": 0.0,
+        "daily_review_hours": 0.0,
+        "reviewers_needed": 0,
+        "within_capacity": true,
+        "sensitivity": 0.9085963003264418,
+        "specificity": 0.9423354156655454
+      },
+      {
+        "lower": 0.12,
+        "upper": 0.12,
+        "observed_actions": [
+          [
+            1966,
+            0,
+            115
+          ],
+          [
+            91,
+            0,
+            828
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            850.2642960115329,
+            0.0,
+            49.73570398846709
+          ],
+          [
+            9.902067464635474,
+            0.0,
+            90.09793253536452
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            850.2642960115329,
+            49.73570398846709
+          ],
+          [
+            9.902067464635474,
+            90.09793253536452
+          ]
+        ],
+        "cost_per_1000": 6204.426332029414,
+        "error_cost_per_1000": 6194.426332029414,
+        "review_cost_per_1000": 0.0,
+        "inference_cost_per_1000": 10.0,
+        "false_negatives_per_1000": 9.902067464635474,
+        "false_positives_per_1000": 49.73570398846709,
+        "review_fraction": 0.0,
+        "daily_reviews": 0.0,
+        "daily_review_hours": 0.0,
+        "reviewers_needed": 0,
+        "within_capacity": true,
+        "sensitivity": 0.9009793253536452,
+        "specificity": 0.944738106679481
+      },
+      {
+        "lower": 0.13,
+        "upper": 0.13,
+        "observed_actions": [
+          [
+            1970,
+            0,
+            111
+          ],
+          [
+            95,
+            0,
+            824
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            851.9942335415666,
+            0.0,
+            48.00576645843344
+          ],
+          [
+            10.337323177366704,
+            0.0,
+            89.66267682263329
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            851.9942335415666,
+            48.00576645843344
+          ],
+          [
+            10.337323177366704,
+            89.66267682263329
+          ]
+        ],
+        "cost_per_1000": 6378.805750144189,
+        "error_cost_per_1000": 6368.805750144189,
+        "review_cost_per_1000": 0.0,
+        "inference_cost_per_1000": 10.0,
+        "false_negatives_per_1000": 10.337323177366704,
+        "false_positives_per_1000": 48.00576645843344,
+        "review_fraction": 0.0,
+        "daily_reviews": 0.0,
+        "daily_review_hours": 0.0,
+        "reviewers_needed": 0,
+        "within_capacity": true,
+        "sensitivity": 0.896626768226333,
+        "specificity": 0.9466602594906295
+      },
+      {
+        "lower": 0.14,
+        "upper": 0.14,
+        "observed_actions": [
+          [
+            1973,
+            0,
+            108
+          ],
+          [
+            98,
+            0,
+            821
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            853.2916866890918,
+            0.0,
+            46.70831331090822
+          ],
+          [
+            10.663764961915124,
+            0.0,
+            89.33623503808488
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            853.2916866890918,
+            46.70831331090822
+          ],
+          [
+            10.663764961915124,
+            89.33623503808488
+          ]
+        ],
+        "cost_per_1000": 6509.590313730267,
+        "error_cost_per_1000": 6499.590313730267,
+        "review_cost_per_1000": 0.0,
+        "inference_cost_per_1000": 10.0,
+        "false_negatives_per_1000": 10.663764961915124,
+        "false_positives_per_1000": 46.70831331090822,
+        "review_fraction": 0.0,
+        "daily_reviews": 0.0,
+        "daily_review_hours": 0.0,
+        "reviewers_needed": 0,
+        "within_capacity": true,
+        "sensitivity": 0.8933623503808488,
+        "specificity": 0.9481018740989908
+      },
+      {
+        "lower": 0.15,
+        "upper": 0.15,
+        "observed_actions": [
+          [
+            1979,
+            0,
+            102
+          ],
+          [
+            106,
+            0,
+            813
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            855.8865929841422,
+            0.0,
+            44.11340701585776
+          ],
+          [
+            11.534276387377584,
+            0.0,
+            88.46572361262243
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            855.8865929841422,
+            44.11340701585776
+          ],
+          [
+            11.534276387377584,
+            88.46572361262243
+          ]
+        ],
+        "cost_per_1000": 6879.973369085235,
+        "error_cost_per_1000": 6869.973369085235,
+        "review_cost_per_1000": 0.0,
+        "inference_cost_per_1000": 10.0,
+        "false_negatives_per_1000": 11.534276387377584,
+        "false_positives_per_1000": 44.11340701585776,
+        "review_fraction": 0.0,
+        "daily_reviews": 0.0,
+        "daily_review_hours": 0.0,
+        "reviewers_needed": 0,
+        "within_capacity": true,
+        "sensitivity": 0.8846572361262242,
+        "specificity": 0.9509851033157136
+      },
+      {
+        "lower": 0.16,
+        "upper": 0.16,
+        "observed_actions": [
+          [
+            1983,
+            0,
+            98
+          ],
+          [
+            116,
+            0,
+            803
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            857.616530514176,
+            0.0,
+            42.38346948582412
+          ],
+          [
+            12.62241566920566,
+            0.0,
+            87.37758433079435
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            857.616530514176,
+            42.38346948582412
+          ],
+          [
+            12.62241566920566,
+            87.37758433079435
+          ]
+        ],
+        "cost_per_1000": 7380.794571748434,
+        "error_cost_per_1000": 7370.794571748434,
+        "review_cost_per_1000": 0.0,
+        "inference_cost_per_1000": 10.0,
+        "false_negatives_per_1000": 12.62241566920566,
+        "false_positives_per_1000": 42.38346948582412,
+        "review_fraction": 0.0,
+        "daily_reviews": 0.0,
+        "daily_review_hours": 0.0,
+        "reviewers_needed": 0,
+        "within_capacity": true,
+        "sensitivity": 0.8737758433079433,
+        "specificity": 0.9529072561268621
+      },
+      {
+        "lower": 0.17,
+        "upper": 0.17,
+        "observed_actions": [
+          [
+            1988,
+            0,
+            93
+          ],
+          [
+            125,
+            0,
+            794
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            859.7789524267179,
+            0.0,
+            40.22104757328208
+          ],
+          [
+            13.601741022850925,
+            0.0,
+            86.39825897714908
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            859.7789524267179,
+            40.22104757328208
+          ],
+          [
+            13.601741022850925,
+            86.39825897714908
+          ]
+        ],
+        "cost_per_1000": 7816.396700757515,
+        "error_cost_per_1000": 7806.396700757515,
+        "review_cost_per_1000": 0.0,
+        "inference_cost_per_1000": 10.0,
+        "false_negatives_per_1000": 13.601741022850925,
+        "false_positives_per_1000": 40.22104757328208,
+        "review_fraction": 0.0,
+        "daily_reviews": 0.0,
+        "daily_review_hours": 0.0,
+        "reviewers_needed": 0,
+        "within_capacity": true,
+        "sensitivity": 0.8639825897714907,
+        "specificity": 0.9553099471407976
+      },
+      {
+        "lower": 0.18,
+        "upper": 0.18,
+        "observed_actions": [
+          [
+            1992,
+            0,
+            89
+          ],
+          [
+            129,
+            0,
+            790
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            861.5088899567515,
+            0.0,
+            38.49111004324844
+          ],
+          [
+            14.036996735582155,
+            0.0,
+            85.96300326441786
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            861.5088899567515,
+            38.49111004324844
+          ],
+          [
+            14.036996735582155,
+            85.96300326441786
+          ]
+        ],
+        "cost_per_1000": 7990.776118872289,
+        "error_cost_per_1000": 7980.776118872289,
+        "review_cost_per_1000": 0.0,
+        "inference_cost_per_1000": 10.0,
+        "false_negatives_per_1000": 14.036996735582155,
+        "false_positives_per_1000": 38.49111004324844,
+        "review_fraction": 0.0,
+        "daily_reviews": 0.0,
+        "daily_review_hours": 0.0,
+        "reviewers_needed": 0,
+        "within_capacity": true,
+        "sensitivity": 0.8596300326441785,
+        "specificity": 0.9572320999519461
+      },
+      {
+        "lower": 0.19,
+        "upper": 0.19,
+        "observed_actions": [
+          [
+            1994,
+            0,
+            87
+          ],
+          [
+            135,
+            0,
+            784
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            862.3738587217684,
+            0.0,
+            37.62614127823162
+          ],
+          [
+            14.689880304678999,
+            0.0,
+            85.31011969532099
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            862.3738587217684,
+            37.62614127823162
+          ],
+          [
+            14.689880304678999,
+            85.31011969532099
+          ]
+        ],
+        "cost_per_1000": 8295.593684295289,
+        "error_cost_per_1000": 8285.593684295289,
+        "review_cost_per_1000": 0.0,
+        "inference_cost_per_1000": 10.0,
+        "false_negatives_per_1000": 14.689880304678999,
+        "false_positives_per_1000": 37.62614127823162,
+        "review_fraction": 0.0,
+        "daily_reviews": 0.0,
+        "daily_review_hours": 0.0,
+        "reviewers_needed": 0,
+        "within_capacity": true,
+        "sensitivity": 0.8531011969532101,
+        "specificity": 0.9581931763575203
+      },
+      {
+        "lower": 0.2,
+        "upper": 0.2,
+        "observed_actions": [
+          [
+            1997,
+            0,
+            84
+          ],
+          [
+            140,
+            0,
+            779
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            863.6713118692936,
+            0.0,
+            36.3286881307064
+          ],
+          [
+            15.233949945593038,
+            0.0,
+            84.76605005440696
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            863.6713118692936,
+            36.3286881307064
+          ],
+          [
+            15.233949945593038,
+            84.76605005440696
+          ]
+        ],
+        "cost_per_1000": 8535.192176064178,
+        "error_cost_per_1000": 8525.192176064178,
+        "review_cost_per_1000": 0.0,
+        "inference_cost_per_1000": 10.0,
+        "false_negatives_per_1000": 15.233949945593038,
+        "false_positives_per_1000": 36.3286881307064,
+        "review_fraction": 0.0,
+        "daily_reviews": 0.0,
+        "daily_review_hours": 0.0,
+        "reviewers_needed": 0,
+        "within_capacity": true,
+        "sensitivity": 0.8476605005440696,
+        "specificity": 0.9596347909658818
+      },
+      {
+        "lower": 0.21,
+        "upper": 0.21,
+        "observed_actions": [
+          [
+            1998,
+            0,
+            83
+          ],
+          [
+            147,
+            0,
+            772
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            864.103796251802,
+            0.0,
+            35.89620374819798
+          ],
+          [
+            15.995647442872688,
+            0.0,
+            84.00435255712732
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            864.103796251802,
+            35.89620374819798
+          ],
+          [
+            15.995647442872688,
+            84.00435255712732
+          ]
+        ],
+        "cost_per_1000": 8905.228815141292,
+        "error_cost_per_1000": 8895.228815141292,
+        "review_cost_per_1000": 0.0,
+        "inference_cost_per_1000": 10.0,
+        "false_negatives_per_1000": 15.995647442872688,
+        "false_positives_per_1000": 35.89620374819798,
+        "review_fraction": 0.0,
+        "daily_reviews": 0.0,
+        "daily_review_hours": 0.0,
+        "reviewers_needed": 0,
+        "within_capacity": true,
+        "sensitivity": 0.8400435255712732,
+        "specificity": 0.9601153291686689
+      },
+      {
+        "lower": 0.22,
+        "upper": 0.22,
+        "observed_actions": [
+          [
+            2001,
+            0,
+            80
+          ],
+          [
+            156,
+            0,
+            763
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            865.4012493993273,
+            0.0,
+            34.59875060067276
+          ],
+          [
+            16.974972796517953,
+            0.0,
+            83.02502720348205
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            865.4012493993273,
+            34.59875060067276
+          ],
+          [
+            16.974972796517953,
+            83.02502720348205
+          ]
+        ],
+        "cost_per_1000": 9362.455163275794,
+        "error_cost_per_1000": 9352.455163275794,
+        "review_cost_per_1000": 0.0,
+        "inference_cost_per_1000": 10.0,
+        "false_negatives_per_1000": 16.974972796517953,
+        "false_positives_per_1000": 34.59875060067276,
+        "review_fraction": 0.0,
+        "daily_reviews": 0.0,
+        "daily_review_hours": 0.0,
+        "reviewers_needed": 0,
+        "within_capacity": true,
+        "sensitivity": 0.8302502720348205,
+        "specificity": 0.9615569437770304
+      },
+      {
+        "lower": 0.23,
+        "upper": 0.23,
+        "observed_actions": [
+          [
+            2005,
+            0,
+            76
+          ],
+          [
+            164,
+            0,
+            755
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            867.1311869293609,
+            0.0,
+            32.86881307063911
+          ],
+          [
+            17.84548422198041,
+            0.0,
+            82.15451577801959
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            867.1311869293609,
+            32.86881307063911
+          ],
+          [
+            17.84548422198041,
+            82.15451577801959
+          ]
+        ],
+        "cost_per_1000": 9754.462437756181,
+        "error_cost_per_1000": 9744.462437756181,
+        "review_cost_per_1000": 0.0,
+        "inference_cost_per_1000": 10.0,
+        "false_negatives_per_1000": 17.84548422198041,
+        "false_positives_per_1000": 32.86881307063911,
+        "review_fraction": 0.0,
+        "daily_reviews": 0.0,
+        "daily_review_hours": 0.0,
+        "reviewers_needed": 0,
+        "within_capacity": true,
+        "sensitivity": 0.8215451577801959,
+        "specificity": 0.9634790965881788
+      },
+      {
+        "lower": 0.24,
+        "upper": 0.24,
+        "observed_actions": [
+          [
+            2006,
+            0,
+            75
+          ],
+          [
+            167,
+            0,
+            752
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            867.5636713118693,
+            0.0,
+            32.436328688130715
+          ],
+          [
+            18.171926006528835,
+            0.0,
+            81.82807399347116
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            867.5636713118693,
+            32.436328688130715
+          ],
+          [
+            18.171926006528835,
+            81.82807399347116
+          ]
+        ],
+        "cost_per_1000": 9906.871220467687,
+        "error_cost_per_1000": 9896.871220467687,
+        "review_cost_per_1000": 0.0,
+        "inference_cost_per_1000": 10.0,
+        "false_negatives_per_1000": 18.171926006528835,
+        "false_positives_per_1000": 32.436328688130715,
+        "review_fraction": 0.0,
+        "daily_reviews": 0.0,
+        "daily_review_hours": 0.0,
+        "reviewers_needed": 0,
+        "within_capacity": true,
+        "sensitivity": 0.8182807399347116,
+        "specificity": 0.9639596347909658
+      },
+      {
+        "lower": 0.25,
+        "upper": 0.25,
+        "observed_actions": [
+          [
+            2008,
+            0,
+            73
+          ],
+          [
+            173,
+            0,
+            746
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            868.4286400768862,
+            0.0,
+            31.571359923113892
+          ],
+          [
+            18.824809575625682,
+            0.0,
+            81.17519042437432
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            868.4286400768862,
+            31.571359923113892
+          ],
+          [
+            18.824809575625682,
+            81.17519042437432
+          ]
+        ],
+        "cost_per_1000": 10211.688785890688,
+        "error_cost_per_1000": 10201.688785890688,
+        "review_cost_per_1000": 0.0,
+        "inference_cost_per_1000": 10.0,
+        "false_negatives_per_1000": 18.824809575625682,
+        "false_positives_per_1000": 31.571359923113892,
+        "review_fraction": 0.0,
+        "daily_reviews": 0.0,
+        "daily_review_hours": 0.0,
+        "reviewers_needed": 0,
+        "within_capacity": true,
+        "sensitivity": 0.8117519042437432,
+        "specificity": 0.9649207111965402
+      },
+      {
+        "lower": 0.26,
+        "upper": 0.26,
+        "observed_actions": [
+          [
+            2016,
+            0,
+            65
+          ],
+          [
+            179,
+            0,
+            740
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            871.8885151369534,
+            0.0,
+            28.111484863046613
+          ],
+          [
+            19.477693144722526,
+            0.0,
+            80.52230685527748
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            871.8885151369534,
+            28.111484863046613
+          ],
+          [
+            19.477693144722526,
+            80.52230685527748
+          ]
+        ],
+        "cost_per_1000": 10451.633693937429,
+        "error_cost_per_1000": 10441.633693937429,
+        "review_cost_per_1000": 0.0,
+        "inference_cost_per_1000": 10.0,
+        "false_negatives_per_1000": 19.477693144722526,
+        "false_positives_per_1000": 28.111484863046613,
+        "review_fraction": 0.0,
+        "daily_reviews": 0.0,
+        "daily_review_hours": 0.0,
+        "reviewers_needed": 0,
+        "within_capacity": true,
+        "sensitivity": 0.8052230685527748,
+        "specificity": 0.9687650168188371
+      },
+      {
+        "lower": 0.27,
+        "upper": 0.27,
+        "observed_actions": [
+          [
+            2019,
+            0,
+            62
+          ],
+          [
+            188,
+            0,
+            731
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            873.1859682844786,
+            0.0,
+            26.814031715521384
+          ],
+          [
+            20.45701849836779,
+            0.0,
+            79.54298150163221
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            873.1859682844786,
+            26.814031715521384
+          ],
+          [
+            20.45701849836779,
+            79.54298150163221
+          ]
+        ],
+        "cost_per_1000": 10908.86004207193,
+        "error_cost_per_1000": 10898.86004207193,
+        "review_cost_per_1000": 0.0,
+        "inference_cost_per_1000": 10.0,
+        "false_negatives_per_1000": 20.45701849836779,
+        "false_positives_per_1000": 26.814031715521384,
+        "review_fraction": 0.0,
+        "daily_reviews": 0.0,
+        "daily_review_hours": 0.0,
+        "reviewers_needed": 0,
+        "within_capacity": true,
+        "sensitivity": 0.7954298150163222,
+        "specificity": 0.9702066314271984
+      },
+      {
+        "lower": 0.28,
+        "upper": 0.28,
+        "observed_actions": [
+          [
+            2023,
+            0,
+            58
+          ],
+          [
+            194,
+            0,
+            725
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            874.9159058145123,
+            0.0,
+            25.084094185487746
+          ],
+          [
+            21.10990206746464,
+            0.0,
+            78.89009793253537
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            874.9159058145123,
+            25.084094185487746
+          ],
+          [
+            21.10990206746464,
+            78.89009793253537
+          ]
+        ],
+        "cost_per_1000": 11192.053388369513,
+        "error_cost_per_1000": 11182.053388369513,
+        "review_cost_per_1000": 0.0,
+        "inference_cost_per_1000": 10.0,
+        "false_negatives_per_1000": 21.10990206746464,
+        "false_positives_per_1000": 25.084094185487746,
+        "review_fraction": 0.0,
+        "daily_reviews": 0.0,
+        "daily_review_hours": 0.0,
+        "reviewers_needed": 0,
+        "within_capacity": true,
+        "sensitivity": 0.7889009793253536,
+        "specificity": 0.9721287842383469
+      },
+      {
+        "lower": 0.29,
+        "upper": 0.29,
+        "observed_actions": [
+          [
+            2025,
+            0,
+            56
+          ],
+          [
+            200,
+            0,
+            719
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            875.7808745795292,
+            0.0,
+            24.219125420470927
+          ],
+          [
+            21.762785636561482,
+            0.0,
+            78.23721436343853
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            875.7808745795292,
+            24.219125420470927
+          ],
+          [
+            21.762785636561482,
+            78.23721436343853
+          ]
+        ],
+        "cost_per_1000": 11496.870953792515,
+        "error_cost_per_1000": 11486.870953792515,
+        "review_cost_per_1000": 0.0,
+        "inference_cost_per_1000": 10.0,
+        "false_negatives_per_1000": 21.762785636561482,
+        "false_positives_per_1000": 24.219125420470927,
+        "review_fraction": 0.0,
+        "daily_reviews": 0.0,
+        "daily_review_hours": 0.0,
+        "reviewers_needed": 0,
+        "within_capacity": true,
+        "sensitivity": 0.7823721436343852,
+        "specificity": 0.9730898606439211
+      },
+      {
+        "lower": 0.3,
+        "upper": 0.3,
+        "observed_actions": [
+          [
+            2026,
+            0,
+            55
+          ],
+          [
+            203,
+            0,
+            716
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            876.2133589620374,
+            0.0,
+            23.786641037962514
+          ],
+          [
+            22.089227421109904,
+            0.0,
+            77.9107725788901
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            876.2133589620374,
+            23.786641037962514
+          ],
+          [
+            22.089227421109904,
+            77.9107725788901
+          ]
+        ],
+        "cost_per_1000": 11649.279736504015,
+        "error_cost_per_1000": 11639.279736504015,
+        "review_cost_per_1000": 0.0,
+        "inference_cost_per_1000": 10.0,
+        "false_negatives_per_1000": 22.089227421109904,
+        "false_positives_per_1000": 23.786641037962514,
+        "review_fraction": 0.0,
+        "daily_reviews": 0.0,
+        "daily_review_hours": 0.0,
+        "reviewers_needed": 0,
+        "within_capacity": true,
+        "sensitivity": 0.7791077257889011,
+        "specificity": 0.9735703988467083
+      },
+      {
+        "lower": 0.31,
+        "upper": 0.31,
+        "observed_actions": [
+          [
+            2031,
+            0,
+            50
+          ],
+          [
+            208,
+            0,
+            711
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            878.3757808745796,
+            0.0,
+            21.62421912542047
+          ],
+          [
+            22.63329706202394,
+            0.0,
+            77.36670293797607
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            878.3757808745796,
+            21.62421912542047
+          ],
+          [
+            22.63329706202394,
+            77.36670293797607
+          ]
+        ],
+        "cost_per_1000": 11867.254009147482,
+        "error_cost_per_1000": 11857.254009147482,
+        "review_cost_per_1000": 0.0,
+        "inference_cost_per_1000": 10.0,
+        "false_negatives_per_1000": 22.63329706202394,
+        "false_positives_per_1000": 21.62421912542047,
+        "review_fraction": 0.0,
+        "daily_reviews": 0.0,
+        "daily_review_hours": 0.0,
+        "reviewers_needed": 0,
+        "within_capacity": true,
+        "sensitivity": 0.7736670293797606,
+        "specificity": 0.9759730898606439
+      },
+      {
+        "lower": 0.32,
+        "upper": 0.32,
+        "observed_actions": [
+          [
+            2031,
+            0,
+            50
+          ],
+          [
+            216,
+            0,
+            703
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            878.3757808745796,
+            0.0,
+            21.62421912542047
+          ],
+          [
+            23.5038084874864,
+            0.0,
+            76.4961915125136
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            878.3757808745796,
+            21.62421912542047
+          ],
+          [
+            23.5038084874864,
+            76.4961915125136
+          ]
+        ],
+        "cost_per_1000": 12302.509721878712,
+        "error_cost_per_1000": 12292.509721878712,
+        "review_cost_per_1000": 0.0,
+        "inference_cost_per_1000": 10.0,
+        "false_negatives_per_1000": 23.5038084874864,
+        "false_positives_per_1000": 21.62421912542047,
+        "review_fraction": 0.0,
+        "daily_reviews": 0.0,
+        "daily_review_hours": 0.0,
+        "reviewers_needed": 0,
+        "within_capacity": true,
+        "sensitivity": 0.764961915125136,
+        "specificity": 0.9759730898606439
+      },
+      {
+        "lower": 0.33,
+        "upper": 0.33,
+        "observed_actions": [
+          [
+            2032,
+            0,
+            49
+          ],
+          [
+            222,
+            0,
+            697
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            878.808265257088,
+            0.0,
+            21.19173474291206
+          ],
+          [
+            24.156692056583246,
+            0.0,
+            75.84330794341676
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            878.808265257088,
+            21.19173474291206
+          ],
+          [
+            24.156692056583246,
+            75.84330794341676
+          ]
+        ],
+        "cost_per_1000": 12618.139396864426,
+        "error_cost_per_1000": 12608.139396864426,
+        "review_cost_per_1000": 0.0,
+        "inference_cost_per_1000": 10.0,
+        "false_negatives_per_1000": 24.156692056583246,
+        "false_positives_per_1000": 21.19173474291206,
+        "review_fraction": 0.0,
+        "daily_reviews": 0.0,
+        "daily_review_hours": 0.0,
+        "reviewers_needed": 0,
+        "within_capacity": true,
+        "sensitivity": 0.7584330794341676,
+        "specificity": 0.976453628063431
+      },
+      {
+        "lower": 0.34,
+        "upper": 0.34,
+        "observed_actions": [
+          [
+            2034,
+            0,
+            47
+          ],
+          [
+            226,
+            0,
+            693
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            879.6732340221047,
+            0.0,
+            20.326765977895246
+          ],
+          [
+            24.591947769314476,
+            0.0,
+            75.40805223068553
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            879.6732340221047,
+            20.326765977895246
+          ],
+          [
+            24.591947769314476,
+            75.40805223068553
+          ]
+        ],
+        "cost_per_1000": 12814.14303410462,
+        "error_cost_per_1000": 12804.14303410462,
+        "review_cost_per_1000": 0.0,
+        "inference_cost_per_1000": 10.0,
+        "false_negatives_per_1000": 24.591947769314476,
+        "false_positives_per_1000": 20.326765977895246,
+        "review_fraction": 0.0,
+        "daily_reviews": 0.0,
+        "daily_review_hours": 0.0,
+        "reviewers_needed": 0,
+        "within_capacity": true,
+        "sensitivity": 0.7540805223068553,
+        "specificity": 0.9774147044690054
+      },
+      {
+        "lower": 0.35000000000000003,
+        "upper": 0.35000000000000003,
+        "observed_actions": [
+          [
+            2037,
+            0,
+            44
+          ],
+          [
+            233,
+            0,
+            686
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            880.97068716963,
+            0.0,
+            19.029312830370017
+          ],
+          [
+            25.35364526659412,
+            0.0,
+            74.64635473340587
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            880.97068716963,
+            19.029312830370017
+          ],
+          [
+            25.35364526659412,
+            74.64635473340587
+          ]
+        ],
+        "cost_per_1000": 13162.555454056312,
+        "error_cost_per_1000": 13152.555454056312,
+        "review_cost_per_1000": 0.0,
+        "inference_cost_per_1000": 10.0,
+        "false_negatives_per_1000": 25.35364526659412,
+        "false_positives_per_1000": 19.029312830370017,
+        "review_fraction": 0.0,
+        "daily_reviews": 0.0,
+        "daily_review_hours": 0.0,
+        "reviewers_needed": 0,
+        "within_capacity": true,
+        "sensitivity": 0.7464635473340587,
+        "specificity": 0.9788563190773666
+      },
+      {
+        "lower": 0.36,
+        "upper": 0.36,
+        "observed_actions": [
+          [
+            2039,
+            0,
+            42
+          ],
+          [
+            244,
+            0,
+            675
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            881.8356559346469,
+            0.0,
+            18.1643440653532
+          ],
+          [
+            26.550598476605003,
+            0.0,
+            73.44940152339501
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            881.8356559346469,
+            18.1643440653532
+          ],
+          [
+            26.550598476605003,
+            73.44940152339501
+          ]
+        ],
+        "cost_per_1000": 13739.407839936332,
+        "error_cost_per_1000": 13729.407839936332,
+        "review_cost_per_1000": 0.0,
+        "inference_cost_per_1000": 10.0,
+        "false_negatives_per_1000": 26.550598476605003,
+        "false_positives_per_1000": 18.1643440653532,
+        "review_fraction": 0.0,
+        "daily_reviews": 0.0,
+        "daily_review_hours": 0.0,
+        "reviewers_needed": 0,
+        "within_capacity": true,
+        "sensitivity": 0.73449401523395,
+        "specificity": 0.9798173954829409
+      },
+      {
+        "lower": 0.37,
+        "upper": 0.37,
+        "observed_actions": [
+          [
+            2043,
+            0,
+            38
+          ],
+          [
+            249,
+            0,
+            670
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            883.5655934646804,
+            0.0,
+            16.434406535319557
+          ],
+          [
+            27.094668117519046,
+            0.0,
+            72.90533188248097
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            883.5655934646804,
+            16.434406535319557
+          ],
+          [
+            27.094668117519046,
+            72.90533188248097
+          ]
+        ],
+        "cost_per_1000": 13968.194222142512,
+        "error_cost_per_1000": 13958.194222142512,
+        "review_cost_per_1000": 0.0,
+        "inference_cost_per_1000": 10.0,
+        "false_negatives_per_1000": 27.094668117519046,
+        "false_positives_per_1000": 16.434406535319557,
+        "review_fraction": 0.0,
+        "daily_reviews": 0.0,
+        "daily_review_hours": 0.0,
+        "reviewers_needed": 0,
+        "within_capacity": true,
+        "sensitivity": 0.7290533188248095,
+        "specificity": 0.9817395482940894
+      },
+      {
+        "lower": 0.38,
+        "upper": 0.38,
+        "observed_actions": [
+          [
+            2045,
+            0,
+            36
+          ],
+          [
+            251,
+            0,
+            668
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            884.4305622296972,
+            0.0,
+            15.569437770302738
+          ],
+          [
+            27.312295973884662,
+            0.0,
+            72.68770402611534
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            884.4305622296972,
+            15.569437770302738
+          ],
+          [
+            27.312295973884662,
+            72.68770402611534
+          ]
+        ],
+        "cost_per_1000": 14055.3839311999,
+        "error_cost_per_1000": 14045.3839311999,
+        "review_cost_per_1000": 0.0,
+        "inference_cost_per_1000": 10.0,
+        "false_negatives_per_1000": 27.312295973884662,
+        "false_positives_per_1000": 15.569437770302738,
+        "review_fraction": 0.0,
+        "daily_reviews": 0.0,
+        "daily_review_hours": 0.0,
+        "reviewers_needed": 0,
+        "within_capacity": true,
+        "sensitivity": 0.7268770402611534,
+        "specificity": 0.9827006246996636
+      },
+      {
+        "lower": 0.39,
+        "upper": 0.39,
+        "observed_actions": [
+          [
+            2047,
+            0,
+            34
+          ],
+          [
+            258,
+            0,
+            661
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            885.2955309947141,
+            0.0,
+            14.70446900528592
+          ],
+          [
+            28.07399347116431,
+            0.0,
+            71.9260065288357
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            885.2955309947141,
+            14.70446900528592
+          ],
+          [
+            28.07399347116431,
+            71.9260065288357
+          ]
+        ],
+        "cost_per_1000": 14414.608460714304,
+        "error_cost_per_1000": 14404.608460714304,
+        "review_cost_per_1000": 0.0,
+        "inference_cost_per_1000": 10.0,
+        "false_negatives_per_1000": 28.07399347116431,
+        "false_positives_per_1000": 14.70446900528592,
+        "review_fraction": 0.0,
+        "daily_reviews": 0.0,
+        "daily_review_hours": 0.0,
+        "reviewers_needed": 0,
+        "within_capacity": true,
+        "sensitivity": 0.7192600652883568,
+        "specificity": 0.9836617011052379
+      },
+      {
+        "lower": 0.4,
+        "upper": 0.4,
+        "observed_actions": [
+          [
+            2048,
+            0,
+            33
+          ],
+          [
+            261,
+            0,
+            658
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            885.7280153772226,
+            0.0,
+            14.27198462277751
+          ],
+          [
+            28.40043525571273,
+            0.0,
+            71.59956474428728
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            885.7280153772226,
+            14.27198462277751
+          ],
+          [
+            28.40043525571273,
+            71.59956474428728
+          ]
+        ],
+        "cost_per_1000": 14567.017243425802,
+        "error_cost_per_1000": 14557.017243425802,
+        "review_cost_per_1000": 0.0,
+        "inference_cost_per_1000": 10.0,
+        "false_negatives_per_1000": 28.40043525571273,
+        "false_positives_per_1000": 14.27198462277751,
+        "review_fraction": 0.0,
+        "daily_reviews": 0.0,
+        "daily_review_hours": 0.0,
+        "reviewers_needed": 0,
+        "within_capacity": true,
+        "sensitivity": 0.7159956474428728,
+        "specificity": 0.984142239308025
+      },
+      {
+        "lower": 0.41000000000000003,
+        "upper": 0.41000000000000003,
+        "observed_actions": [
+          [
+            2048,
+            0,
+            33
+          ],
+          [
+            271,
+            0,
+            648
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            885.7280153772226,
+            0.0,
+            14.27198462277751
+          ],
+          [
+            29.488574537540806,
+            0.0,
+            70.5114254624592
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            885.7280153772226,
+            14.27198462277751
+          ],
+          [
+            29.488574537540806,
+            70.5114254624592
+          ]
+        ],
+        "cost_per_1000": 15111.086884339842,
+        "error_cost_per_1000": 15101.086884339842,
+        "review_cost_per_1000": 0.0,
+        "inference_cost_per_1000": 10.0,
+        "false_negatives_per_1000": 29.488574537540806,
+        "false_positives_per_1000": 14.27198462277751,
+        "review_fraction": 0.0,
+        "daily_reviews": 0.0,
+        "daily_review_hours": 0.0,
+        "reviewers_needed": 0,
+        "within_capacity": true,
+        "sensitivity": 0.705114254624592,
+        "specificity": 0.984142239308025
+      },
+      {
+        "lower": 0.42,
+        "upper": 0.42,
+        "observed_actions": [
+          [
+            2052,
+            0,
+            29
+          ],
+          [
+            279,
+            0,
+            640
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            887.4579529072562,
+            0.0,
+            12.542047092743873
+          ],
+          [
+            30.359085963003263,
+            0.0,
+            69.64091403699673
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            887.4579529072562,
+            12.542047092743873
+          ],
+          [
+            30.359085963003263,
+            69.64091403699673
+          ]
+        ],
+        "cost_per_1000": 15503.09415882023,
+        "error_cost_per_1000": 15493.09415882023,
+        "review_cost_per_1000": 0.0,
+        "inference_cost_per_1000": 10.0,
+        "false_negatives_per_1000": 30.359085963003263,
+        "false_positives_per_1000": 12.542047092743873,
+        "review_fraction": 0.0,
+        "daily_reviews": 0.0,
+        "daily_review_hours": 0.0,
+        "reviewers_needed": 0,
+        "within_capacity": true,
+        "sensitivity": 0.6964091403699674,
+        "specificity": 0.9860643921191734
+      },
+      {
+        "lower": 0.43,
+        "upper": 0.43,
+        "observed_actions": [
+          [
+            2054,
+            0,
+            27
+          ],
+          [
+            292,
+            0,
+            627
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            888.322921672273,
+            0.0,
+            11.677078327727054
+          ],
+          [
+            31.773667029379762,
+            0.0,
+            68.22633297062023
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            888.322921672273,
+            11.677078327727054
+          ],
+          [
+            31.773667029379762,
+            68.22633297062023
+          ]
+        ],
+        "cost_per_1000": 16188.760472883057,
+        "error_cost_per_1000": 16178.760472883057,
+        "review_cost_per_1000": 0.0,
+        "inference_cost_per_1000": 10.0,
+        "false_negatives_per_1000": 31.773667029379762,
+        "false_positives_per_1000": 11.677078327727054,
+        "review_fraction": 0.0,
+        "daily_reviews": 0.0,
+        "daily_review_hours": 0.0,
+        "reviewers_needed": 0,
+        "within_capacity": true,
+        "sensitivity": 0.6822633297062023,
+        "specificity": 0.9870254685247477
+      },
+      {
+        "lower": 0.44,
+        "upper": 0.44,
+        "observed_actions": [
+          [
+            2054,
+            0,
+            27
+          ],
+          [
+            299,
+            0,
+            620
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            888.322921672273,
+            0.0,
+            11.677078327727054
+          ],
+          [
+            32.535364526659414,
+            0.0,
+            67.46463547334058
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            888.322921672273,
+            11.677078327727054
+          ],
+          [
+            32.535364526659414,
+            67.46463547334058
+          ]
+        ],
+        "cost_per_1000": 16569.609221522882,
+        "error_cost_per_1000": 16559.609221522882,
+        "review_cost_per_1000": 0.0,
+        "inference_cost_per_1000": 10.0,
+        "false_negatives_per_1000": 32.535364526659414,
+        "false_positives_per_1000": 11.677078327727054,
+        "review_fraction": 0.0,
+        "daily_reviews": 0.0,
+        "daily_review_hours": 0.0,
+        "reviewers_needed": 0,
+        "within_capacity": true,
+        "sensitivity": 0.6746463547334058,
+        "specificity": 0.9870254685247477
+      },
+      {
+        "lower": 0.45,
+        "upper": 0.45,
+        "observed_actions": [
+          [
+            2055,
+            0,
+            26
+          ],
+          [
+            305,
+            0,
+            614
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            888.7554060547815,
+            0.0,
+            11.244593945218645
+          ],
+          [
+            33.18824809575626,
+            0.0,
+            66.81175190424375
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            888.7554060547815,
+            11.244593945218645
+          ],
+          [
+            33.18824809575626,
+            66.81175190424375
+          ]
+        ],
+        "cost_per_1000": 16885.238896508596,
+        "error_cost_per_1000": 16875.238896508596,
+        "review_cost_per_1000": 0.0,
+        "inference_cost_per_1000": 10.0,
+        "false_negatives_per_1000": 33.18824809575626,
+        "false_positives_per_1000": 11.244593945218645,
+        "review_fraction": 0.0,
+        "daily_reviews": 0.0,
+        "daily_review_hours": 0.0,
+        "reviewers_needed": 0,
+        "within_capacity": true,
+        "sensitivity": 0.6681175190424375,
+        "specificity": 0.9875060067275349
+      },
+      {
+        "lower": 0.46,
+        "upper": 0.46,
+        "observed_actions": [
+          [
+            2056,
+            0,
+            25
+          ],
+          [
+            307,
+            0,
+            612
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            889.1878904372899,
+            0.0,
+            10.812109562710235
+          ],
+          [
+            33.405875952121875,
+            0.0,
+            66.59412404787814
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            889.1878904372899,
+            10.812109562710235
+          ],
+          [
+            33.405875952121875,
+            66.59412404787814
+          ]
+        ],
+        "cost_per_1000": 16983.240715128693,
+        "error_cost_per_1000": 16973.240715128693,
+        "review_cost_per_1000": 0.0,
+        "inference_cost_per_1000": 10.0,
+        "false_negatives_per_1000": 33.405875952121875,
+        "false_positives_per_1000": 10.812109562710235,
+        "review_fraction": 0.0,
+        "daily_reviews": 0.0,
+        "daily_review_hours": 0.0,
+        "reviewers_needed": 0,
+        "within_capacity": true,
+        "sensitivity": 0.6659412404787813,
+        "specificity": 0.9879865449303219
+      },
+      {
+        "lower": 0.47000000000000003,
+        "upper": 0.47000000000000003,
+        "observed_actions": [
+          [
+            2058,
+            0,
+            23
+          ],
+          [
+            319,
+            0,
+            600
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            890.0528592023065,
+            0.0,
+            9.947140797693416
+          ],
+          [
+            34.71164309031556,
+            0.0,
+            65.28835690968444
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            890.0528592023065,
+            9.947140797693416
+          ],
+          [
+            34.71164309031556,
+            65.28835690968444
+          ]
+        ],
+        "cost_per_1000": 17614.500065100117,
+        "error_cost_per_1000": 17604.500065100117,
+        "review_cost_per_1000": 0.0,
+        "inference_cost_per_1000": 10.0,
+        "false_negatives_per_1000": 34.71164309031556,
+        "false_positives_per_1000": 9.947140797693416,
+        "review_fraction": 0.0,
+        "daily_reviews": 0.0,
+        "daily_review_hours": 0.0,
+        "reviewers_needed": 0,
+        "within_capacity": true,
+        "sensitivity": 0.6528835690968444,
+        "specificity": 0.9889476213358962
+      },
+      {
+        "lower": 0.48,
+        "upper": 0.48,
+        "observed_actions": [
+          [
+            2059,
+            0,
+            22
+          ],
+          [
+            327,
+            0,
+            592
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            890.485343584815,
+            0.0,
+            9.514656415185009
+          ],
+          [
+            35.58215451577802,
+            0.0,
+            64.41784548422198
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            890.485343584815,
+            9.514656415185009
+          ],
+          [
+            35.58215451577802,
+            64.41784548422198
+          ]
+        ],
+        "cost_per_1000": 18038.943668268636,
+        "error_cost_per_1000": 18028.943668268636,
+        "review_cost_per_1000": 0.0,
+        "inference_cost_per_1000": 10.0,
+        "false_negatives_per_1000": 35.58215451577802,
+        "false_positives_per_1000": 9.514656415185009,
+        "review_fraction": 0.0,
+        "daily_reviews": 0.0,
+        "daily_review_hours": 0.0,
+        "reviewers_needed": 0,
+        "within_capacity": true,
+        "sensitivity": 0.6441784548422198,
+        "specificity": 0.9894281595386833
+      },
+      {
+        "lower": 0.49,
+        "upper": 0.49,
+        "observed_actions": [
+          [
+            2059,
+            0,
+            22
+          ],
+          [
+            344,
+            0,
+            575
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            890.485343584815,
+            0.0,
+            9.514656415185009
+          ],
+          [
+            37.43199129488575,
+            0.0,
+            62.56800870511425
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            890.485343584815,
+            9.514656415185009
+          ],
+          [
+            37.43199129488575,
+            62.56800870511425
+          ]
+        ],
+        "cost_per_1000": 18963.862057822498,
+        "error_cost_per_1000": 18953.862057822498,
+        "review_cost_per_1000": 0.0,
+        "inference_cost_per_1000": 10.0,
+        "false_negatives_per_1000": 37.43199129488575,
+        "false_positives_per_1000": 9.514656415185009,
+        "review_fraction": 0.0,
+        "daily_reviews": 0.0,
+        "daily_review_hours": 0.0,
+        "reviewers_needed": 0,
+        "within_capacity": true,
+        "sensitivity": 0.6256800870511425,
+        "specificity": 0.9894281595386833
+      },
+      {
+        "lower": 0.5,
+        "upper": 0.5,
+        "observed_actions": [
+          [
+            2060,
+            0,
+            21
+          ],
+          [
+            357,
+            0,
+            562
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            890.9178279673234,
+            0.0,
+            9.0821720326766
+          ],
+          [
+            38.84657236126225,
+            0.0,
+            61.15342763873776
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            890.9178279673234,
+            9.0821720326766
+          ],
+          [
+            38.84657236126225,
+            61.15342763873776
+          ]
+        ],
+        "cost_per_1000": 19660.34048144804,
+        "error_cost_per_1000": 19650.34048144804,
+        "review_cost_per_1000": 0.0,
+        "inference_cost_per_1000": 10.0,
+        "false_negatives_per_1000": 38.84657236126225,
+        "false_positives_per_1000": 9.0821720326766,
+        "review_fraction": 0.0,
+        "daily_reviews": 0.0,
+        "daily_review_hours": 0.0,
+        "reviewers_needed": 0,
+        "within_capacity": true,
+        "sensitivity": 0.6115342763873776,
+        "specificity": 0.9899086977414705
+      },
+      {
+        "lower": 0.51,
+        "upper": 0.51,
+        "observed_actions": [
+          [
+            2063,
+            0,
+            18
+          ],
+          [
+            369,
+            0,
+            550
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            892.2152811148487,
+            0.0,
+            7.784718885151369
+          ],
+          [
+            40.15233949945593,
+            0.0,
+            59.847660500544066
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            892.2152811148487,
+            7.784718885151369
+          ],
+          [
+            40.15233949945593,
+            59.847660500544066
+          ]
+        ],
+        "cost_per_1000": 20280.78772185675,
+        "error_cost_per_1000": 20270.78772185675,
+        "review_cost_per_1000": 0.0,
+        "inference_cost_per_1000": 10.0,
+        "false_negatives_per_1000": 40.15233949945593,
+        "false_positives_per_1000": 7.784718885151369,
+        "review_fraction": 0.0,
+        "daily_reviews": 0.0,
+        "daily_review_hours": 0.0,
+        "reviewers_needed": 0,
+        "within_capacity": true,
+        "sensitivity": 0.5984766050054406,
+        "specificity": 0.9913503123498318
+      },
+      {
+        "lower": 0.52,
+        "upper": 0.52,
+        "observed_actions": [
+          [
+            2067,
+            0,
+            14
+          ],
+          [
+            381,
+            0,
+            538
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            893.9452186448823,
+            0.0,
+            6.054781355117732
+          ],
+          [
+            41.45810663764962,
+            0.0,
+            58.541893362350386
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            893.9452186448823,
+            6.054781355117732
+          ],
+          [
+            41.45810663764962,
+            58.541893362350386
+          ]
+        ],
+        "cost_per_1000": 20890.422852702755,
+        "error_cost_per_1000": 20880.422852702755,
+        "review_cost_per_1000": 0.0,
+        "inference_cost_per_1000": 10.0,
+        "false_negatives_per_1000": 41.45810663764962,
+        "false_positives_per_1000": 6.054781355117732,
+        "review_fraction": 0.0,
+        "daily_reviews": 0.0,
+        "daily_review_hours": 0.0,
+        "reviewers_needed": 0,
+        "within_capacity": true,
+        "sensitivity": 0.5854189336235038,
+        "specificity": 0.9932724651609803
+      },
+      {
+        "lower": 0.53,
+        "upper": 0.53,
+        "observed_actions": [
+          [
+            2069,
+            0,
+            12
+          ],
+          [
+            395,
+            0,
+            524
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            894.8101874098991,
+            0.0,
+            5.189812590100913
+          ],
+          [
+            42.98150163220893,
+            0.0,
+            57.01849836779108
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            894.8101874098991,
+            5.189812590100913
+          ],
+          [
+            42.98150163220893,
+            57.01849836779108
+          ]
+        ],
+        "cost_per_1000": 21630.496130856987,
+        "error_cost_per_1000": 21620.496130856987,
+        "review_cost_per_1000": 0.0,
+        "inference_cost_per_1000": 10.0,
+        "false_negatives_per_1000": 42.98150163220893,
+        "false_positives_per_1000": 5.189812590100913,
+        "review_fraction": 0.0,
+        "daily_reviews": 0.0,
+        "daily_review_hours": 0.0,
+        "reviewers_needed": 0,
+        "within_capacity": true,
+        "sensitivity": 0.5701849836779107,
+        "specificity": 0.9942335415665545
+      },
+      {
+        "lower": 0.54,
+        "upper": 0.54,
+        "observed_actions": [
+          [
+            2072,
+            0,
+            9
+          ],
+          [
+            400,
+            0,
+            519
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            896.1076405574244,
+            0.0,
+            3.8923594425756844
+          ],
+          [
+            43.525571273122964,
+            0.0,
+            56.474428726877036
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            896.1076405574244,
+            3.8923594425756844
+          ],
+          [
+            43.525571273122964,
+            56.474428726877036
+          ]
+        ],
+        "cost_per_1000": 21870.094622625875,
+        "error_cost_per_1000": 21860.094622625875,
+        "review_cost_per_1000": 0.0,
+        "inference_cost_per_1000": 10.0,
+        "false_negatives_per_1000": 43.525571273122964,
+        "false_positives_per_1000": 3.8923594425756844,
+        "review_fraction": 0.0,
+        "daily_reviews": 0.0,
+        "daily_review_hours": 0.0,
+        "reviewers_needed": 0,
+        "within_capacity": true,
+        "sensitivity": 0.5647442872687704,
+        "specificity": 0.995675156174916
+      },
+      {
+        "lower": 0.55,
+        "upper": 0.55,
+        "observed_actions": [
+          [
+            2073,
+            0,
+            8
+          ],
+          [
+            418,
+            0,
+            501
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            896.5401249399328,
+            0.0,
+            3.459875060067276
+          ],
+          [
+            45.484221980413494,
+            0.0,
+            54.515778019586506
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            896.5401249399328,
+            3.459875060067276
+          ],
+          [
+            45.484221980413494,
+            54.515778019586506
+          ]
+        ],
+        "cost_per_1000": 22838.60786670843,
+        "error_cost_per_1000": 22828.60786670843,
+        "review_cost_per_1000": 0.0,
+        "inference_cost_per_1000": 10.0,
+        "false_negatives_per_1000": 45.484221980413494,
+        "false_positives_per_1000": 3.459875060067276,
+        "review_fraction": 0.0,
+        "daily_reviews": 0.0,
+        "daily_review_hours": 0.0,
+        "reviewers_needed": 0,
+        "within_capacity": true,
+        "sensitivity": 0.545157780195865,
+        "specificity": 0.996155694377703
+      },
+      {
+        "lower": 0.56,
+        "upper": 0.56,
+        "observed_actions": [
+          [
+            2073,
+            0,
+            8
+          ],
+          [
+            441,
+            0,
+            478
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            896.5401249399328,
+            0.0,
+            3.459875060067276
+          ],
+          [
+            47.98694232861807,
+            0.0,
+            52.01305767138194
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            896.5401249399328,
+            3.459875060067276
+          ],
+          [
+            47.98694232861807,
+            52.01305767138194
+          ]
+        ],
+        "cost_per_1000": 24089.968040810716,
+        "error_cost_per_1000": 24079.968040810716,
+        "review_cost_per_1000": 0.0,
+        "inference_cost_per_1000": 10.0,
+        "false_negatives_per_1000": 47.98694232861807,
+        "false_positives_per_1000": 3.459875060067276,
+        "review_fraction": 0.0,
+        "daily_reviews": 0.0,
+        "daily_review_hours": 0.0,
+        "reviewers_needed": 0,
+        "within_capacity": true,
+        "sensitivity": 0.5201305767138193,
+        "specificity": 0.996155694377703
+      },
+      {
+        "lower": 0.5700000000000001,
+        "upper": 0.5700000000000001,
+        "observed_actions": [
+          [
+            2077,
+            0,
+            4
+          ],
+          [
+            467,
+            0,
+            452
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            898.2700624699663,
+            0.0,
+            1.729937530033638
+          ],
+          [
+            50.81610446137106,
+            0.0,
+            49.18389553862895
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            898.2700624699663,
+            1.729937530033638
+          ],
+          [
+            50.81610446137106,
+            49.18389553862895
+          ]
+        ],
+        "cost_per_1000": 25461.300668936372,
+        "error_cost_per_1000": 25451.300668936372,
+        "review_cost_per_1000": 0.0,
+        "inference_cost_per_1000": 10.0,
+        "false_negatives_per_1000": 50.81610446137106,
+        "false_positives_per_1000": 1.729937530033638,
+        "review_fraction": 0.0,
+        "daily_reviews": 0.0,
+        "daily_review_hours": 0.0,
+        "reviewers_needed": 0,
+        "within_capacity": true,
+        "sensitivity": 0.49183895538628947,
+        "specificity": 0.9980778471888515
+      },
+      {
+        "lower": 0.58,
+        "upper": 0.58,
+        "observed_actions": [
+          [
+            2078,
+            0,
+            3
+          ],
+          [
+            482,
+            0,
+            437
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            898.7025468524748,
+            0.0,
+            1.2974531475252282
+          ],
+          [
+            52.44831338411317,
+            0.0,
+            47.55168661588684
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            898.7025468524748,
+            1.2974531475252282
+          ],
+          [
+            52.44831338411317,
+            47.55168661588684
+          ]
+        ],
+        "cost_per_1000": 26266.593020744716,
+        "error_cost_per_1000": 26256.593020744716,
+        "review_cost_per_1000": 0.0,
+        "inference_cost_per_1000": 10.0,
+        "false_negatives_per_1000": 52.44831338411317,
+        "false_positives_per_1000": 1.2974531475252282,
+        "review_fraction": 0.0,
+        "daily_reviews": 0.0,
+        "daily_review_hours": 0.0,
+        "reviewers_needed": 0,
+        "within_capacity": true,
+        "sensitivity": 0.47551686615886835,
+        "specificity": 0.9985583853916387
+      },
+      {
+        "lower": 0.59,
+        "upper": 0.59,
+        "observed_actions": [
+          [
+            2078,
+            0,
+            3
+          ],
+          [
+            508,
+            0,
+            411
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            898.7025468524748,
+            0.0,
+            1.2974531475252282
+          ],
+          [
+            55.27747551686616,
+            0.0,
+            44.722524483133846
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            898.7025468524748,
+            1.2974531475252282
+          ],
+          [
+            55.27747551686616,
+            44.722524483133846
+          ]
+        ],
+        "cost_per_1000": 27681.174087121213,
+        "error_cost_per_1000": 27671.174087121213,
+        "review_cost_per_1000": 0.0,
+        "inference_cost_per_1000": 10.0,
+        "false_negatives_per_1000": 55.27747551686616,
+        "false_positives_per_1000": 1.2974531475252282,
+        "review_fraction": 0.0,
+        "daily_reviews": 0.0,
+        "daily_review_hours": 0.0,
+        "reviewers_needed": 0,
+        "within_capacity": true,
+        "sensitivity": 0.44722524483133846,
+        "specificity": 0.9985583853916387
+      },
+      {
+        "lower": 0.6,
+        "upper": 0.6,
+        "observed_actions": [
+          [
+            2079,
+            0,
+            2
+          ],
+          [
+            532,
+            0,
+            387
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            899.1350312349833,
+            0.0,
+            0.864968765016819
+          ],
+          [
+            57.889009793253535,
+            0.0,
+            42.110990206746465
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            899.1350312349833,
+            0.864968765016819
+          ],
+          [
+            57.889009793253535,
+            42.110990206746465
+          ]
+        ],
+        "cost_per_1000": 28976.12911575219,
+        "error_cost_per_1000": 28966.12911575219,
+        "review_cost_per_1000": 0.0,
+        "inference_cost_per_1000": 10.0,
+        "false_negatives_per_1000": 57.889009793253535,
+        "false_positives_per_1000": 0.864968765016819,
+        "review_fraction": 0.0,
+        "daily_reviews": 0.0,
+        "daily_review_hours": 0.0,
+        "reviewers_needed": 0,
+        "within_capacity": true,
+        "sensitivity": 0.4211099020674646,
+        "specificity": 0.9990389235944258
+      },
+      {
+        "lower": 0.61,
+        "upper": 0.61,
+        "observed_actions": [
+          [
+            2080,
+            0,
+            1
+          ],
+          [
+            570,
+            0,
+            349
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            899.5675156174916,
+            0.0,
+            0.4324843825084095
+          ],
+          [
+            62.02393906420022,
+            0.0,
+            37.97606093579979
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            899.5675156174916,
+            0.4324843825084095
+          ],
+          [
+            62.02393906420022,
+            37.97606093579979
+          ]
+        ],
+        "cost_per_1000": 31032.78164166282,
+        "error_cost_per_1000": 31022.78164166282,
+        "review_cost_per_1000": 0.0,
+        "inference_cost_per_1000": 10.0,
+        "false_negatives_per_1000": 62.02393906420022,
+        "false_positives_per_1000": 0.4324843825084095,
+        "review_fraction": 0.0,
+        "daily_reviews": 0.0,
+        "daily_review_hours": 0.0,
+        "reviewers_needed": 0,
+        "within_capacity": true,
+        "sensitivity": 0.3797606093579979,
+        "specificity": 0.9995194617972128
+      },
+      {
+        "lower": 0.62,
+        "upper": 0.62,
+        "observed_actions": [
+          [
+            2080,
+            0,
+            1
+          ],
+          [
+            600,
+            0,
+            319
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            899.5675156174916,
+            0.0,
+            0.4324843825084095
+          ],
+          [
+            65.28835690968444,
+            0.0,
+            34.71164309031556
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            899.5675156174916,
+            0.4324843825084095
+          ],
+          [
+            65.28835690968444,
+            34.71164309031556
+          ]
+        ],
+        "cost_per_1000": 32664.99056440493,
+        "error_cost_per_1000": 32654.99056440493,
+        "review_cost_per_1000": 0.0,
+        "inference_cost_per_1000": 10.0,
+        "false_negatives_per_1000": 65.28835690968444,
+        "false_positives_per_1000": 0.4324843825084095,
+        "review_fraction": 0.0,
+        "daily_reviews": 0.0,
+        "daily_review_hours": 0.0,
+        "reviewers_needed": 0,
+        "within_capacity": true,
+        "sensitivity": 0.34711643090315564,
+        "specificity": 0.9995194617972128
+      },
+      {
+        "lower": 0.63,
+        "upper": 0.63,
+        "observed_actions": [
+          [
+            2081,
+            0,
+            0
+          ],
+          [
+            628,
+            0,
+            291
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            900.0,
+            0.0,
+            0.0
+          ],
+          [
+            68.33514689880305,
+            0.0,
+            31.664853101196954
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            900.0,
+            0.0
+          ],
+          [
+            68.33514689880305,
+            31.664853101196954
+          ]
+        ],
+        "cost_per_1000": 34177.57344940152,
+        "error_cost_per_1000": 34167.57344940152,
+        "review_cost_per_1000": 0.0,
+        "inference_cost_per_1000": 10.0,
+        "false_negatives_per_1000": 68.33514689880305,
+        "false_positives_per_1000": 0.0,
+        "review_fraction": 0.0,
+        "daily_reviews": 0.0,
+        "daily_review_hours": 0.0,
+        "reviewers_needed": 0,
+        "within_capacity": true,
+        "sensitivity": 0.31664853101196955,
+        "specificity": 1.0
+      },
+      {
+        "lower": 0.64,
+        "upper": 0.64,
+        "observed_actions": [
+          [
+            2081,
+            0,
+            0
+          ],
+          [
+            661,
+            0,
+            258
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            900.0,
+            0.0,
+            0.0
+          ],
+          [
+            71.9260065288357,
+            0.0,
+            28.07399347116431
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            900.0,
+            0.0
+          ],
+          [
+            71.9260065288357,
+            28.07399347116431
+          ]
+        ],
+        "cost_per_1000": 35973.00326441785,
+        "error_cost_per_1000": 35963.00326441785,
+        "review_cost_per_1000": 0.0,
+        "inference_cost_per_1000": 10.0,
+        "false_negatives_per_1000": 71.9260065288357,
+        "false_positives_per_1000": 0.0,
+        "review_fraction": 0.0,
+        "daily_reviews": 0.0,
+        "daily_review_hours": 0.0,
+        "reviewers_needed": 0,
+        "within_capacity": true,
+        "sensitivity": 0.28073993471164305,
+        "specificity": 1.0
+      },
+      {
+        "lower": 0.65,
+        "upper": 0.65,
+        "observed_actions": [
+          [
+            2081,
+            0,
+            0
+          ],
+          [
+            694,
+            0,
+            225
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            900.0,
+            0.0,
+            0.0
+          ],
+          [
+            75.51686615886834,
+            0.0,
+            24.483133841131668
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            900.0,
+            0.0
+          ],
+          [
+            75.51686615886834,
+            24.483133841131668
+          ]
+        ],
+        "cost_per_1000": 37768.43307943417,
+        "error_cost_per_1000": 37758.43307943417,
+        "review_cost_per_1000": 0.0,
+        "inference_cost_per_1000": 10.0,
+        "false_negatives_per_1000": 75.51686615886834,
+        "false_positives_per_1000": 0.0,
+        "review_fraction": 0.0,
+        "daily_reviews": 0.0,
+        "daily_review_hours": 0.0,
+        "reviewers_needed": 0,
+        "within_capacity": true,
+        "sensitivity": 0.24483133841131668,
+        "specificity": 1.0
+      },
+      {
+        "lower": 0.66,
+        "upper": 0.66,
+        "observed_actions": [
+          [
+            2081,
+            0,
+            0
+          ],
+          [
+            718,
+            0,
+            201
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            900.0,
+            0.0,
+            0.0
+          ],
+          [
+            78.12840043525573,
+            0.0,
+            21.871599564744287
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            900.0,
+            0.0
+          ],
+          [
+            78.12840043525573,
+            21.871599564744287
+          ]
+        ],
+        "cost_per_1000": 39074.20021762786,
+        "error_cost_per_1000": 39064.20021762786,
+        "review_cost_per_1000": 0.0,
+        "inference_cost_per_1000": 10.0,
+        "false_negatives_per_1000": 78.12840043525573,
+        "false_positives_per_1000": 0.0,
+        "review_fraction": 0.0,
+        "daily_reviews": 0.0,
+        "daily_review_hours": 0.0,
+        "reviewers_needed": 0,
+        "within_capacity": true,
+        "sensitivity": 0.21871599564744285,
+        "specificity": 1.0
+      },
+      {
+        "lower": 0.67,
+        "upper": 0.67,
+        "observed_actions": [
+          [
+            2081,
+            0,
+            0
+          ],
+          [
+            741,
+            0,
+            178
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            900.0,
+            0.0,
+            0.0
+          ],
+          [
+            80.6311207834603,
+            0.0,
+            19.368879216539717
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            900.0,
+            0.0
+          ],
+          [
+            80.6311207834603,
+            19.368879216539717
+          ]
+        ],
+        "cost_per_1000": 40325.56039173015,
+        "error_cost_per_1000": 40315.56039173015,
+        "review_cost_per_1000": 0.0,
+        "inference_cost_per_1000": 10.0,
+        "false_negatives_per_1000": 80.6311207834603,
+        "false_positives_per_1000": 0.0,
+        "review_fraction": 0.0,
+        "daily_reviews": 0.0,
+        "daily_review_hours": 0.0,
+        "reviewers_needed": 0,
+        "within_capacity": true,
+        "sensitivity": 0.1936887921653971,
+        "specificity": 1.0
+      },
+      {
+        "lower": 0.68,
+        "upper": 0.68,
+        "observed_actions": [
+          [
+            2081,
+            0,
+            0
+          ],
+          [
+            771,
+            0,
+            148
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            900.0,
+            0.0,
+            0.0
+          ],
+          [
+            83.89553862894451,
+            0.0,
+            16.104461371055496
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            900.0,
+            0.0
+          ],
+          [
+            83.89553862894451,
+            16.104461371055496
+          ]
+        ],
+        "cost_per_1000": 41957.76931447225,
+        "error_cost_per_1000": 41947.76931447225,
+        "review_cost_per_1000": 0.0,
+        "inference_cost_per_1000": 10.0,
+        "false_negatives_per_1000": 83.89553862894451,
+        "false_positives_per_1000": 0.0,
+        "review_fraction": 0.0,
+        "daily_reviews": 0.0,
+        "daily_review_hours": 0.0,
+        "reviewers_needed": 0,
+        "within_capacity": true,
+        "sensitivity": 0.16104461371055495,
+        "specificity": 1.0
+      },
+      {
+        "lower": 0.6900000000000001,
+        "upper": 0.6900000000000001,
+        "observed_actions": [
+          [
+            2081,
+            0,
+            0
+          ],
+          [
+            792,
+            0,
+            127
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            900.0,
+            0.0,
+            0.0
+          ],
+          [
+            86.18063112078346,
+            0.0,
+            13.81936887921654
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            900.0,
+            0.0
+          ],
+          [
+            86.18063112078346,
+            13.81936887921654
+          ]
+        ],
+        "cost_per_1000": 43100.31556039173,
+        "error_cost_per_1000": 43090.31556039173,
+        "review_cost_per_1000": 0.0,
+        "inference_cost_per_1000": 10.0,
+        "false_negatives_per_1000": 86.18063112078346,
+        "false_positives_per_1000": 0.0,
+        "review_fraction": 0.0,
+        "daily_reviews": 0.0,
+        "daily_review_hours": 0.0,
+        "reviewers_needed": 0,
+        "within_capacity": true,
+        "sensitivity": 0.1381936887921654,
+        "specificity": 1.0
+      },
+      {
+        "lower": 0.7000000000000001,
+        "upper": 0.7000000000000001,
+        "observed_actions": [
+          [
+            2081,
+            0,
+            0
+          ],
+          [
+            821,
+            0,
+            98
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            900.0,
+            0.0,
+            0.0
+          ],
+          [
+            89.33623503808488,
+            0.0,
+            10.663764961915124
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            900.0,
+            0.0
+          ],
+          [
+            89.33623503808488,
+            10.663764961915124
+          ]
+        ],
+        "cost_per_1000": 44678.11751904244,
+        "error_cost_per_1000": 44668.11751904244,
+        "review_cost_per_1000": 0.0,
+        "inference_cost_per_1000": 10.0,
+        "false_negatives_per_1000": 89.33623503808488,
+        "false_positives_per_1000": 0.0,
+        "review_fraction": 0.0,
+        "daily_reviews": 0.0,
+        "daily_review_hours": 0.0,
+        "reviewers_needed": 0,
+        "within_capacity": true,
+        "sensitivity": 0.10663764961915125,
+        "specificity": 1.0
+      },
+      {
+        "lower": 0.71,
+        "upper": 0.71,
+        "observed_actions": [
+          [
+            2081,
+            0,
+            0
+          ],
+          [
+            837,
+            0,
+            82
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            900.0,
+            0.0,
+            0.0
+          ],
+          [
+            91.07725788900979,
+            0.0,
+            8.922742110990205
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            900.0,
+            0.0
+          ],
+          [
+            91.07725788900979,
+            8.922742110990205
+          ]
+        ],
+        "cost_per_1000": 45548.62894450489,
+        "error_cost_per_1000": 45538.62894450489,
+        "review_cost_per_1000": 0.0,
+        "inference_cost_per_1000": 10.0,
+        "false_negatives_per_1000": 91.07725788900979,
+        "false_positives_per_1000": 0.0,
+        "review_fraction": 0.0,
+        "daily_reviews": 0.0,
+        "daily_review_hours": 0.0,
+        "reviewers_needed": 0,
+        "within_capacity": true,
+        "sensitivity": 0.08922742110990206,
+        "specificity": 1.0
+      },
+      {
+        "lower": 0.72,
+        "upper": 0.72,
+        "observed_actions": [
+          [
+            2081,
+            0,
+            0
+          ],
+          [
+            852,
+            0,
+            67
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            900.0,
+            0.0,
+            0.0
+          ],
+          [
+            92.70946681175191,
+            0.0,
+            7.290533188248096
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            900.0,
+            0.0
+          ],
+          [
+            92.70946681175191,
+            7.290533188248096
+          ]
+        ],
+        "cost_per_1000": 46364.73340587595,
+        "error_cost_per_1000": 46354.73340587595,
+        "review_cost_per_1000": 0.0,
+        "inference_cost_per_1000": 10.0,
+        "false_negatives_per_1000": 92.70946681175191,
+        "false_positives_per_1000": 0.0,
+        "review_fraction": 0.0,
+        "daily_reviews": 0.0,
+        "daily_review_hours": 0.0,
+        "reviewers_needed": 0,
+        "within_capacity": true,
+        "sensitivity": 0.07290533188248097,
+        "specificity": 1.0
+      },
+      {
+        "lower": 0.73,
+        "upper": 0.73,
+        "observed_actions": [
+          [
+            2081,
+            0,
+            0
+          ],
+          [
+            869,
+            0,
+            50
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            900.0,
+            0.0,
+            0.0
+          ],
+          [
+            94.55930359085964,
+            0.0,
+            5.4406964091403704
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            900.0,
+            0.0
+          ],
+          [
+            94.55930359085964,
+            5.4406964091403704
+          ]
+        ],
+        "cost_per_1000": 47289.65179542982,
+        "error_cost_per_1000": 47279.65179542982,
+        "review_cost_per_1000": 0.0,
+        "inference_cost_per_1000": 10.0,
+        "false_negatives_per_1000": 94.55930359085964,
+        "false_positives_per_1000": 0.0,
+        "review_fraction": 0.0,
+        "daily_reviews": 0.0,
+        "daily_review_hours": 0.0,
+        "reviewers_needed": 0,
+        "within_capacity": true,
+        "sensitivity": 0.0544069640914037,
+        "specificity": 1.0
+      },
+      {
+        "lower": 0.74,
+        "upper": 0.74,
+        "observed_actions": [
+          [
+            2081,
+            0,
+            0
+          ],
+          [
+            889,
+            0,
+            30
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            900.0,
+            0.0,
+            0.0
+          ],
+          [
+            96.73558215451578,
+            0.0,
+            3.2644178454842225
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            900.0,
+            0.0
+          ],
+          [
+            96.73558215451578,
+            3.2644178454842225
+          ]
+        ],
+        "cost_per_1000": 48377.79107725789,
+        "error_cost_per_1000": 48367.79107725789,
+        "review_cost_per_1000": 0.0,
+        "inference_cost_per_1000": 10.0,
+        "false_negatives_per_1000": 96.73558215451578,
+        "false_positives_per_1000": 0.0,
+        "review_fraction": 0.0,
+        "daily_reviews": 0.0,
+        "daily_review_hours": 0.0,
+        "reviewers_needed": 0,
+        "within_capacity": true,
+        "sensitivity": 0.03264417845484222,
+        "specificity": 1.0
+      },
+      {
+        "lower": 0.75,
+        "upper": 0.75,
+        "observed_actions": [
+          [
+            2081,
+            0,
+            0
+          ],
+          [
+            896,
+            0,
+            23
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            900.0,
+            0.0,
+            0.0
+          ],
+          [
+            97.49727965179544,
+            0.0,
+            2.5027203482045706
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            900.0,
+            0.0
+          ],
+          [
+            97.49727965179544,
+            2.5027203482045706
+          ]
+        ],
+        "cost_per_1000": 48758.63982589772,
+        "error_cost_per_1000": 48748.63982589772,
+        "review_cost_per_1000": 0.0,
+        "inference_cost_per_1000": 10.0,
+        "false_negatives_per_1000": 97.49727965179544,
+        "false_positives_per_1000": 0.0,
+        "review_fraction": 0.0,
+        "daily_reviews": 0.0,
+        "daily_review_hours": 0.0,
+        "reviewers_needed": 0,
+        "within_capacity": true,
+        "sensitivity": 0.025027203482045703,
+        "specificity": 1.0
+      },
+      {
+        "lower": 0.76,
+        "upper": 0.76,
+        "observed_actions": [
+          [
+            2081,
+            0,
+            0
+          ],
+          [
+            901,
+            0,
+            18
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            900.0,
+            0.0,
+            0.0
+          ],
+          [
+            98.04134929270947,
+            0.0,
+            1.9586507072905333
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            900.0,
+            0.0
+          ],
+          [
+            98.04134929270947,
+            1.9586507072905333
+          ]
+        ],
+        "cost_per_1000": 49030.67464635473,
+        "error_cost_per_1000": 49020.67464635473,
+        "review_cost_per_1000": 0.0,
+        "inference_cost_per_1000": 10.0,
+        "false_negatives_per_1000": 98.04134929270947,
+        "false_positives_per_1000": 0.0,
+        "review_fraction": 0.0,
+        "daily_reviews": 0.0,
+        "daily_review_hours": 0.0,
+        "reviewers_needed": 0,
+        "within_capacity": true,
+        "sensitivity": 0.019586507072905334,
+        "specificity": 1.0
+      },
+      {
+        "lower": 0.77,
+        "upper": 0.77,
+        "observed_actions": [
+          [
+            2081,
+            0,
+            0
+          ],
+          [
+            904,
+            0,
+            15
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            900.0,
+            0.0,
+            0.0
+          ],
+          [
+            98.3677910772579,
+            0.0,
+            1.6322089227421113
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            900.0,
+            0.0
+          ],
+          [
+            98.3677910772579,
+            1.6322089227421113
+          ]
+        ],
+        "cost_per_1000": 49193.89553862895,
+        "error_cost_per_1000": 49183.89553862895,
+        "review_cost_per_1000": 0.0,
+        "inference_cost_per_1000": 10.0,
+        "false_negatives_per_1000": 98.3677910772579,
+        "false_positives_per_1000": 0.0,
+        "review_fraction": 0.0,
+        "daily_reviews": 0.0,
+        "daily_review_hours": 0.0,
+        "reviewers_needed": 0,
+        "within_capacity": true,
+        "sensitivity": 0.01632208922742111,
+        "specificity": 1.0
+      },
+      {
+        "lower": 0.78,
+        "upper": 0.78,
+        "observed_actions": [
+          [
+            2081,
+            0,
+            0
+          ],
+          [
+            909,
+            0,
+            10
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            900.0,
+            0.0,
+            0.0
+          ],
+          [
+            98.91186071817192,
+            0.0,
+            1.088139281828074
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            900.0,
+            0.0
+          ],
+          [
+            98.91186071817192,
+            1.088139281828074
+          ]
+        ],
+        "cost_per_1000": 49465.93035908596,
+        "error_cost_per_1000": 49455.93035908596,
+        "review_cost_per_1000": 0.0,
+        "inference_cost_per_1000": 10.0,
+        "false_negatives_per_1000": 98.91186071817192,
+        "false_positives_per_1000": 0.0,
+        "review_fraction": 0.0,
+        "daily_reviews": 0.0,
+        "daily_review_hours": 0.0,
+        "reviewers_needed": 0,
+        "within_capacity": true,
+        "sensitivity": 0.01088139281828074,
+        "specificity": 1.0
+      },
+      {
+        "lower": 0.79,
+        "upper": 0.79,
+        "observed_actions": [
+          [
+            2081,
+            0,
+            0
+          ],
+          [
+            915,
+            0,
+            4
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            900.0,
+            0.0,
+            0.0
+          ],
+          [
+            99.56474428726878,
+            0.0,
+            0.4352557127312296
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            900.0,
+            0.0
+          ],
+          [
+            99.56474428726878,
+            0.4352557127312296
+          ]
+        ],
+        "cost_per_1000": 49792.37214363439,
+        "error_cost_per_1000": 49782.37214363439,
+        "review_cost_per_1000": 0.0,
+        "inference_cost_per_1000": 10.0,
+        "false_negatives_per_1000": 99.56474428726878,
+        "false_positives_per_1000": 0.0,
+        "review_fraction": 0.0,
+        "daily_reviews": 0.0,
+        "daily_review_hours": 0.0,
+        "reviewers_needed": 0,
+        "within_capacity": true,
+        "sensitivity": 0.004352557127312295,
+        "specificity": 1.0
+      },
+      {
+        "lower": 0.8,
+        "upper": 0.8,
+        "observed_actions": [
+          [
+            2081,
+            0,
+            0
+          ],
+          [
+            915,
+            0,
+            4
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            900.0,
+            0.0,
+            0.0
+          ],
+          [
+            99.56474428726878,
+            0.0,
+            0.4352557127312296
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            900.0,
+            0.0
+          ],
+          [
+            99.56474428726878,
+            0.4352557127312296
+          ]
+        ],
+        "cost_per_1000": 49792.37214363439,
+        "error_cost_per_1000": 49782.37214363439,
+        "review_cost_per_1000": 0.0,
+        "inference_cost_per_1000": 10.0,
+        "false_negatives_per_1000": 99.56474428726878,
+        "false_positives_per_1000": 0.0,
+        "review_fraction": 0.0,
+        "daily_reviews": 0.0,
+        "daily_review_hours": 0.0,
+        "reviewers_needed": 0,
+        "within_capacity": true,
+        "sensitivity": 0.004352557127312295,
+        "specificity": 1.0
+      },
+      {
+        "lower": 0.81,
+        "upper": 0.81,
+        "observed_actions": [
+          [
+            2081,
+            0,
+            0
+          ],
+          [
+            916,
+            0,
+            3
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            900.0,
+            0.0,
+            0.0
+          ],
+          [
+            99.67355821545158,
+            0.0,
+            0.3264417845484222
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            900.0,
+            0.0
+          ],
+          [
+            99.67355821545158,
+            0.3264417845484222
+          ]
+        ],
+        "cost_per_1000": 49846.779107725786,
+        "error_cost_per_1000": 49836.779107725786,
+        "review_cost_per_1000": 0.0,
+        "inference_cost_per_1000": 10.0,
+        "false_negatives_per_1000": 99.67355821545158,
+        "false_positives_per_1000": 0.0,
+        "review_fraction": 0.0,
+        "daily_reviews": 0.0,
+        "daily_review_hours": 0.0,
+        "reviewers_needed": 0,
+        "within_capacity": true,
+        "sensitivity": 0.003264417845484222,
+        "specificity": 1.0
+      },
+      {
+        "lower": 0.8200000000000001,
+        "upper": 0.8200000000000001,
+        "observed_actions": [
+          [
+            2081,
+            0,
+            0
+          ],
+          [
+            917,
+            0,
+            2
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            900.0,
+            0.0,
+            0.0
+          ],
+          [
+            99.78237214363439,
+            0.0,
+            0.2176278563656148
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            900.0,
+            0.0
+          ],
+          [
+            99.78237214363439,
+            0.2176278563656148
+          ]
+        ],
+        "cost_per_1000": 49901.186071817196,
+        "error_cost_per_1000": 49891.186071817196,
+        "review_cost_per_1000": 0.0,
+        "inference_cost_per_1000": 10.0,
+        "false_negatives_per_1000": 99.78237214363439,
+        "false_positives_per_1000": 0.0,
+        "review_fraction": 0.0,
+        "daily_reviews": 0.0,
+        "daily_review_hours": 0.0,
+        "reviewers_needed": 0,
+        "within_capacity": true,
+        "sensitivity": 0.002176278563656148,
+        "specificity": 1.0
+      },
+      {
+        "lower": 0.8300000000000001,
+        "upper": 0.8300000000000001,
+        "observed_actions": [
+          [
+            2081,
+            0,
+            0
+          ],
+          [
+            918,
+            0,
+            1
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            900.0,
+            0.0,
+            0.0
+          ],
+          [
+            99.8911860718172,
+            0.0,
+            0.1088139281828074
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            900.0,
+            0.0
+          ],
+          [
+            99.8911860718172,
+            0.1088139281828074
+          ]
+        ],
+        "cost_per_1000": 49955.5930359086,
+        "error_cost_per_1000": 49945.5930359086,
+        "review_cost_per_1000": 0.0,
+        "inference_cost_per_1000": 10.0,
+        "false_negatives_per_1000": 99.8911860718172,
+        "false_positives_per_1000": 0.0,
+        "review_fraction": 0.0,
+        "daily_reviews": 0.0,
+        "daily_review_hours": 0.0,
+        "reviewers_needed": 0,
+        "within_capacity": true,
+        "sensitivity": 0.0010881392818280738,
+        "specificity": 1.0
+      },
+      {
+        "lower": 0.84,
+        "upper": 0.84,
+        "observed_actions": [
+          [
+            2081,
+            0,
+            0
+          ],
+          [
+            918,
+            0,
+            1
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            900.0,
+            0.0,
+            0.0
+          ],
+          [
+            99.8911860718172,
+            0.0,
+            0.1088139281828074
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            900.0,
+            0.0
+          ],
+          [
+            99.8911860718172,
+            0.1088139281828074
+          ]
+        ],
+        "cost_per_1000": 49955.5930359086,
+        "error_cost_per_1000": 49945.5930359086,
+        "review_cost_per_1000": 0.0,
+        "inference_cost_per_1000": 10.0,
+        "false_negatives_per_1000": 99.8911860718172,
+        "false_positives_per_1000": 0.0,
+        "review_fraction": 0.0,
+        "daily_reviews": 0.0,
+        "daily_review_hours": 0.0,
+        "reviewers_needed": 0,
+        "within_capacity": true,
+        "sensitivity": 0.0010881392818280738,
+        "specificity": 1.0
+      },
+      {
+        "lower": 0.85,
+        "upper": 0.85,
+        "observed_actions": [
+          [
+            2081,
+            0,
+            0
+          ],
+          [
+            918,
+            0,
+            1
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            900.0,
+            0.0,
+            0.0
+          ],
+          [
+            99.8911860718172,
+            0.0,
+            0.1088139281828074
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            900.0,
+            0.0
+          ],
+          [
+            99.8911860718172,
+            0.1088139281828074
+          ]
+        ],
+        "cost_per_1000": 49955.5930359086,
+        "error_cost_per_1000": 49945.5930359086,
+        "review_cost_per_1000": 0.0,
+        "inference_cost_per_1000": 10.0,
+        "false_negatives_per_1000": 99.8911860718172,
+        "false_positives_per_1000": 0.0,
+        "review_fraction": 0.0,
+        "daily_reviews": 0.0,
+        "daily_review_hours": 0.0,
+        "reviewers_needed": 0,
+        "within_capacity": true,
+        "sensitivity": 0.0010881392818280738,
+        "specificity": 1.0
+      },
+      {
+        "lower": 0.86,
+        "upper": 0.86,
+        "observed_actions": [
+          [
+            2081,
+            0,
+            0
+          ],
+          [
+            918,
+            0,
+            1
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            900.0,
+            0.0,
+            0.0
+          ],
+          [
+            99.8911860718172,
+            0.0,
+            0.1088139281828074
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            900.0,
+            0.0
+          ],
+          [
+            99.8911860718172,
+            0.1088139281828074
+          ]
+        ],
+        "cost_per_1000": 49955.5930359086,
+        "error_cost_per_1000": 49945.5930359086,
+        "review_cost_per_1000": 0.0,
+        "inference_cost_per_1000": 10.0,
+        "false_negatives_per_1000": 99.8911860718172,
+        "false_positives_per_1000": 0.0,
+        "review_fraction": 0.0,
+        "daily_reviews": 0.0,
+        "daily_review_hours": 0.0,
+        "reviewers_needed": 0,
+        "within_capacity": true,
+        "sensitivity": 0.0010881392818280738,
+        "specificity": 1.0
+      },
+      {
+        "lower": 0.87,
+        "upper": 0.87,
+        "observed_actions": [
+          [
+            2081,
+            0,
+            0
+          ],
+          [
+            918,
+            0,
+            1
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            900.0,
+            0.0,
+            0.0
+          ],
+          [
+            99.8911860718172,
+            0.0,
+            0.1088139281828074
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            900.0,
+            0.0
+          ],
+          [
+            99.8911860718172,
+            0.1088139281828074
+          ]
+        ],
+        "cost_per_1000": 49955.5930359086,
+        "error_cost_per_1000": 49945.5930359086,
+        "review_cost_per_1000": 0.0,
+        "inference_cost_per_1000": 10.0,
+        "false_negatives_per_1000": 99.8911860718172,
+        "false_positives_per_1000": 0.0,
+        "review_fraction": 0.0,
+        "daily_reviews": 0.0,
+        "daily_review_hours": 0.0,
+        "reviewers_needed": 0,
+        "within_capacity": true,
+        "sensitivity": 0.0010881392818280738,
+        "specificity": 1.0
+      },
+      {
+        "lower": 0.88,
+        "upper": 0.88,
+        "observed_actions": [
+          [
+            2081,
+            0,
+            0
+          ],
+          [
+            918,
+            0,
+            1
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            900.0,
+            0.0,
+            0.0
+          ],
+          [
+            99.8911860718172,
+            0.0,
+            0.1088139281828074
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            900.0,
+            0.0
+          ],
+          [
+            99.8911860718172,
+            0.1088139281828074
+          ]
+        ],
+        "cost_per_1000": 49955.5930359086,
+        "error_cost_per_1000": 49945.5930359086,
+        "review_cost_per_1000": 0.0,
+        "inference_cost_per_1000": 10.0,
+        "false_negatives_per_1000": 99.8911860718172,
+        "false_positives_per_1000": 0.0,
+        "review_fraction": 0.0,
+        "daily_reviews": 0.0,
+        "daily_review_hours": 0.0,
+        "reviewers_needed": 0,
+        "within_capacity": true,
+        "sensitivity": 0.0010881392818280738,
+        "specificity": 1.0
+      },
+      {
+        "lower": 0.89,
+        "upper": 0.89,
+        "observed_actions": [
+          [
+            2081,
+            0,
+            0
+          ],
+          [
+            918,
+            0,
+            1
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            900.0,
+            0.0,
+            0.0
+          ],
+          [
+            99.8911860718172,
+            0.0,
+            0.1088139281828074
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            900.0,
+            0.0
+          ],
+          [
+            99.8911860718172,
+            0.1088139281828074
+          ]
+        ],
+        "cost_per_1000": 49955.5930359086,
+        "error_cost_per_1000": 49945.5930359086,
+        "review_cost_per_1000": 0.0,
+        "inference_cost_per_1000": 10.0,
+        "false_negatives_per_1000": 99.8911860718172,
+        "false_positives_per_1000": 0.0,
+        "review_fraction": 0.0,
+        "daily_reviews": 0.0,
+        "daily_review_hours": 0.0,
+        "reviewers_needed": 0,
+        "within_capacity": true,
+        "sensitivity": 0.0010881392818280738,
+        "specificity": 1.0
+      },
+      {
+        "lower": 0.9,
+        "upper": 0.9,
+        "observed_actions": [
+          [
+            2081,
+            0,
+            0
+          ],
+          [
+            918,
+            0,
+            1
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            900.0,
+            0.0,
+            0.0
+          ],
+          [
+            99.8911860718172,
+            0.0,
+            0.1088139281828074
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            900.0,
+            0.0
+          ],
+          [
+            99.8911860718172,
+            0.1088139281828074
+          ]
+        ],
+        "cost_per_1000": 49955.5930359086,
+        "error_cost_per_1000": 49945.5930359086,
+        "review_cost_per_1000": 0.0,
+        "inference_cost_per_1000": 10.0,
+        "false_negatives_per_1000": 99.8911860718172,
+        "false_positives_per_1000": 0.0,
+        "review_fraction": 0.0,
+        "daily_reviews": 0.0,
+        "daily_review_hours": 0.0,
+        "reviewers_needed": 0,
+        "within_capacity": true,
+        "sensitivity": 0.0010881392818280738,
+        "specificity": 1.0
+      },
+      {
+        "lower": 0.91,
+        "upper": 0.91,
+        "observed_actions": [
+          [
+            2081,
+            0,
+            0
+          ],
+          [
+            919,
+            0,
+            0
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            900.0,
+            0.0,
+            0.0
+          ],
+          [
+            100.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            900.0,
+            0.0
+          ],
+          [
+            100.0,
+            0.0
+          ]
+        ],
+        "cost_per_1000": 50010.0,
+        "error_cost_per_1000": 50000.0,
+        "review_cost_per_1000": 0.0,
+        "inference_cost_per_1000": 10.0,
+        "false_negatives_per_1000": 100.0,
+        "false_positives_per_1000": 0.0,
+        "review_fraction": 0.0,
+        "daily_reviews": 0.0,
+        "daily_review_hours": 0.0,
+        "reviewers_needed": 0,
+        "within_capacity": true,
+        "sensitivity": 0.0,
+        "specificity": 1.0
+      },
+      {
+        "lower": 0.92,
+        "upper": 0.92,
+        "observed_actions": [
+          [
+            2081,
+            0,
+            0
+          ],
+          [
+            919,
+            0,
+            0
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            900.0,
+            0.0,
+            0.0
+          ],
+          [
+            100.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            900.0,
+            0.0
+          ],
+          [
+            100.0,
+            0.0
+          ]
+        ],
+        "cost_per_1000": 50010.0,
+        "error_cost_per_1000": 50000.0,
+        "review_cost_per_1000": 0.0,
+        "inference_cost_per_1000": 10.0,
+        "false_negatives_per_1000": 100.0,
+        "false_positives_per_1000": 0.0,
+        "review_fraction": 0.0,
+        "daily_reviews": 0.0,
+        "daily_review_hours": 0.0,
+        "reviewers_needed": 0,
+        "within_capacity": true,
+        "sensitivity": 0.0,
+        "specificity": 1.0
+      },
+      {
+        "lower": 0.93,
+        "upper": 0.93,
+        "observed_actions": [
+          [
+            2081,
+            0,
+            0
+          ],
+          [
+            919,
+            0,
+            0
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            900.0,
+            0.0,
+            0.0
+          ],
+          [
+            100.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            900.0,
+            0.0
+          ],
+          [
+            100.0,
+            0.0
+          ]
+        ],
+        "cost_per_1000": 50010.0,
+        "error_cost_per_1000": 50000.0,
+        "review_cost_per_1000": 0.0,
+        "inference_cost_per_1000": 10.0,
+        "false_negatives_per_1000": 100.0,
+        "false_positives_per_1000": 0.0,
+        "review_fraction": 0.0,
+        "daily_reviews": 0.0,
+        "daily_review_hours": 0.0,
+        "reviewers_needed": 0,
+        "within_capacity": true,
+        "sensitivity": 0.0,
+        "specificity": 1.0
+      },
+      {
+        "lower": 0.9400000000000001,
+        "upper": 0.9400000000000001,
+        "observed_actions": [
+          [
+            2081,
+            0,
+            0
+          ],
+          [
+            919,
+            0,
+            0
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            900.0,
+            0.0,
+            0.0
+          ],
+          [
+            100.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            900.0,
+            0.0
+          ],
+          [
+            100.0,
+            0.0
+          ]
+        ],
+        "cost_per_1000": 50010.0,
+        "error_cost_per_1000": 50000.0,
+        "review_cost_per_1000": 0.0,
+        "inference_cost_per_1000": 10.0,
+        "false_negatives_per_1000": 100.0,
+        "false_positives_per_1000": 0.0,
+        "review_fraction": 0.0,
+        "daily_reviews": 0.0,
+        "daily_review_hours": 0.0,
+        "reviewers_needed": 0,
+        "within_capacity": true,
+        "sensitivity": 0.0,
+        "specificity": 1.0
+      },
+      {
+        "lower": 0.9500000000000001,
+        "upper": 0.9500000000000001,
+        "observed_actions": [
+          [
+            2081,
+            0,
+            0
+          ],
+          [
+            919,
+            0,
+            0
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            900.0,
+            0.0,
+            0.0
+          ],
+          [
+            100.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            900.0,
+            0.0
+          ],
+          [
+            100.0,
+            0.0
+          ]
+        ],
+        "cost_per_1000": 50010.0,
+        "error_cost_per_1000": 50000.0,
+        "review_cost_per_1000": 0.0,
+        "inference_cost_per_1000": 10.0,
+        "false_negatives_per_1000": 100.0,
+        "false_positives_per_1000": 0.0,
+        "review_fraction": 0.0,
+        "daily_reviews": 0.0,
+        "daily_review_hours": 0.0,
+        "reviewers_needed": 0,
+        "within_capacity": true,
+        "sensitivity": 0.0,
+        "specificity": 1.0
+      },
+      {
+        "lower": 0.96,
+        "upper": 0.96,
+        "observed_actions": [
+          [
+            2081,
+            0,
+            0
+          ],
+          [
+            919,
+            0,
+            0
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            900.0,
+            0.0,
+            0.0
+          ],
+          [
+            100.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            900.0,
+            0.0
+          ],
+          [
+            100.0,
+            0.0
+          ]
+        ],
+        "cost_per_1000": 50010.0,
+        "error_cost_per_1000": 50000.0,
+        "review_cost_per_1000": 0.0,
+        "inference_cost_per_1000": 10.0,
+        "false_negatives_per_1000": 100.0,
+        "false_positives_per_1000": 0.0,
+        "review_fraction": 0.0,
+        "daily_reviews": 0.0,
+        "daily_review_hours": 0.0,
+        "reviewers_needed": 0,
+        "within_capacity": true,
+        "sensitivity": 0.0,
+        "specificity": 1.0
+      },
+      {
+        "lower": 0.97,
+        "upper": 0.97,
+        "observed_actions": [
+          [
+            2081,
+            0,
+            0
+          ],
+          [
+            919,
+            0,
+            0
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            900.0,
+            0.0,
+            0.0
+          ],
+          [
+            100.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            900.0,
+            0.0
+          ],
+          [
+            100.0,
+            0.0
+          ]
+        ],
+        "cost_per_1000": 50010.0,
+        "error_cost_per_1000": 50000.0,
+        "review_cost_per_1000": 0.0,
+        "inference_cost_per_1000": 10.0,
+        "false_negatives_per_1000": 100.0,
+        "false_positives_per_1000": 0.0,
+        "review_fraction": 0.0,
+        "daily_reviews": 0.0,
+        "daily_review_hours": 0.0,
+        "reviewers_needed": 0,
+        "within_capacity": true,
+        "sensitivity": 0.0,
+        "specificity": 1.0
+      },
+      {
+        "lower": 0.98,
+        "upper": 0.98,
+        "observed_actions": [
+          [
+            2081,
+            0,
+            0
+          ],
+          [
+            919,
+            0,
+            0
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            900.0,
+            0.0,
+            0.0
+          ],
+          [
+            100.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            900.0,
+            0.0
+          ],
+          [
+            100.0,
+            0.0
+          ]
+        ],
+        "cost_per_1000": 50010.0,
+        "error_cost_per_1000": 50000.0,
+        "review_cost_per_1000": 0.0,
+        "inference_cost_per_1000": 10.0,
+        "false_negatives_per_1000": 100.0,
+        "false_positives_per_1000": 0.0,
+        "review_fraction": 0.0,
+        "daily_reviews": 0.0,
+        "daily_review_hours": 0.0,
+        "reviewers_needed": 0,
+        "within_capacity": true,
+        "sensitivity": 0.0,
+        "specificity": 1.0
+      },
+      {
+        "lower": 0.99,
+        "upper": 0.99,
+        "observed_actions": [
+          [
+            2081,
+            0,
+            0
+          ],
+          [
+            919,
+            0,
+            0
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            900.0,
+            0.0,
+            0.0
+          ],
+          [
+            100.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            900.0,
+            0.0
+          ],
+          [
+            100.0,
+            0.0
+          ]
+        ],
+        "cost_per_1000": 50010.0,
+        "error_cost_per_1000": 50000.0,
+        "review_cost_per_1000": 0.0,
+        "inference_cost_per_1000": 10.0,
+        "false_negatives_per_1000": 100.0,
+        "false_positives_per_1000": 0.0,
+        "review_fraction": 0.0,
+        "daily_reviews": 0.0,
+        "daily_review_hours": 0.0,
+        "reviewers_needed": 0,
+        "within_capacity": true,
+        "sensitivity": 0.0,
+        "specificity": 1.0
+      },
+      {
+        "lower": 1.0,
+        "upper": 1.0,
+        "observed_actions": [
+          [
+            2081,
+            0,
+            0
+          ],
+          [
+            919,
+            0,
+            0
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            900.0,
+            0.0,
+            0.0
+          ],
+          [
+            100.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            900.0,
+            0.0
+          ],
+          [
+            100.0,
+            0.0
+          ]
+        ],
+        "cost_per_1000": 50010.0,
+        "error_cost_per_1000": 50000.0,
+        "review_cost_per_1000": 0.0,
+        "inference_cost_per_1000": 10.0,
+        "false_negatives_per_1000": 100.0,
+        "false_positives_per_1000": 0.0,
+        "review_fraction": 0.0,
+        "daily_reviews": 0.0,
+        "daily_review_hours": 0.0,
+        "reviewers_needed": 0,
+        "within_capacity": true,
+        "sensitivity": 0.0,
+        "specificity": 1.0
+      },
+      {
+        "lower": 1.001,
+        "upper": 1.001,
+        "observed_actions": [
+          [
+            2081,
+            0,
+            0
+          ],
+          [
+            919,
+            0,
+            0
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            900.0,
+            0.0,
+            0.0
+          ],
+          [
+            100.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            900.0,
+            0.0
+          ],
+          [
+            100.0,
+            0.0
+          ]
+        ],
+        "cost_per_1000": 50010.0,
+        "error_cost_per_1000": 50000.0,
+        "review_cost_per_1000": 0.0,
+        "inference_cost_per_1000": 10.0,
+        "false_negatives_per_1000": 100.0,
+        "false_positives_per_1000": 0.0,
+        "review_fraction": 0.0,
+        "daily_reviews": 0.0,
+        "daily_review_hours": 0.0,
+        "reviewers_needed": 0,
+        "within_capacity": true,
+        "sensitivity": 0.0,
+        "specificity": 1.0
+      }
+    ],
+    "scenario": {
+      "prevalence": 0.1,
+      "false_positive_eur": 25.0,
+      "false_negative_eur": 500.0,
+      "review_minutes": 2.0,
+      "reviewer_hourly_eur": 60.0,
+      "reviewer_sensitivity": 0.9,
+      "reviewer_specificity": 0.9,
+      "daily_images": 200,
+      "reviewers_available": 1,
+      "review_hours_per_person": 2.0,
+      "inference_eur_per_image": 0.01
+    },
+    "selection_split": "val",
+    "grid_step": 0.01,
+    "grid_optimum": {
+      "binary": {
+        "lower": 0.04,
+        "upper": 0.04,
+        "observed_actions": [
+          [
+            1830,
+            0,
+            251
+          ],
+          [
+            24,
+            0,
+            895
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            791.4464199903892,
+            0.0,
+            108.55358000961077
+          ],
+          [
+            2.6115342763873777,
+            0.0,
+            97.38846572361264
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            791.4464199903892,
+            108.55358000961077
+          ],
+          [
+            2.6115342763873777,
+            97.38846572361264
+          ]
+        ],
+        "cost_per_1000": 4029.6066384339583,
+        "error_cost_per_1000": 4019.6066384339583,
+        "review_cost_per_1000": 0.0,
+        "inference_cost_per_1000": 10.0,
+        "false_negatives_per_1000": 2.6115342763873777,
+        "false_positives_per_1000": 108.55358000961077,
+        "review_fraction": 0.0,
+        "daily_reviews": 0.0,
+        "daily_review_hours": 0.0,
+        "reviewers_needed": 0,
+        "within_capacity": true,
+        "sensitivity": 0.9738846572361263,
+        "specificity": 0.8793849111004325
+      },
+      "hybrid": {
+        "lower": 0.02,
+        "upper": 0.15,
+        "observed_actions": [
+          [
+            1691,
+            288,
+            102
+          ],
+          [
+            9,
+            97,
+            813
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            731.3310908217204,
+            124.5555021624219,
+            44.11340701585776
+          ],
+          [
+            0.9793253536452666,
+            10.55495103373232,
+            88.46572361262243
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            843.4310427679002,
+            56.56895723209995
+          ],
+          [
+            2.0348204570184985,
+            97.96517954298152
+          ]
+        ],
+        "cost_per_1000": 2711.855065704056,
+        "error_cost_per_1000": 2431.6341593117477,
+        "review_cost_per_1000": 270.22090639230845,
+        "inference_cost_per_1000": 10.0,
+        "false_negatives_per_1000": 2.0348204570184985,
+        "false_positives_per_1000": 56.56895723209995,
+        "review_fraction": 0.13511045319615422,
+        "daily_reviews": 27.022090639230846,
+        "daily_review_hours": 0.9007363546410282,
+        "reviewers_needed": 1,
+        "within_capacity": true,
+        "sensitivity": 0.9796517954298151,
+        "specificity": 0.9371456030754445
+      }
+    },
+    "adoption_method": "explicit_user_adoption_after_validation"
+  },
+  "validation_predictions_sha256": "5ffaa9e014338c0833d207b640b5363c322c95538e9bfbd168ba6c559e7e52cb",
+  "weights_sha256": "b01a44d932c0dfde35e00b2dccb25eb512b95d23e557183f3413831973cbe778",
+  "config_sha256": "f4a02773eb761bd6877debd57db6f8ee35dcac8a87c25e4609e20aa11eda84a1",
+  "scenario_sha256": "22fd2195a794794d45b73fbf1271bb207cf02b15ea4fa3569af55ac1966debab",
+  "manifest_sha256": "13c2bcbdf29a04c8be1568b07dba737846f64262ab434cf0b067ec0ce38fdc43",
+  "frozen_at_utc": "2026-10-26T08:58:49.105350+00:00",
+  "test_inference_performed_before_freeze": false,
+  "test_inference_declaration_scope": "This checkpoint's evaluation only; prior study exposure is recorded separately.",
+  "test_previously_exposed": true,
+  "evaluation_scope": "Reused test partition after baseline inspection; not a new blind test.",
+  "selection_note": "Validation labels and predictions only. Test AP/P/R operating points are descriptive and cannot change this policy."
+}

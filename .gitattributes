@@ -1,0 +1,4 @@
+# Preserve original entrypoints and evidence bytes: provenance checks use SHA256.
+# Automatic Windows newline conversion would invalidate those bindings on checkout.
+* -text
+*.pdf binary

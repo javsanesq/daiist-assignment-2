@@ -1,0 +1,72 @@
+{
+  "dataset": "vinbigdata-v3",
+  "review_type": "Model visual inspection; not clinical adjudication or patient identification",
+  "scope": {
+    "cheap_scored_pairs": 323220,
+    "expensively_scored_pairs": 822,
+    "visually_reviewed_pairs": 20,
+    "full_resolution_additional_review_ranks": [
+      1
+    ]
+  },
+  "confirmed_copied_images_in_reviewed_pairs": 0,
+  "finding": "No copied image established in the 20 highest-ranked previews. The leading pair is unusually similar and remains unresolved as possibly related acquisitions. This does not verify patient independence.",
+  "leading_pair": {
+    "rank": 1,
+    "left": "train\\images\\8242cf16d8311b8af8c0280899d8ed4b_png.rf.7f360d5a1ae55d5f289b57665dc3efe3.jpg",
+    "right": "valid\\images\\b829a8ee3f5ba1d16bc28c47b3d70a34_png.rf.aeb63d645d00eb2787aec8c6983becf0.jpg",
+    "assessment": "Unresolved possible related acquisitions; copied same image not established. Visible diaphragm, gas pattern and positioning differences persist at full resolution. Do not infer shared patient identity from similarity.",
+    "orb_geometric_inliers": 249,
+    "orb_good_matches": 304,
+    "after_registration": {
+      "pair_rank": 1,
+      "after_homography_intensity_correlation": 0.9545694417319404,
+      "after_homography_detail_correlation": 0.6137549658210625,
+      "after_homography_masked_ssim": 0.8171311020851135,
+      "note": "Registration is diagnostic evidence only; it cannot establish a shared patient or duplicate acquisition."
+    }
+  },
+  "other_reviewed_pairs": {
+    "ranks": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "assessment": "Copied images not established. Visible differences in anatomy, position, clothing or accessories in the contact sheets. This is not evidence of different patient identities."
+  },
+  "limits": [
+    "Screened only the initial cross-split dHash candidates.",
+    "Only 822 pairs received expensive feature checks and only the top 20 received visual inspection.",
+    "Large transformations can evade cheap correlation or the initial dHash search.",
+    "Source IDs are image-instance IDs, not patient IDs; source-ID separation cannot prove patient separation.",
+    "No source images, labels, annotations or splits were changed."
+  ],
+  "artifacts": {
+    "all_cheap_scores": "all_pair_cheap_scores.csv",
+    "expensive_scores": "ranked_candidates.csv",
+    "previews": [
+      "C:\\Users\\Usuario\\Desktop\\DAIIST_Assignment_2_Windows_Handoff\\daiist-assignment-2\\evidence\\vinbigdata-v3\\strong_similarity_review\\top_pairs_01_04.jpg",
+      "C:\\Users\\Usuario\\Desktop\\DAIIST_Assignment_2_Windows_Handoff\\daiist-assignment-2\\evidence\\vinbigdata-v3\\strong_similarity_review\\top_pairs_05_08.jpg",
+      "C:\\Users\\Usuario\\Desktop\\DAIIST_Assignment_2_Windows_Handoff\\daiist-assignment-2\\evidence\\vinbigdata-v3\\strong_similarity_review\\top_pairs_09_12.jpg",
+      "C:\\Users\\Usuario\\Desktop\\DAIIST_Assignment_2_Windows_Handoff\\daiist-assignment-2\\evidence\\vinbigdata-v3\\strong_similarity_review\\top_pairs_13_16.jpg",
+      "C:\\Users\\Usuario\\Desktop\\DAIIST_Assignment_2_Windows_Handoff\\daiist-assignment-2\\evidence\\vinbigdata-v3\\strong_similarity_review\\top_pairs_17_20.jpg"
+    ],
+    "leading_full_resolution_pair": "top_pair_full_resolution.jpg"
+  }
+}

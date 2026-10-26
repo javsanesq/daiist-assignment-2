@@ -1,0 +1,2067 @@
+{
+  "schema_version": 1,
+  "split": "test",
+  "images": 1499,
+  "same_image_ids": true,
+  "semantic_mapping": {},
+  "frozen_policy_sha256": "0a9a929d2bcb80f51ba8490fd481df4156d0c4cbcdfba67f19153b3219cbb40d",
+  "target_taxonomy": [
+    "Aortic enlargement",
+    "Atelectasis",
+    "Calcification",
+    "Cardiomegaly",
+    "Consolidation",
+    "ILD",
+    "Infiltration",
+    "Lung Opacity",
+    "Nodule-Mass",
+    "Other lesion",
+    "Pleural effusion",
+    "Pleural thickening",
+    "Pneumothorax",
+    "Pulmonary fibrosis"
+  ],
+  "raw_coco_prediction_count": 76495,
+  "note": "The COCO baseline was genuinely run. Its empty clinical mapping and the predict-nothing baseline have identical target detections, but the COCO baseline incurs the hypothetical inference cost. Zero-shot COCO AP is not evaluated by overlapping numeric IDs.",
+  "models": {
+    "finetuned": {
+      "name": "Finetuned YOLO11n",
+      "native": {
+        "overall": {
+          "map50": 0.2004648622619678,
+          "map50_95": 0.08883195012295796,
+          "mean_precision_at_max_f1": 0.4079912208942303,
+          "mean_recall_at_max_f1": 0.222298125508844
+        },
+        "per_class": [
+          {
+            "class_id": 0,
+            "class_name": "Aortic enlargement",
+            "ap50": 0.8191963714905535,
+            "ap50_95": 0.4081362368502598,
+            "precision_at_max_f1": 0.5258582023433218,
+            "recall_at_max_f1": 0.9003322259136213,
+            "instances": 301,
+            "images": 301
+          },
+          {
+            "class_id": 1,
+            "class_name": "Atelectasis",
+            "ap50": 0.14246744975313275,
+            "ap50_95": 0.047397380991799964,
+            "precision_at_max_f1": 1.0,
+            "recall_at_max_f1": 0.0,
+            "instances": 20,
+            "images": 20
+          },
+          {
+            "class_id": 2,
+            "class_name": "Calcification",
+            "ap50": 0.11251977809704328,
+            "ap50_95": 0.03543492834594296,
+            "precision_at_max_f1": 0.3196145433837078,
+            "recall_at_max_f1": 0.11904761904761904,
+            "instances": 42,
+            "images": 42
+          },
+          {
+            "class_id": 3,
+            "class_name": "Cardiomegaly",
+            "ap50": 0.9054752654016829,
+            "ap50_95": 0.4890050613136812,
+            "precision_at_max_f1": 0.5712334905798013,
+            "recall_at_max_f1": 0.9311926605504587,
+            "instances": 218,
+            "images": 218
+          },
+          {
+            "class_id": 4,
+            "class_name": "Consolidation",
+            "ap50": 0.0969010582522481,
+            "ap50_95": 0.03488966899320159,
+            "precision_at_max_f1": 0.0,
+            "recall_at_max_f1": 0.0,
+            "instances": 48,
+            "images": 48
+          },
+          {
+            "class_id": 5,
+            "class_name": "ILD",
+            "ap50": 0.07481373888705864,
+            "ap50_95": 0.02045277477262249,
+            "precision_at_max_f1": 1.0,
+            "recall_at_max_f1": 0.0,
+            "instances": 40,
+            "images": 40
+          },
+          {
+            "class_id": 6,
+            "class_name": "Infiltration",
+            "ap50": 0.12281936940914039,
+            "ap50_95": 0.04216967616332407,
+            "precision_at_max_f1": 0.17889275007256356,
+            "recall_at_max_f1": 0.22165392705170803,
+            "instances": 58,
+            "images": 58
+          },
+          {
+            "class_id": 7,
+            "class_name": "Lung Opacity",
+            "ap50": 0.13264707462231187,
+            "ap50_95": 0.040075810450153224,
+            "precision_at_max_f1": 0.26164281121470906,
+            "recall_at_max_f1": 0.1897810218978102,
+            "instances": 137,
+            "images": 137
+          },
+          {
+            "class_id": 8,
+            "class_name": "Nodule-Mass",
+            "ap50": 0.17927862527196958,
+            "ap50_95": 0.055759816060838095,
+            "precision_at_max_f1": 0.29594501326884615,
+            "recall_at_max_f1": 0.24981401039448273,
+            "instances": 69,
+            "images": 69
+          },
+          {
+            "class_id": 9,
+            "class_name": "Other lesion",
+            "ap50": 0.021001517286902464,
+            "ap50_95": 0.005938424462873027,
+            "precision_at_max_f1": 0.1355837841575948,
+            "recall_at_max_f1": 0.01694915254237288,
+            "instances": 118,
+            "images": 118
+          },
+          {
+            "class_id": 10,
+            "class_name": "Pleural effusion",
+            "ap50": 0.12498501929222777,
+            "ap50_95": 0.044174614285577216,
+            "precision_at_max_f1": 0.12696584280090267,
+            "recall_at_max_f1": 0.31572270926603996,
+            "instances": 117,
+            "images": 117
+          },
+          {
+            "class_id": 11,
+            "class_name": "Pleural thickening",
+            "ap50": 0.03283819855628339,
+            "ap50_95": 0.009056491130845942,
+            "precision_at_max_f1": 0.2286157420534287,
+            "recall_at_max_f1": 0.02912621359223301,
+            "instances": 206,
+            "images": 206
+          },
+          {
+            "class_id": 12,
+            "class_name": "Pneumothorax",
+            "ap50": 0.0,
+            "ap50_95": 0.0,
+            "precision_at_max_f1": 1.0,
+            "recall_at_max_f1": 0.0,
+            "instances": 5,
+            "images": 5
+          },
+          {
+            "class_id": 13,
+            "class_name": "Pulmonary fibrosis",
+            "ap50": 0.04156460534699491,
+            "ap50_95": 0.01115641790029215,
+            "precision_at_max_f1": 0.06752491264434768,
+            "recall_at_max_f1": 0.13855421686746988,
+            "instances": 166,
+            "images": 166
+          }
+        ],
+        "maximum_f1_confidence": 0.07807807807807808,
+        "operating_point_note": "Native P/R use the split's maximum smoothed mean-F1 operating point at IoU 0.50. This is descriptive, not the validation-frozen image triage threshold. AP integrates the confidence ranking; reported recall is not a single sensitivity for clinical care.",
+        "inference": {
+          "conf": 0.001,
+          "iou": 0.7,
+          "max_det": 300,
+          "imgsz": 1024
+        },
+        "split": "test",
+        "save_dir": "C:\\Users\\Usuario\\Desktop\\DAIIST_Assignment_2_Windows_Handoff\\daiist-assignment-2\\runs\\yolo11_20261026T024637Z_a7af6c_test_native",
+        "annotation_note": "Published representative boxes, not exhaustive lesion annotations."
+      },
+      "fixed_at_binary_threshold": {
+        "level": "object",
+        "confidence_threshold": 0.04,
+        "iou_threshold": 0.5,
+        "threshold_rule": "confidence >= threshold; IoU >= threshold",
+        "matching": "Score-ordered greedy; stable cache order for ties; no reuse of a ground-truth box",
+        "images": 1499,
+        "images_with_no_ground_truth_boxes": 1075,
+        "images_with_no_retained_predictions": 967,
+        "ground_truth_instances": 1545,
+        "predicted_instances": 3294,
+        "per_class": [
+          {
+            "class_id": 0,
+            "class_name": "Aortic enlargement",
+            "true_positives": 279,
+            "false_positives": 405,
+            "false_negatives": 22,
+            "ground_truth_instances": 301,
+            "predicted_instances": 684,
+            "precision": 0.40789473684210525,
+            "recall": 0.9269102990033222
+          },
+          {
+            "class_id": 1,
+            "class_name": "Atelectasis",
+            "true_positives": 0,
+            "false_positives": 0,
+            "false_negatives": 20,
+            "ground_truth_instances": 20,
+            "predicted_instances": 0,
+            "precision": null,
+            "recall": 0.0
+          },
+          {
+            "class_id": 2,
+            "class_name": "Calcification",
+            "true_positives": 4,
+            "false_positives": 20,
+            "false_negatives": 38,
+            "ground_truth_instances": 42,
+            "predicted_instances": 24,
+            "precision": 0.16666666666666666,
+            "recall": 0.09523809523809523
+          },
+          {
+            "class_id": 3,
+            "class_name": "Cardiomegaly",
+            "true_positives": 207,
+            "false_positives": 219,
+            "false_negatives": 11,
+            "ground_truth_instances": 218,
+            "predicted_instances": 426,
+            "precision": 0.4859154929577465,
+            "recall": 0.9495412844036697
+          },
+          {
+            "class_id": 4,
+            "class_name": "Consolidation",
+            "true_positives": 0,
+            "false_positives": 0,
+            "false_negatives": 48,
+            "ground_truth_instances": 48,
+            "predicted_instances": 0,
+            "precision": null,
+            "recall": 0.0
+          },
+          {
+            "class_id": 5,
+            "class_name": "ILD",
+            "true_positives": 4,
+            "false_positives": 9,
+            "false_negatives": 36,
+            "ground_truth_instances": 40,
+            "predicted_instances": 13,
+            "precision": 0.3076923076923077,
+            "recall": 0.1
+          },
+          {
+            "class_id": 6,
+            "class_name": "Infiltration",
+            "true_positives": 14,
+            "false_positives": 80,
+            "false_negatives": 44,
+            "ground_truth_instances": 58,
+            "predicted_instances": 94,
+            "precision": 0.14893617021276595,
+            "recall": 0.2413793103448276
+          },
+          {
+            "class_id": 7,
+            "class_name": "Lung Opacity",
+            "true_positives": 34,
+            "false_positives": 160,
+            "false_negatives": 103,
+            "ground_truth_instances": 137,
+            "predicted_instances": 194,
+            "precision": 0.17525773195876287,
+            "recall": 0.24817518248175183
+          },
+          {
+            "class_id": 8,
+            "class_name": "Nodule-Mass",
+            "true_positives": 18,
+            "false_positives": 97,
+            "false_negatives": 51,
+            "ground_truth_instances": 69,
+            "predicted_instances": 115,
+            "precision": 0.1565217391304348,
+            "recall": 0.2608695652173913
+          },
+          {
+            "class_id": 9,
+            "class_name": "Other lesion",
+            "true_positives": 0,
+            "false_positives": 1,
+            "false_negatives": 118,
+            "ground_truth_instances": 118,
+            "predicted_instances": 1,
+            "precision": 0.0,
+            "recall": 0.0
+          },
+          {
+            "class_id": 10,
+            "class_name": "Pleural effusion",
+            "true_positives": 55,
+            "false_positives": 552,
+            "false_negatives": 62,
+            "ground_truth_instances": 117,
+            "predicted_instances": 607,
+            "precision": 0.09060955518945635,
+            "recall": 0.4700854700854701
+          },
+          {
+            "class_id": 11,
+            "class_name": "Pleural thickening",
+            "true_positives": 10,
+            "false_positives": 170,
+            "false_negatives": 196,
+            "ground_truth_instances": 206,
+            "predicted_instances": 180,
+            "precision": 0.05555555555555555,
+            "recall": 0.04854368932038835
+          },
+          {
+            "class_id": 12,
+            "class_name": "Pneumothorax",
+            "true_positives": 0,
+            "false_positives": 0,
+            "false_negatives": 5,
+            "ground_truth_instances": 5,
+            "predicted_instances": 0,
+            "precision": null,
+            "recall": 0.0
+          },
+          {
+            "class_id": 13,
+            "class_name": "Pulmonary fibrosis",
+            "true_positives": 42,
+            "false_positives": 914,
+            "false_negatives": 124,
+            "ground_truth_instances": 166,
+            "predicted_instances": 956,
+            "precision": 0.043933054393305436,
+            "recall": 0.25301204819277107
+          }
+        ],
+        "micro": {
+          "true_positives": 667,
+          "false_positives": 2627,
+          "false_negatives": 878,
+          "precision": 0.20248937462052216,
+          "recall": 0.43171521035598703
+        },
+        "confusion": {
+          "matrix": [
+            [
+              279,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              22
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1,
+              0,
+              0,
+              3,
+              3,
+              0,
+              4,
+              8
+            ],
+            [
+              3,
+              0,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              6,
+              0,
+              0,
+              0,
+              0,
+              3,
+              28
+            ],
+            [
+              1,
+              0,
+              0,
+              207,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              10
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              4,
+              9,
+              1,
+              0,
+              2,
+              0,
+              0,
+              6,
+              26
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              3,
+              4,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              31
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              5,
+              6,
+              0,
+              0,
+              0,
+              0,
+              0,
+              7,
+              39
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              7,
+              23,
+              2,
+              0,
+              5,
+              0,
+              0,
+              11,
+              89
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              2,
+              3,
+              15,
+              0,
+              1,
+              0,
+              0,
+              3,
+              44
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              2,
+              3,
+              0,
+              1,
+              0,
+              0,
+              8,
+              103
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1,
+              0,
+              0,
+              51,
+              0,
+              0,
+              0,
+              64
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              19,
+              9,
+              0,
+              6,
+              172
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              5
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              7,
+              4,
+              3,
+              0,
+              0,
+              0,
+              0,
+              36,
+              116
+            ],
+            [
+              400,
+              0,
+              22,
+              219,
+              0,
+              9,
+              62,
+              143,
+              85,
+              1,
+              525,
+              168,
+              0,
+              872,
+              0
+            ]
+          ],
+          "labels": [
+            "Aortic enlargement",
+            "Atelectasis",
+            "Calcification",
+            "Cardiomegaly",
+            "Consolidation",
+            "ILD",
+            "Infiltration",
+            "Lung Opacity",
+            "Nodule-Mass",
+            "Other lesion",
+            "Pleural effusion",
+            "Pleural thickening",
+            "Pneumothorax",
+            "Pulmonary fibrosis",
+            "background (unmatched)"
+          ],
+          "rows": "true",
+          "columns": "predicted",
+          "background_index": 14,
+          "matching": "Class-agnostic geometric matching, separately from class-aware precision/recall",
+          "true_negative_boxes": null
+        },
+        "metric_note": "Fixed-threshold counts, not AP and not native maximum-F1 precision/recall. Empty denominators are null."
+      },
+      "observed_image_level": {
+        "confusion": [
+          [
+            956,
+            119
+          ],
+          [
+            11,
+            413
+          ]
+        ],
+        "rows": [
+          "annotated_negative",
+          "annotated_positive"
+        ],
+        "columns": [
+          "routine",
+          "accelerated"
+        ],
+        "sensitivity": 0.9740566037735849,
+        "specificity": 0.8893023255813953,
+        "precision": 0.7763157894736842,
+        "threshold": 0.04,
+        "units": "Observed image counts; no assumed human decisions included"
+      },
+      "projected_model_only": {
+        "lower": 0.04,
+        "upper": 0.04,
+        "observed_actions": [
+          [
+            956,
+            0,
+            119
+          ],
+          [
+            11,
+            0,
+            413
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            800.3720930232558,
+            0.0,
+            99.62790697674419
+          ],
+          [
+            2.5943396226415096,
+            0.0,
+            97.4056603773585
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            800.3720930232558,
+            99.62790697674419
+          ],
+          [
+            2.5943396226415096,
+            97.4056603773585
+          ]
+        ],
+        "cost_per_1000": 3797.8674857393594,
+        "error_cost_per_1000": 3787.8674857393594,
+        "review_cost_per_1000": 0.0,
+        "inference_cost_per_1000": 10.0,
+        "false_negatives_per_1000": 2.5943396226415096,
+        "false_positives_per_1000": 99.62790697674419,
+        "review_fraction": 0.0,
+        "daily_reviews": 0.0,
+        "daily_review_hours": 0.0,
+        "reviewers_needed": 0,
+        "within_capacity": true,
+        "sensitivity": 0.9740566037735848,
+        "specificity": 0.8893023255813954
+      }
+    },
+    "coco_zero_shot": {
+      "name": "Pretrained COCO YOLO11n, explicit empty target mapping",
+      "native": {
+        "overall": {
+          "map50": 0.0,
+          "map50_95": 0.0
+        },
+        "per_class": [
+          {
+            "class_id": 0,
+            "class_name": "Aortic enlargement",
+            "ap50": 0.0,
+            "ap50_95": 0.0,
+            "precision_at_max_f1": null,
+            "recall_at_max_f1": 0.0,
+            "instances": 301
+          },
+          {
+            "class_id": 1,
+            "class_name": "Atelectasis",
+            "ap50": 0.0,
+            "ap50_95": 0.0,
+            "precision_at_max_f1": null,
+            "recall_at_max_f1": 0.0,
+            "instances": 20
+          },
+          {
+            "class_id": 2,
+            "class_name": "Calcification",
+            "ap50": 0.0,
+            "ap50_95": 0.0,
+            "precision_at_max_f1": null,
+            "recall_at_max_f1": 0.0,
+            "instances": 42
+          },
+          {
+            "class_id": 3,
+            "class_name": "Cardiomegaly",
+            "ap50": 0.0,
+            "ap50_95": 0.0,
+            "precision_at_max_f1": null,
+            "recall_at_max_f1": 0.0,
+            "instances": 218
+          },
+          {
+            "class_id": 4,
+            "class_name": "Consolidation",
+            "ap50": 0.0,
+            "ap50_95": 0.0,
+            "precision_at_max_f1": null,
+            "recall_at_max_f1": 0.0,
+            "instances": 48
+          },
+          {
+            "class_id": 5,
+            "class_name": "ILD",
+            "ap50": 0.0,
+            "ap50_95": 0.0,
+            "precision_at_max_f1": null,
+            "recall_at_max_f1": 0.0,
+            "instances": 40
+          },
+          {
+            "class_id": 6,
+            "class_name": "Infiltration",
+            "ap50": 0.0,
+            "ap50_95": 0.0,
+            "precision_at_max_f1": null,
+            "recall_at_max_f1": 0.0,
+            "instances": 58
+          },
+          {
+            "class_id": 7,
+            "class_name": "Lung Opacity",
+            "ap50": 0.0,
+            "ap50_95": 0.0,
+            "precision_at_max_f1": null,
+            "recall_at_max_f1": 0.0,
+            "instances": 137
+          },
+          {
+            "class_id": 8,
+            "class_name": "Nodule-Mass",
+            "ap50": 0.0,
+            "ap50_95": 0.0,
+            "precision_at_max_f1": null,
+            "recall_at_max_f1": 0.0,
+            "instances": 69
+          },
+          {
+            "class_id": 9,
+            "class_name": "Other lesion",
+            "ap50": 0.0,
+            "ap50_95": 0.0,
+            "precision_at_max_f1": null,
+            "recall_at_max_f1": 0.0,
+            "instances": 118
+          },
+          {
+            "class_id": 10,
+            "class_name": "Pleural effusion",
+            "ap50": 0.0,
+            "ap50_95": 0.0,
+            "precision_at_max_f1": null,
+            "recall_at_max_f1": 0.0,
+            "instances": 117
+          },
+          {
+            "class_id": 11,
+            "class_name": "Pleural thickening",
+            "ap50": 0.0,
+            "ap50_95": 0.0,
+            "precision_at_max_f1": null,
+            "recall_at_max_f1": 0.0,
+            "instances": 206
+          },
+          {
+            "class_id": 12,
+            "class_name": "Pneumothorax",
+            "ap50": 0.0,
+            "ap50_95": 0.0,
+            "precision_at_max_f1": null,
+            "recall_at_max_f1": 0.0,
+            "instances": 5
+          },
+          {
+            "class_id": 13,
+            "class_name": "Pulmonary fibrosis",
+            "ap50": 0.0,
+            "ap50_95": 0.0,
+            "precision_at_max_f1": null,
+            "recall_at_max_f1": 0.0,
+            "instances": 166
+          }
+        ],
+        "operating_point_note": "Analytical empty-target-output result, not a native numeric-ID evaluation. With no target predictions, AP and recall are zero for represented classes; precision is undefined. There is no maximum-F1 confidence to interpret."
+      },
+      "fixed_at_binary_threshold": {
+        "level": "object",
+        "confidence_threshold": 0.04,
+        "iou_threshold": 0.5,
+        "threshold_rule": "confidence >= threshold; IoU >= threshold",
+        "matching": "Score-ordered greedy; stable cache order for ties; no reuse of a ground-truth box",
+        "images": 1499,
+        "images_with_no_ground_truth_boxes": 1075,
+        "images_with_no_retained_predictions": 1499,
+        "ground_truth_instances": 1545,
+        "predicted_instances": 0,
+        "per_class": [
+          {
+            "class_id": 0,
+            "class_name": "Aortic enlargement",
+            "true_positives": 0,
+            "false_positives": 0,
+            "false_negatives": 301,
+            "ground_truth_instances": 301,
+            "predicted_instances": 0,
+            "precision": null,
+            "recall": 0.0
+          },
+          {
+            "class_id": 1,
+            "class_name": "Atelectasis",
+            "true_positives": 0,
+            "false_positives": 0,
+            "false_negatives": 20,
+            "ground_truth_instances": 20,
+            "predicted_instances": 0,
+            "precision": null,
+            "recall": 0.0
+          },
+          {
+            "class_id": 2,
+            "class_name": "Calcification",
+            "true_positives": 0,
+            "false_positives": 0,
+            "false_negatives": 42,
+            "ground_truth_instances": 42,
+            "predicted_instances": 0,
+            "precision": null,
+            "recall": 0.0
+          },
+          {
+            "class_id": 3,
+            "class_name": "Cardiomegaly",
+            "true_positives": 0,
+            "false_positives": 0,
+            "false_negatives": 218,
+            "ground_truth_instances": 218,
+            "predicted_instances": 0,
+            "precision": null,
+            "recall": 0.0
+          },
+          {
+            "class_id": 4,
+            "class_name": "Consolidation",
+            "true_positives": 0,
+            "false_positives": 0,
+            "false_negatives": 48,
+            "ground_truth_instances": 48,
+            "predicted_instances": 0,
+            "precision": null,
+            "recall": 0.0
+          },
+          {
+            "class_id": 5,
+            "class_name": "ILD",
+            "true_positives": 0,
+            "false_positives": 0,
+            "false_negatives": 40,
+            "ground_truth_instances": 40,
+            "predicted_instances": 0,
+            "precision": null,
+            "recall": 0.0
+          },
+          {
+            "class_id": 6,
+            "class_name": "Infiltration",
+            "true_positives": 0,
+            "false_positives": 0,
+            "false_negatives": 58,
+            "ground_truth_instances": 58,
+            "predicted_instances": 0,
+            "precision": null,
+            "recall": 0.0
+          },
+          {
+            "class_id": 7,
+            "class_name": "Lung Opacity",
+            "true_positives": 0,
+            "false_positives": 0,
+            "false_negatives": 137,
+            "ground_truth_instances": 137,
+            "predicted_instances": 0,
+            "precision": null,
+            "recall": 0.0
+          },
+          {
+            "class_id": 8,
+            "class_name": "Nodule-Mass",
+            "true_positives": 0,
+            "false_positives": 0,
+            "false_negatives": 69,
+            "ground_truth_instances": 69,
+            "predicted_instances": 0,
+            "precision": null,
+            "recall": 0.0
+          },
+          {
+            "class_id": 9,
+            "class_name": "Other lesion",
+            "true_positives": 0,
+            "false_positives": 0,
+            "false_negatives": 118,
+            "ground_truth_instances": 118,
+            "predicted_instances": 0,
+            "precision": null,
+            "recall": 0.0
+          },
+          {
+            "class_id": 10,
+            "class_name": "Pleural effusion",
+            "true_positives": 0,
+            "false_positives": 0,
+            "false_negatives": 117,
+            "ground_truth_instances": 117,
+            "predicted_instances": 0,
+            "precision": null,
+            "recall": 0.0
+          },
+          {
+            "class_id": 11,
+            "class_name": "Pleural thickening",
+            "true_positives": 0,
+            "false_positives": 0,
+            "false_negatives": 206,
+            "ground_truth_instances": 206,
+            "predicted_instances": 0,
+            "precision": null,
+            "recall": 0.0
+          },
+          {
+            "class_id": 12,
+            "class_name": "Pneumothorax",
+            "true_positives": 0,
+            "false_positives": 0,
+            "false_negatives": 5,
+            "ground_truth_instances": 5,
+            "predicted_instances": 0,
+            "precision": null,
+            "recall": 0.0
+          },
+          {
+            "class_id": 13,
+            "class_name": "Pulmonary fibrosis",
+            "true_positives": 0,
+            "false_positives": 0,
+            "false_negatives": 166,
+            "ground_truth_instances": 166,
+            "predicted_instances": 0,
+            "precision": null,
+            "recall": 0.0
+          }
+        ],
+        "micro": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 1545,
+          "precision": null,
+          "recall": 0.0
+        },
+        "confusion": {
+          "matrix": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              301
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              20
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              42
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              218
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              48
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              40
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              58
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              137
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              69
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              118
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              117
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              206
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              5
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              166
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "labels": [
+            "Aortic enlargement",
+            "Atelectasis",
+            "Calcification",
+            "Cardiomegaly",
+            "Consolidation",
+            "ILD",
+            "Infiltration",
+            "Lung Opacity",
+            "Nodule-Mass",
+            "Other lesion",
+            "Pleural effusion",
+            "Pleural thickening",
+            "Pneumothorax",
+            "Pulmonary fibrosis",
+            "background (unmatched)"
+          ],
+          "rows": "true",
+          "columns": "predicted",
+          "background_index": 14,
+          "matching": "Class-agnostic geometric matching, separately from class-aware precision/recall",
+          "true_negative_boxes": null
+        },
+        "metric_note": "Fixed-threshold counts, not AP and not native maximum-F1 precision/recall. Empty denominators are null."
+      },
+      "observed_image_level": {
+        "confusion": [
+          [
+            1075,
+            0
+          ],
+          [
+            424,
+            0
+          ]
+        ],
+        "rows": [
+          "annotated_negative",
+          "annotated_positive"
+        ],
+        "columns": [
+          "routine",
+          "accelerated"
+        ],
+        "sensitivity": 0.0,
+        "specificity": 1.0,
+        "precision": null,
+        "threshold": 1.001,
+        "units": "Observed image counts; no assumed human decisions included"
+      },
+      "projected_no_target_output": {
+        "lower": 1.001,
+        "upper": 1.001,
+        "observed_actions": [
+          [
+            1075,
+            0,
+            0
+          ],
+          [
+            424,
+            0,
+            0
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            900.0,
+            0.0,
+            0.0
+          ],
+          [
+            100.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            900.0,
+            0.0
+          ],
+          [
+            100.0,
+            0.0
+          ]
+        ],
+        "cost_per_1000": 50010.0,
+        "error_cost_per_1000": 50000.0,
+        "review_cost_per_1000": 0.0,
+        "inference_cost_per_1000": 10.0,
+        "false_negatives_per_1000": 100.0,
+        "false_positives_per_1000": 0.0,
+        "review_fraction": 0.0,
+        "daily_reviews": 0.0,
+        "daily_review_hours": 0.0,
+        "reviewers_needed": 0,
+        "within_capacity": true,
+        "sensitivity": 0.0,
+        "specificity": 1.0
+      }
+    },
+    "predict_nothing": {
+      "name": "Predict nothing / routine queue for all",
+      "native": {
+        "overall": {
+          "map50": 0.0,
+          "map50_95": 0.0
+        },
+        "per_class": [
+          {
+            "class_id": 0,
+            "class_name": "Aortic enlargement",
+            "ap50": 0.0,
+            "ap50_95": 0.0,
+            "precision_at_max_f1": null,
+            "recall_at_max_f1": 0.0,
+            "instances": 301
+          },
+          {
+            "class_id": 1,
+            "class_name": "Atelectasis",
+            "ap50": 0.0,
+            "ap50_95": 0.0,
+            "precision_at_max_f1": null,
+            "recall_at_max_f1": 0.0,
+            "instances": 20
+          },
+          {
+            "class_id": 2,
+            "class_name": "Calcification",
+            "ap50": 0.0,
+            "ap50_95": 0.0,
+            "precision_at_max_f1": null,
+            "recall_at_max_f1": 0.0,
+            "instances": 42
+          },
+          {
+            "class_id": 3,
+            "class_name": "Cardiomegaly",
+            "ap50": 0.0,
+            "ap50_95": 0.0,
+            "precision_at_max_f1": null,
+            "recall_at_max_f1": 0.0,
+            "instances": 218
+          },
+          {
+            "class_id": 4,
+            "class_name": "Consolidation",
+            "ap50": 0.0,
+            "ap50_95": 0.0,
+            "precision_at_max_f1": null,
+            "recall_at_max_f1": 0.0,
+            "instances": 48
+          },
+          {
+            "class_id": 5,
+            "class_name": "ILD",
+            "ap50": 0.0,
+            "ap50_95": 0.0,
+            "precision_at_max_f1": null,
+            "recall_at_max_f1": 0.0,
+            "instances": 40
+          },
+          {
+            "class_id": 6,
+            "class_name": "Infiltration",
+            "ap50": 0.0,
+            "ap50_95": 0.0,
+            "precision_at_max_f1": null,
+            "recall_at_max_f1": 0.0,
+            "instances": 58
+          },
+          {
+            "class_id": 7,
+            "class_name": "Lung Opacity",
+            "ap50": 0.0,
+            "ap50_95": 0.0,
+            "precision_at_max_f1": null,
+            "recall_at_max_f1": 0.0,
+            "instances": 137
+          },
+          {
+            "class_id": 8,
+            "class_name": "Nodule-Mass",
+            "ap50": 0.0,
+            "ap50_95": 0.0,
+            "precision_at_max_f1": null,
+            "recall_at_max_f1": 0.0,
+            "instances": 69
+          },
+          {
+            "class_id": 9,
+            "class_name": "Other lesion",
+            "ap50": 0.0,
+            "ap50_95": 0.0,
+            "precision_at_max_f1": null,
+            "recall_at_max_f1": 0.0,
+            "instances": 118
+          },
+          {
+            "class_id": 10,
+            "class_name": "Pleural effusion",
+            "ap50": 0.0,
+            "ap50_95": 0.0,
+            "precision_at_max_f1": null,
+            "recall_at_max_f1": 0.0,
+            "instances": 117
+          },
+          {
+            "class_id": 11,
+            "class_name": "Pleural thickening",
+            "ap50": 0.0,
+            "ap50_95": 0.0,
+            "precision_at_max_f1": null,
+            "recall_at_max_f1": 0.0,
+            "instances": 206
+          },
+          {
+            "class_id": 12,
+            "class_name": "Pneumothorax",
+            "ap50": 0.0,
+            "ap50_95": 0.0,
+            "precision_at_max_f1": null,
+            "recall_at_max_f1": 0.0,
+            "instances": 5
+          },
+          {
+            "class_id": 13,
+            "class_name": "Pulmonary fibrosis",
+            "ap50": 0.0,
+            "ap50_95": 0.0,
+            "precision_at_max_f1": null,
+            "recall_at_max_f1": 0.0,
+            "instances": 166
+          }
+        ],
+        "operating_point_note": "Analytical empty-target-output result, not a native numeric-ID evaluation. With no target predictions, AP and recall are zero for represented classes; precision is undefined. There is no maximum-F1 confidence to interpret."
+      },
+      "fixed_at_binary_threshold": {
+        "level": "object",
+        "confidence_threshold": 0.04,
+        "iou_threshold": 0.5,
+        "threshold_rule": "confidence >= threshold; IoU >= threshold",
+        "matching": "Score-ordered greedy; stable cache order for ties; no reuse of a ground-truth box",
+        "images": 1499,
+        "images_with_no_ground_truth_boxes": 1075,
+        "images_with_no_retained_predictions": 1499,
+        "ground_truth_instances": 1545,
+        "predicted_instances": 0,
+        "per_class": [
+          {
+            "class_id": 0,
+            "class_name": "Aortic enlargement",
+            "true_positives": 0,
+            "false_positives": 0,
+            "false_negatives": 301,
+            "ground_truth_instances": 301,
+            "predicted_instances": 0,
+            "precision": null,
+            "recall": 0.0
+          },
+          {
+            "class_id": 1,
+            "class_name": "Atelectasis",
+            "true_positives": 0,
+            "false_positives": 0,
+            "false_negatives": 20,
+            "ground_truth_instances": 20,
+            "predicted_instances": 0,
+            "precision": null,
+            "recall": 0.0
+          },
+          {
+            "class_id": 2,
+            "class_name": "Calcification",
+            "true_positives": 0,
+            "false_positives": 0,
+            "false_negatives": 42,
+            "ground_truth_instances": 42,
+            "predicted_instances": 0,
+            "precision": null,
+            "recall": 0.0
+          },
+          {
+            "class_id": 3,
+            "class_name": "Cardiomegaly",
+            "true_positives": 0,
+            "false_positives": 0,
+            "false_negatives": 218,
+            "ground_truth_instances": 218,
+            "predicted_instances": 0,
+            "precision": null,
+            "recall": 0.0
+          },
+          {
+            "class_id": 4,
+            "class_name": "Consolidation",
+            "true_positives": 0,
+            "false_positives": 0,
+            "false_negatives": 48,
+            "ground_truth_instances": 48,
+            "predicted_instances": 0,
+            "precision": null,
+            "recall": 0.0
+          },
+          {
+            "class_id": 5,
+            "class_name": "ILD",
+            "true_positives": 0,
+            "false_positives": 0,
+            "false_negatives": 40,
+            "ground_truth_instances": 40,
+            "predicted_instances": 0,
+            "precision": null,
+            "recall": 0.0
+          },
+          {
+            "class_id": 6,
+            "class_name": "Infiltration",
+            "true_positives": 0,
+            "false_positives": 0,
+            "false_negatives": 58,
+            "ground_truth_instances": 58,
+            "predicted_instances": 0,
+            "precision": null,
+            "recall": 0.0
+          },
+          {
+            "class_id": 7,
+            "class_name": "Lung Opacity",
+            "true_positives": 0,
+            "false_positives": 0,
+            "false_negatives": 137,
+            "ground_truth_instances": 137,
+            "predicted_instances": 0,
+            "precision": null,
+            "recall": 0.0
+          },
+          {
+            "class_id": 8,
+            "class_name": "Nodule-Mass",
+            "true_positives": 0,
+            "false_positives": 0,
+            "false_negatives": 69,
+            "ground_truth_instances": 69,
+            "predicted_instances": 0,
+            "precision": null,
+            "recall": 0.0
+          },
+          {
+            "class_id": 9,
+            "class_name": "Other lesion",
+            "true_positives": 0,
+            "false_positives": 0,
+            "false_negatives": 118,
+            "ground_truth_instances": 118,
+            "predicted_instances": 0,
+            "precision": null,
+            "recall": 0.0
+          },
+          {
+            "class_id": 10,
+            "class_name": "Pleural effusion",
+            "true_positives": 0,
+            "false_positives": 0,
+            "false_negatives": 117,
+            "ground_truth_instances": 117,
+            "predicted_instances": 0,
+            "precision": null,
+            "recall": 0.0
+          },
+          {
+            "class_id": 11,
+            "class_name": "Pleural thickening",
+            "true_positives": 0,
+            "false_positives": 0,
+            "false_negatives": 206,
+            "ground_truth_instances": 206,
+            "predicted_instances": 0,
+            "precision": null,
+            "recall": 0.0
+          },
+          {
+            "class_id": 12,
+            "class_name": "Pneumothorax",
+            "true_positives": 0,
+            "false_positives": 0,
+            "false_negatives": 5,
+            "ground_truth_instances": 5,
+            "predicted_instances": 0,
+            "precision": null,
+            "recall": 0.0
+          },
+          {
+            "class_id": 13,
+            "class_name": "Pulmonary fibrosis",
+            "true_positives": 0,
+            "false_positives": 0,
+            "false_negatives": 166,
+            "ground_truth_instances": 166,
+            "predicted_instances": 0,
+            "precision": null,
+            "recall": 0.0
+          }
+        ],
+        "micro": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 1545,
+          "precision": null,
+          "recall": 0.0
+        },
+        "confusion": {
+          "matrix": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              301
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              20
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              42
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              218
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              48
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              40
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              58
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              137
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              69
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              118
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              117
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              206
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              5
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              166
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "labels": [
+            "Aortic enlargement",
+            "Atelectasis",
+            "Calcification",
+            "Cardiomegaly",
+            "Consolidation",
+            "ILD",
+            "Infiltration",
+            "Lung Opacity",
+            "Nodule-Mass",
+            "Other lesion",
+            "Pleural effusion",
+            "Pleural thickening",
+            "Pneumothorax",
+            "Pulmonary fibrosis",
+            "background (unmatched)"
+          ],
+          "rows": "true",
+          "columns": "predicted",
+          "background_index": 14,
+          "matching": "Class-agnostic geometric matching, separately from class-aware precision/recall",
+          "true_negative_boxes": null
+        },
+        "metric_note": "Fixed-threshold counts, not AP and not native maximum-F1 precision/recall. Empty denominators are null."
+      },
+      "observed_image_level": {
+        "confusion": [
+          [
+            1075,
+            0
+          ],
+          [
+            424,
+            0
+          ]
+        ],
+        "rows": [
+          "annotated_negative",
+          "annotated_positive"
+        ],
+        "columns": [
+          "routine",
+          "accelerated"
+        ],
+        "sensitivity": 0.0,
+        "specificity": 1.0,
+        "precision": null,
+        "threshold": 1.001,
+        "units": "Observed image counts; no assumed human decisions included"
+      },
+      "projected_no_target_output": {
+        "lower": 1.001,
+        "upper": 1.001,
+        "observed_actions": [
+          [
+            1075,
+            0,
+            0
+          ],
+          [
+            424,
+            0,
+            0
+          ]
+        ],
+        "expected_actions_per_1000": [
+          [
+            900.0,
+            0.0,
+            0.0
+          ],
+          [
+            100.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "expected_resolved_confusion_per_1000": [
+          [
+            900.0,
+            0.0
+          ],
+          [
+            100.0,
+            0.0
+          ]
+        ],
+        "cost_per_1000": 50000.0,
+        "error_cost_per_1000": 50000.0,
+        "review_cost_per_1000": 0.0,
+        "inference_cost_per_1000": 0.0,
+        "false_negatives_per_1000": 100.0,
+        "false_positives_per_1000": 0.0,
+        "review_fraction": 0.0,
+        "daily_reviews": 0.0,
+        "daily_review_hours": 0.0,
+        "reviewers_needed": 0,
+        "within_capacity": true,
+        "sensitivity": 0.0,
+        "specificity": 1.0
+      }
+    }
+  }
+}

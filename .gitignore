@@ -14,3 +14,29 @@ runs/
 
 # Never commit your API key
 .env
+
+# Local Ultralytics preferences and downloaded starting checkpoints
+.ultralytics/
+Ultralytics/
+pretrained/
+weights/yolo26n.pt
+
+# Recoverable local reruns and temporary PDF render previews
+history/
+tmp/
+
+# Local candidate runs and shared-data junctions; curated study summaries go in results/.
+experiments/
+
+# Private account-control evidence is local task context, not assignment material.
+evidence/dashboard_redesign_audit/assistant_reset_enabled.png
+evidence/model_improvement_authorisation.json
+
+# Active local dashboard server logs
+evidence/dashboard_server.log
+evidence/dashboard_server_error.log
+
+# Downloaded demonstration images and private report-writing responses
+assets/demo/
+assets/download_check/
+evidence/report_author_responses.json

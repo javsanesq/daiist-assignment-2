@@ -1,0 +1,7 @@
+{
+  "pair_rank": 1,
+  "after_homography_intensity_correlation": 0.9545694417319404,
+  "after_homography_detail_correlation": 0.6137549658210625,
+  "after_homography_masked_ssim": 0.8171311020851135,
+  "note": "Registration is diagnostic evidence only; it cannot establish a shared patient or duplicate acquisition."
+}

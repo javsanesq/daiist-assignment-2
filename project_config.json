@@ -1,0 +1,99 @@
+{
+  "schema_version": 1,
+  "project_title": "Chest X-ray Review Priority: An Educational Cost-Based Triage Study",
+  "dataset": {
+    "approved": true,
+    "workspace": "vinbigdataxrayproject",
+    "project": "chest-xray-symptom-detection",
+    "version": 3,
+    "root": "datasets/vinbigdata-v3",
+    "format": "yolov8",
+    "class_names": [
+      "Aortic enlargement",
+      "Atelectasis",
+      "Calcification",
+      "Cardiomegaly",
+      "Consolidation",
+      "ILD",
+      "Infiltration",
+      "Lung Opacity",
+      "Nodule-Mass",
+      "Other lesion",
+      "Pleural effusion",
+      "Pleural thickening",
+      "Pneumothorax",
+      "Pulmonary fibrosis"
+    ],
+    "positive_class_ids": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "audit_path": "evidence/vinbigdata-v3/audit.json",
+    "manifest_path": "evidence/vinbigdata-v3/image_manifest.csv",
+    "accepted_limitations": [
+      "One representative source-reader box per present class; additional same-class regions may be unannotated. Localization metrics are not exhaustive lesion-detection metrics.",
+      "Source IDs identify images, not verified patients; patient independence is unproven.",
+      "Advanced similarity review established no copied image among the reviewed top 20 pairs, but one highly similar train/validation pair remains unresolved as possibly related acquisitions.",
+      "Source CSV is corroborated through a public mirror, not an authenticated official download.",
+      "No finding denotes absence of the 14 listed categories, not general health or clinical clearance."
+    ],
+    "decision_by": "Javier",
+    "decision_at_utc": "2026-10-26T00:59:32.831113+00:00",
+    "user_decision": "Choose chest X-rays for image-level priority triage; explicitly retain those limitations"
+  },
+  "framing": {
+    "operator": "Hypothetical hospital radiology image-review team",
+    "unit": "one chest X-ray image, not a verified patient or complete examination",
+    "positive": "At least one of the 14 listed findings is annotated",
+    "negative": "None of the 14 listed findings is annotated; source labels explicitly say No finding",
+    "routine": "Routine clinical image-review queue",
+    "review": "Extra human priority check",
+    "accelerated": "Accelerated clinical image review",
+    "all_cases_clinically_assessed": true,
+    "urgency_labels_observed": false,
+    "clinical_deployment_claim": false
+  },
+  "training": {
+    "model": "pretrained/yolo11n.pt",
+    "epochs": 100,
+    "patience": 20,
+    "imgsz": 1024,
+    "batch": 16,
+    "workers": 4,
+    "seed": 42,
+    "device": 0,
+    "deterministic": true,
+    "optimizer": "AdamW",
+    "lr0": 0.0005,
+    "warmup_bias_lr": 0.0,
+    "momentum": 0.9,
+    "nbs": 64
+  },
+  "inference": {
+    "conf": 0.001,
+    "iou": 0.7,
+    "max_det": 300,
+    "imgsz": 1024
+  },
+  "scenario_path": "scenario.json",
+  "coco_semantic_mapping": {},
+  "submission_authorised": false,
+  "model_study": {
+    "candidate_id": "n1024_resolution",
+    "selection_split": "val",
+    "previous_test_already_exposed": true,
+    "test_inference_authorised": false
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "status": "complete",
+  "started_at_utc": "2026-10-26T08:59:27.716998+00:00",
+  "frozen_policy_sha256": "0a9a929d2bcb80f51ba8490fd481df4156d0c4cbcdfba67f19153b3219cbb40d",
+  "weights_sha256": "b01a44d932c0dfde35e00b2dccb25eb512b95d23e557183f3413831973cbe778",
+  "manifest_sha256": "13c2bcbdf29a04c8be1568b07dba737846f64262ab434cf0b067ec0ce38fdc43",
+  "config_sha256": "f4a02773eb761bd6877debd57db6f8ee35dcac8a87c25e4609e20aa11eda84a1",
+  "environment": {
+    "status": "passed",
+    "python": "3.12.15",
+    "os": "Windows-11-10.0.26200-SP0",
+    "torch": "2.11.0+cu128",
+    "torchvision": "0.26.0+cu128",
+    "cuda_runtime": "12.8",
+    "gpu": "NVIDIA GeForce RTX 5080",
+    "capability": [
+      12,
+      0
+    ],
+    "vram_gib": 15.92,
+    "checks": [
+      "CUDA matrix multiplication",
+      "CUDA torchvision NMS",
+      "CUDA convolution"
+    ],
+    "training_performed": false
+  },
+  "test_policy_optimization": false,
+  "test_previously_exposed": true,
+  "evaluation_scope": "Reused test partition after baseline inspection; not a new blind test.",
+  "finished_at_utc": "2026-10-26T09:00:13.202810+00:00",
+  "artifact_sha256": {
+    "test_predictions.json": "7ca77924fa995c19199d231b8965081bc32d9b0e344a859271d7ddb989d40026",
+    "test_metrics.json": "88ab502518ea7849f58f7ffd6291f10798c85410819990c4fc957b8fbb7e18b7",
+    "validation_metrics.json": "73133d2f1f07c5e266795631095efd77794b8e07687aee3b5166630116e1687c",
+    "coco_predictions_raw.json": "b80b0810f60dfd934b600d92bfa9f5187de1e05d3decb4c0badd2412a6366379",
+    "coco_predictions_target.json": "ef8996ded7485584f13a3e57941e41791bd50195b23204f0b856d25ffbec8950",
+    "predict_nothing_predictions.json": "75568e6956ba0ee1a3fa7fac351d20f633fdfb948638f1bc0a5315ffa22ea8b0",
+    "model_baselines.json": "10a380fcb947465317f0db1f4e2d62a4c171043100c04da5f24eb57c1b81da97",
+    "operational_comparison.json": "4dda7959ac4b36bf4de0ec5c9df7eec356b35376422b4f6ff41c419eb7982a2e",
+    "sensitivity_analysis.json": "3e1a2c907b74a8751fbc161033d8f05717792a3289d21f7a6b83b99f26a7259c",
+    "training_summary.json": "785c865037d69faae41e9c446e6d15a840f7e60f6d0d3b393c3c258c59ed48db"
+  }
+}

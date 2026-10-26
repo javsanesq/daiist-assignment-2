@@ -1,0 +1,805 @@
+{
+  "candidate_count": 822,
+  "unique_images_processed": 1093,
+  "image_modality": "chest-x-ray",
+  "input_csv": "C:\\Users\\Usuario\\Desktop\\DAIIST_Assignment_2_Windows_Handoff\\daiist-assignment-2\\evidence\\vinbigdata-v3\\strong_similarity_review\\expensive_shortlist.csv",
+  "dataset_root": "C:\\Users\\Usuario\\Desktop\\DAIIST_Assignment_2_Windows_Handoff\\daiist-assignment-2\\datasets\\vinbigdata-v3",
+  "method": "256 px green channel; non-black interior mask (>12 intensity) eroded 21 px; local SSIM; CLAHE high-pass correlation; ORB 0.75 ratio + reciprocal match; homography RANSAC 3 px",
+  "ranking": "ORB inliers * inlier fraction + 10 * max(0, detail correlation)",
+  "limits": [
+    "Ranking is not duplicate proof and does not identify patients.",
+    "Only input dHash candidates were compared; other repeated views could be missed.",
+    "No images, labels or splits were changed.",
+    "Black-padding/field edges are reduced by the eroded interior mask, but shared anatomy can still cause false matches."
+  ],
+  "top_pairs": [
+    {
+      "left": "train\\images\\8242cf16d8311b8af8c0280899d8ed4b_png.rf.7f360d5a1ae55d5f289b57665dc3efe3.jpg",
+      "right": "valid\\images\\b829a8ee3f5ba1d16bc28c47b3d70a34_png.rf.aeb63d645d00eb2787aec8c6983becf0.jpg",
+      "left_split": "train",
+      "right_split": "valid",
+      "left_class": "multi-label",
+      "right_class": "multi-label",
+      "hamming_distance": 1,
+      "intensity_correlation_64": "0.9574962854385376",
+      "detail_correlation_64": "0.7275342345237732",
+      "cheap_ranking_score": "0.796522855758667",
+      "selected_for_expensive_check": "True",
+      "interior_pixels": 42572,
+      "grayscale_correlation": 0.9497490628294697,
+      "detail_correlation": 0.5040436612302949,
+      "masked_local_ssim": 0.7501010894775391,
+      "orb_good_matches": 304,
+      "orb_geometric_inliers": 249,
+      "orb_inlier_fraction": 0.819078947368421,
+      "orb_median_reprojection_px_at_256": 1.0943703651428223,
+      "ranking_score": 208.99109450703978,
+      "homography_256": [
+        [
+          0.947051086918835,
+          0.042329891772790736,
+          0.27273408656902554
+        ],
+        [
+          -0.040629825819461216,
+          0.9760312131440654,
+          5.1813028091480335
+        ],
+        [
+          -0.00016650979995959717,
+          -3.6207471920462497e-06,
+          0.9999999999999999
+        ]
+      ]
+    },
+    {
+      "left": "train\\images\\24d7d977707ea866b54a44228ff1cacf_png.rf.fba6506abf047ba597219c36e52a8d3e.jpg",
+      "right": "valid\\images\\8fb4566125cd72a102b6971c6c35ac67_png.rf.0d7b27f2f57f7bf21c231ce7196876a9.jpg",
+      "left_split": "train",
+      "right_split": "valid",
+      "left_class": "multi-label",
+      "right_class": "multi-label",
+      "hamming_distance": 0,
+      "intensity_correlation_64": "0.9384278059005737",
+      "detail_correlation_64": "0.528753399848938",
+      "cheap_ranking_score": "0.6516557335853577",
+      "selected_for_expensive_check": "True",
+      "interior_pixels": 36808,
+      "grayscale_correlation": 0.9227258951845387,
+      "detail_correlation": 0.43857521284132156,
+      "masked_local_ssim": 0.7533082365989685,
+      "orb_good_matches": 125,
+      "orb_geometric_inliers": 79,
+      "orb_inlier_fraction": 0.632,
+      "orb_median_reprojection_px_at_256": 1.2413376569747925,
+      "ranking_score": 54.31375212841321,
+      "homography_256": [
+        [
+          1.1594901413387637,
+          0.07756561949281394,
+          -12.291110716835753
+        ],
+        [
+          0.0263205003425093,
+          1.1764977560465333,
+          -7.7633328210422965
+        ],
+        [
+          0.0004699012012144469,
+          0.0006174286052290121,
+          1.0
+        ]
+      ]
+    },
+    {
+      "left": "train\\images\\25c3e8d473ae41bff1a294abfa850615_png.rf.d283b7a449a15f74f0c8c8c43eb06f19.jpg",
+      "right": "valid\\images\\0b805259394307f01adc87b57b704602_png.rf.0d7def2a80d111029b48e3e86bdff60d.jpg",
+      "left_split": "train",
+      "right_split": "valid",
+      "left_class": "multi-label",
+      "right_class": "multi-label",
+      "hamming_distance": 1,
+      "intensity_correlation_64": "0.9274884462356567",
+      "detail_correlation_64": "0.5612542629241943",
+      "cheap_ranking_score": "0.6711245179176331",
+      "selected_for_expensive_check": "True",
+      "interior_pixels": 39558,
+      "grayscale_correlation": 0.9215249988820868,
+      "detail_correlation": 0.42986558956554916,
+      "masked_local_ssim": 0.7396149635314941,
+      "orb_good_matches": 108,
+      "orb_geometric_inliers": 65,
+      "orb_inlier_fraction": 0.6018518518518519,
+      "orb_median_reprojection_px_at_256": 1.4470100402832031,
+      "ranking_score": 43.41902626602587,
+      "homography_256": [
+        [
+          0.8521925913062376,
+          -0.03841125282840813,
+          10.830958288663982
+        ],
+        [
+          -0.03451685649083718,
+          0.918665406118018,
+          3.452804990267203
+        ],
+        [
+          -0.00044877512996806165,
+          -0.0002625914676052886,
+          1.0
+        ]
+      ]
+    },
+    {
+      "left": "train\\images\\c2c3e9e459681d13dc94b916a3689de4_png.rf.80f0bb35c463e03799bfefd4abef8263.jpg",
+      "right": "valid\\images\\e15a995ca75b644370fbb4b60809783d_png.rf.8e25aa765b248954b67365cd60a36aeb.jpg",
+      "left_split": "train",
+      "right_split": "valid",
+      "left_class": "multi-label",
+      "right_class": "multi-label",
+      "hamming_distance": 3,
+      "intensity_correlation_64": "0.9241937398910522",
+      "detail_correlation_64": "0.5058770179748535",
+      "cheap_ranking_score": "0.6313720345497131",
+      "selected_for_expensive_check": "True",
+      "interior_pixels": 43831,
+      "grayscale_correlation": 0.8942441826315431,
+      "detail_correlation": 0.2934387114232387,
+      "masked_local_ssim": 0.5757715106010437,
+      "orb_good_matches": 102,
+      "orb_geometric_inliers": 63,
+      "orb_inlier_fraction": 0.6176470588235294,
+      "orb_median_reprojection_px_at_256": 1.8693366050720215,
+      "ranking_score": 41.84615182011474,
+      "homography_256": [
+        [
+          0.9458218030110213,
+          -0.06358831381184778,
+          7.539943715934203
+        ],
+        [
+          -0.002255512317843018,
+          0.8827603680198199,
+          4.483023069587353
+        ],
+        [
+          -0.00021314323771691237,
+          -0.00038777594570496923,
+          1.0
+        ]
+      ]
+    },
+    {
+      "left": "train\\images\\3378210c38d195ff5a7e3b612cded052_png.rf.c73630ad9fd1465cb6478393bee97e3b.jpg",
+      "right": "test\\images\\11cc75f11d95fb1ca9bfff79b119a47e_png.rf.b635b75552a5b5b16a3de3ba06e14ba9.jpg",
+      "left_split": "train",
+      "right_split": "test",
+      "left_class": "multi-label",
+      "right_class": "multi-label",
+      "hamming_distance": 2,
+      "intensity_correlation_64": "0.9005013704299927",
+      "detail_correlation_64": "0.5930278301239014",
+      "cheap_ranking_score": "0.6852698922157288",
+      "selected_for_expensive_check": "True",
+      "interior_pixels": 42009,
+      "grayscale_correlation": 0.8792894673701996,
+      "detail_correlation": 0.3434179881671755,
+      "masked_local_ssim": 0.519426703453064,
+      "orb_good_matches": 95,
+      "orb_geometric_inliers": 57,
+      "orb_inlier_fraction": 0.6,
+      "orb_median_reprojection_px_at_256": 1.5778696537017822,
+      "ranking_score": 37.63417988167175,
+      "homography_256": [
+        [
+          1.1062785368236323,
+          -0.029256674184657137,
+          0.6822659533643661
+        ],
+        [
+          0.08799551900901334,
+          1.0727286584092555,
+          -10.162207040104866
+        ],
+        [
+          0.000513794221907463,
+          3.304941799086269e-05,
+          1.0
+        ]
+      ]
+    },
+    {
+      "left": "train\\images\\1690a6092c497ef70d2759acfce9d482_png.rf.72e93c41d12aac36103175895312ea5d.jpg",
+      "right": "test\\images\\8c8cf24144b1bb595592c7ffda561ba3_png.rf.cc147d7ace493981632bef69c034ab03.jpg",
+      "left_split": "train",
+      "right_split": "test",
+      "left_class": "multi-label",
+      "right_class": "multi-label",
+      "hamming_distance": 2,
+      "intensity_correlation_64": "0.9152460694313049",
+      "detail_correlation_64": "0.5568355321884155",
+      "cheap_ranking_score": "0.6643587350845337",
+      "selected_for_expensive_check": "True",
+      "interior_pixels": 46494,
+      "grayscale_correlation": 0.9237993938992609,
+      "detail_correlation": 0.3355195464341061,
+      "masked_local_ssim": 0.5857670903205872,
+      "orb_good_matches": 71,
+      "orb_geometric_inliers": 48,
+      "orb_inlier_fraction": 0.676056338028169,
+      "orb_median_reprojection_px_at_256": 1.2391014099121094,
+      "ranking_score": 35.80589968969317,
+      "homography_256": [
+        [
+          0.8205947360167858,
+          -0.07708855726462818,
+          13.799173634191963
+        ],
+        [
+          -0.02713392656296239,
+          0.8387144771234292,
+          6.905724266119808
+        ],
+        [
+          -0.0006569084813642161,
+          -0.00016214068245831934,
+          1.0
+        ]
+      ]
+    },
+    {
+      "left": "valid\\images\\40e8a0f30610634447cf7f44db3f8136_png.rf.bf4d9062aeff739390eaa091d2b2929a.jpg",
+      "right": "test\\images\\20bad63c072d182a5fc00d596ca810df_png.rf.3d9ae711edbb48e665bc0805567e8042.jpg",
+      "left_split": "valid",
+      "right_split": "test",
+      "left_class": "multi-label",
+      "right_class": "multi-label",
+      "hamming_distance": 3,
+      "intensity_correlation_64": "0.9506179690361023",
+      "detail_correlation_64": "0.5915610790252686",
+      "cheap_ranking_score": "0.6992781162261963",
+      "selected_for_expensive_check": "True",
+      "interior_pixels": 38530,
+      "grayscale_correlation": 0.9275389770916569,
+      "detail_correlation": 0.35734515642324566,
+      "masked_local_ssim": 0.7382517457008362,
+      "orb_good_matches": 94,
+      "orb_geometric_inliers": 55,
+      "orb_inlier_fraction": 0.5851063829787234,
+      "orb_median_reprojection_px_at_256": 1.6256855726242065,
+      "ranking_score": 35.75430262806224,
+      "homography_256": [
+        [
+          0.8271166885597431,
+          -0.16789209978085584,
+          19.792825318059858
+        ],
+        [
+          0.005937722364747706,
+          0.9222193570256624,
+          -4.201470448852363
+        ],
+        [
+          -0.00039329157347262766,
+          -0.0009739497790494551,
+          1.0
+        ]
+      ]
+    },
+    {
+      "left": "train\\images\\fb9212a34ae58d0a54a4880a80da1174_png.rf.8d1256ab2c73552537a708114dde91fd.jpg",
+      "right": "valid\\images\\969d075666dedd66f4c1c6ad0b1e7052_png.rf.60aa3af7af93654db71a646aa39da850.jpg",
+      "left_split": "train",
+      "right_split": "valid",
+      "left_class": "multi-label",
+      "right_class": "multi-label",
+      "hamming_distance": 3,
+      "intensity_correlation_64": "0.9410243034362793",
+      "detail_correlation_64": "0.5357088446617126",
+      "cheap_ranking_score": "0.6573034524917603",
+      "selected_for_expensive_check": "True",
+      "interior_pixels": 46674,
+      "grayscale_correlation": 0.9319217533686998,
+      "detail_correlation": 0.3185081892605533,
+      "masked_local_ssim": 0.7519444823265076,
+      "orb_good_matches": 114,
+      "orb_geometric_inliers": 60,
+      "orb_inlier_fraction": 0.5263157894736842,
+      "orb_median_reprojection_px_at_256": 1.6538728475570679,
+      "ranking_score": 34.764029261026586,
+      "homography_256": [
+        [
+          1.3376850758530348,
+          0.07142263362476084,
+          -28.10162536801323
+        ],
+        [
+          0.013486908279159058,
+          1.3426777681376407,
+          -9.65124805590491
+        ],
+        [
+          0.0007732773357815158,
+          0.000902510937194881,
+          1.0
+        ]
+      ]
+    },
+    {
+      "left": "valid\\images\\7731e2602ff496070a711a8c92ed9190_png.rf.bc46b5c07340517fc2cafc5e697e8ece.jpg",
+      "right": "test\\images\\e505a715563903739da99393751f5ff2_png.rf.2a8b3e2e53f962ef3e01c3eddc0ba804.jpg",
+      "left_split": "valid",
+      "right_split": "test",
+      "left_class": "multi-label",
+      "right_class": "multi-label",
+      "hamming_distance": 1,
+      "intensity_correlation_64": "0.928307056427002",
+      "detail_correlation_64": "0.560193657875061",
+      "cheap_ranking_score": "0.6706277132034302",
+      "selected_for_expensive_check": "True",
+      "interior_pixels": 43426,
+      "grayscale_correlation": 0.9106898900306787,
+      "detail_correlation": 0.35681753005228206,
+      "masked_local_ssim": 0.5639695525169373,
+      "orb_good_matches": 101,
+      "orb_geometric_inliers": 56,
+      "orb_inlier_fraction": 0.5544554455445545,
+      "orb_median_reprojection_px_at_256": 1.2567408084869385,
+      "ranking_score": 34.61768025101787,
+      "homography_256": [
+        [
+          0.9578065855658664,
+          0.0007041555427114995,
+          2.577156445132773
+        ],
+        [
+          -0.018492395206251983,
+          0.9239654337835954,
+          7.760820002512093
+        ],
+        [
+          -5.452341046639321e-05,
+          -0.00010670815028180654,
+          1.0
+        ]
+      ]
+    },
+    {
+      "left": "train\\images\\a44ecf486c9660b2a9e2fdd17cad9ad3_png.rf.eb5cf8c9ee598ff5b01d193ca755aa9d.jpg",
+      "right": "valid\\images\\52f8ccffec591b51c73bf964ee316a49_png.rf.af2674277018b7204f3fefae5e4f85d6.jpg",
+      "left_split": "train",
+      "right_split": "valid",
+      "left_class": "multi-label",
+      "right_class": "multi-label",
+      "hamming_distance": 3,
+      "intensity_correlation_64": "0.9212667942047119",
+      "detail_correlation_64": "0.5417511463165283",
+      "cheap_ranking_score": "0.6556058526039124",
+      "selected_for_expensive_check": "True",
+      "interior_pixels": 42622,
+      "grayscale_correlation": 0.919380759099878,
+      "detail_correlation": 0.34580316174753295,
+      "masked_local_ssim": 0.7494524717330933,
+      "orb_good_matches": 101,
+      "orb_geometric_inliers": 56,
+      "orb_inlier_fraction": 0.5544554455445545,
+      "orb_median_reprojection_px_at_256": 1.4699020385742188,
+      "ranking_score": 34.507536567970384,
+      "homography_256": [
+        [
+          1.1976858692490415,
+          0.042481642991072384,
+          -11.100633692856443
+        ],
+        [
+          0.13782978409261884,
+          1.2074691724445303,
+          -23.103233947279236
+        ],
+        [
+          0.0007874163739712001,
+          0.0005296038195469901,
+          1.0
+        ]
+      ]
+    },
+    {
+      "left": "train\\images\\24eb901ffcdde574f77f51d8ff330be8_png.rf.b6d2db085c7e5ba1540d7a219803659f.jpg",
+      "right": "valid\\images\\0512ed00fe622b41f1959d354138f192_png.rf.59c3735f2ef50f4398c21c6e6d79e430.jpg",
+      "left_split": "train",
+      "right_split": "valid",
+      "left_class": "multi-label",
+      "right_class": "multi-label",
+      "hamming_distance": 2,
+      "intensity_correlation_64": "0.9235162138938904",
+      "detail_correlation_64": "0.537416934967041",
+      "cheap_ranking_score": "0.6532467603683472",
+      "selected_for_expensive_check": "True",
+      "interior_pixels": 37485,
+      "grayscale_correlation": 0.9240210202645041,
+      "detail_correlation": 0.2628105812971381,
+      "masked_local_ssim": 0.7219323515892029,
+      "orb_good_matches": 90,
+      "orb_geometric_inliers": 53,
+      "orb_inlier_fraction": 0.5888888888888889,
+      "orb_median_reprojection_px_at_256": 1.3631463050842285,
+      "ranking_score": 33.83921692408249,
+      "homography_256": [
+        [
+          0.6556198515719145,
+          -0.03036863117508453,
+          31.282323503204577
+        ],
+        [
+          0.007424298828188803,
+          0.8016501566354265,
+          -2.550366849318083
+        ],
+        [
+          -0.0009324688576990671,
+          -5.874812321287391e-05,
+          1.0
+        ]
+      ]
+    },
+    {
+      "left": "train\\images\\410a46c87d447502899ab348a49adf79_png.rf.ba8a1a925373ba524f3e5b90c23a7fb4.jpg",
+      "right": "test\\images\\e1ae5bc203c680c244b63824fdf38c00_png.rf.de1085eae327125f6459b5c37f4af2a4.jpg",
+      "left_split": "train",
+      "right_split": "test",
+      "left_class": "multi-label",
+      "right_class": "multi-label",
+      "hamming_distance": 2,
+      "intensity_correlation_64": "0.9508070945739746",
+      "detail_correlation_64": "0.5719947814941406",
+      "cheap_ranking_score": "0.6856384873390198",
+      "selected_for_expensive_check": "True",
+      "interior_pixels": 40358,
+      "grayscale_correlation": 0.9307466887472894,
+      "detail_correlation": 0.26174089323282107,
+      "masked_local_ssim": 0.772139310836792,
+      "orb_good_matches": 78,
+      "orb_geometric_inliers": 49,
+      "orb_inlier_fraction": 0.6282051282051282,
+      "orb_median_reprojection_px_at_256": 1.3690522909164429,
+      "ranking_score": 33.399460214379495,
+      "homography_256": [
+        [
+          1.2031276603594632,
+          0.055817990246009266,
+          -19.04245763548925
+        ],
+        [
+          0.07370316404607062,
+          1.0221821689655222,
+          -1.2118110153051125
+        ],
+        [
+          0.0006078863014813793,
+          -9.423182474674078e-06,
+          1.0
+        ]
+      ]
+    },
+    {
+      "left": "train\\images\\dcf738eddf4da088a2f8faf31a3f4537_png.rf.63d20e88104dae2e799b6379dd212d87.jpg",
+      "right": "valid\\images\\7ede71d5a837290b35827de9f1a77fb4_png.rf.05dd3433bcfb3e489fa22903c8dfb5c9.jpg",
+      "left_split": "train",
+      "right_split": "valid",
+      "left_class": "multi-label",
+      "right_class": "multi-label",
+      "hamming_distance": 3,
+      "intensity_correlation_64": "0.8952562808990479",
+      "detail_correlation_64": "0.564001739025116",
+      "cheap_ranking_score": "0.663378119468689",
+      "selected_for_expensive_check": "True",
+      "interior_pixels": 44776,
+      "grayscale_correlation": 0.8805262429626699,
+      "detail_correlation": 0.3587997360440819,
+      "masked_local_ssim": 0.5159950852394104,
+      "orb_good_matches": 88,
+      "orb_geometric_inliers": 51,
+      "orb_inlier_fraction": 0.5795454545454546,
+      "orb_median_reprojection_px_at_256": 1.1224486827850342,
+      "ranking_score": 33.144815542259,
+      "homography_256": [
+        [
+          0.880744229248205,
+          0.0708374117773545,
+          2.4630912849789763
+        ],
+        [
+          -0.06906001291976788,
+          1.0103602992946696,
+          4.549968842906525
+        ],
+        [
+          -0.0006263412752499877,
+          0.000431574416331504,
+          1.0
+        ]
+      ]
+    },
+    {
+      "left": "train\\images\\998b7cc5e6e50e0353fcd1ce230f7f92_png.rf.6e12b17ff7c2c376c2c4788c3c1e9bb7.jpg",
+      "right": "valid\\images\\bd35ce9c73b2d34450ab90ee221fafa4_png.rf.7fd98e0adda79cf330f46cc9778aacb7.jpg",
+      "left_split": "train",
+      "right_split": "valid",
+      "left_class": "multi-label",
+      "right_class": "multi-label",
+      "hamming_distance": 3,
+      "intensity_correlation_64": "0.9043671488761902",
+      "detail_correlation_64": "0.5114625096321106",
+      "cheap_ranking_score": "0.6293339133262634",
+      "selected_for_expensive_check": "True",
+      "interior_pixels": 37646,
+      "grayscale_correlation": 0.8968699192821045,
+      "detail_correlation": 0.29532131700196385,
+      "masked_local_ssim": 0.7019162774085999,
+      "orb_good_matches": 85,
+      "orb_geometric_inliers": 50,
+      "orb_inlier_fraction": 0.5882352941176471,
+      "orb_median_reprojection_px_at_256": 1.6004440784454346,
+      "ranking_score": 32.36497787590199,
+      "homography_256": [
+        [
+          0.8775128041882793,
+          -0.180739521657786,
+          11.652226403917128
+        ],
+        [
+          -0.07480395974439304,
+          0.8301231425668345,
+          14.083994111769249
+        ],
+        [
+          -0.00013572338820816185,
+          -0.0014304463835881642,
+          1.0
+        ]
+      ]
+    },
+    {
+      "left": "train\\images\\e181e1775224e3191b0f79f07943e49a_png.rf.b9dfad1faa371d514045a3eb776f4f75.jpg",
+      "right": "test\\images\\f923fdfdc3a6492c3b59763492b14675_png.rf.566b62047e5fcd6c4af2655c256c2c8d.jpg",
+      "left_split": "train",
+      "right_split": "test",
+      "left_class": "multi-label",
+      "right_class": "multi-label",
+      "hamming_distance": 2,
+      "intensity_correlation_64": "0.9541314244270325",
+      "detail_correlation_64": "0.545720100402832",
+      "cheap_ranking_score": "0.6682435274124146",
+      "selected_for_expensive_check": "True",
+      "interior_pixels": 39421,
+      "grayscale_correlation": 0.9354323486035137,
+      "detail_correlation": 0.3278768503534218,
+      "masked_local_ssim": 0.7244678139686584,
+      "orb_good_matches": 97,
+      "orb_geometric_inliers": 53,
+      "orb_inlier_fraction": 0.5463917525773195,
+      "orb_median_reprojection_px_at_256": 1.5053412914276123,
+      "ranking_score": 32.237531390132155,
+      "homography_256": [
+        [
+          1.1865882048327947,
+          0.11440726262396976,
+          -13.290458906526695
+        ],
+        [
+          0.03810711256008735,
+          1.2881636774586478,
+          -13.362061295930268
+        ],
+        [
+          0.0005241511586516593,
+          0.0011101741702061788,
+          0.9999999999999999
+        ]
+      ]
+    },
+    {
+      "left": "train\\images\\27fffe0d97f2808e5744ca084ef602d9_png.rf.983c6c54cf3498bf53848e4d5607df29.jpg",
+      "right": "test\\images\\b9c7edadba4709a6fae8c38d87da3ad3_png.rf.564bc91b65beebb31faaa0819b5829a3.jpg",
+      "left_split": "train",
+      "right_split": "test",
+      "left_class": "multi-label",
+      "right_class": "multi-label",
+      "hamming_distance": 3,
+      "intensity_correlation_64": "0.9267926812171936",
+      "detail_correlation_64": "0.5940596461296082",
+      "cheap_ranking_score": "0.6938796043395996",
+      "selected_for_expensive_check": "True",
+      "interior_pixels": 38421,
+      "grayscale_correlation": 0.916978045435968,
+      "detail_correlation": 0.3154806722966155,
+      "masked_local_ssim": 0.7149417996406555,
+      "orb_good_matches": 90,
+      "orb_geometric_inliers": 51,
+      "orb_inlier_fraction": 0.5666666666666667,
+      "orb_median_reprojection_px_at_256": 1.543007254600525,
+      "ranking_score": 32.054806722966156,
+      "homography_256": [
+        [
+          0.9097045046277592,
+          -0.031068099925135147,
+          7.485365157762458
+        ],
+        [
+          -0.030341546923035773,
+          0.9050126691001742,
+          7.126648604195302
+        ],
+        [
+          -0.0002862797749338416,
+          -0.0003741868708776125,
+          1.0
+        ]
+      ]
+    },
+    {
+      "left": "valid\\images\\b155f0fd22f7123d2ac3dab43f1a8054_png.rf.ce50f7947267f098c99c9f75d856d1e0.jpg",
+      "right": "test\\images\\6726be2d859943d3ae9483824a3f9067_png.rf.ca59bea704d014a9bd36cc200cd80e4e.jpg",
+      "left_split": "valid",
+      "right_split": "test",
+      "left_class": "multi-label",
+      "right_class": "multi-label",
+      "hamming_distance": 3,
+      "intensity_correlation_64": "0.9393279552459717",
+      "detail_correlation_64": "0.5462165474891663",
+      "cheap_ranking_score": "0.6641499996185303",
+      "selected_for_expensive_check": "True",
+      "interior_pixels": 39877,
+      "grayscale_correlation": 0.9253695215041324,
+      "detail_correlation": 0.3617418496246023,
+      "masked_local_ssim": 0.7351214289665222,
+      "orb_good_matches": 67,
+      "orb_geometric_inliers": 43,
+      "orb_inlier_fraction": 0.6417910447761194,
+      "orb_median_reprojection_px_at_256": 1.6256119012832642,
+      "ranking_score": 31.21443342161916,
+      "homography_256": [
+        [
+          1.3088153258517645,
+          0.07979293542398032,
+          -21.322621141107266
+        ],
+        [
+          0.03933877654606068,
+          1.1683154116735106,
+          -2.808678104908871
+        ],
+        [
+          0.0009313067756751528,
+          0.0007338971476899535,
+          1.0
+        ]
+      ]
+    },
+    {
+      "left": "train\\images\\b39a81ada6933fe899d769127e444f26_png.rf.5c399929efbc5192f2635be6d3632b9e.jpg",
+      "right": "valid\\images\\ef3aa4dc726f1f72da7aad1624eaced2_png.rf.42ef325d3b230d9a1b02851bf3e03532.jpg",
+      "left_split": "train",
+      "right_split": "valid",
+      "left_class": "multi-label",
+      "right_class": "multi-label",
+      "hamming_distance": 3,
+      "intensity_correlation_64": "0.9484149217605591",
+      "detail_correlation_64": "0.5971687436103821",
+      "cheap_ranking_score": "0.7025426030158997",
+      "selected_for_expensive_check": "True",
+      "interior_pixels": 35371,
+      "grayscale_correlation": 0.895863636109947,
+      "detail_correlation": 0.2806321825617756,
+      "masked_local_ssim": 0.716779351234436,
+      "orb_good_matches": 92,
+      "orb_geometric_inliers": 51,
+      "orb_inlier_fraction": 0.5543478260869565,
+      "orb_median_reprojection_px_at_256": 1.4904274940490723,
+      "ranking_score": 31.07806095605254,
+      "homography_256": [
+        [
+          1.0033842902139818,
+          -0.12971425285716282,
+          7.638343254087078
+        ],
+        [
+          0.0674751723418381,
+          1.0346276777056573,
+          -12.47384844574304
+        ],
+        [
+          0.0001035502998670892,
+          -0.0005291679339141499,
+          1.0
+        ]
+      ]
+    },
+    {
+      "left": "valid\\images\\868cb7333f19934d42a4a34e537fe7f5_png.rf.5775f506a4bd1681f9933625dbf3eab9.jpg",
+      "right": "test\\images\\b9e3a3e2f00c934a4212c99b8727d720_png.rf.4776726aa1207e4c2dd1de45b3ae5885.jpg",
+      "left_split": "valid",
+      "right_split": "test",
+      "left_class": "multi-label",
+      "right_class": "multi-label",
+      "hamming_distance": 3,
+      "intensity_correlation_64": "0.9009373188018799",
+      "detail_correlation_64": "0.5076639652252197",
+      "cheap_ranking_score": "0.6256459951400757",
+      "selected_for_expensive_check": "True",
+      "interior_pixels": 46534,
+      "grayscale_correlation": 0.8515782283543298,
+      "detail_correlation": 0.2329903051588687,
+      "masked_local_ssim": 0.5285465121269226,
+      "orb_good_matches": 96,
+      "orb_geometric_inliers": 52,
+      "orb_inlier_fraction": 0.5416666666666666,
+      "orb_median_reprojection_px_at_256": 1.5050303936004639,
+      "ranking_score": 30.49656971825535,
+      "homography_256": [
+        [
+          1.4712347934274106,
+          0.14896244840193734,
+          -34.00485190714487
+        ],
+        [
+          0.1549131772064917,
+          1.3635768014138323,
+          -25.879854445778513
+        ],
+        [
+          0.0012922952648351178,
+          0.001156999757513574,
+          1.0
+        ]
+      ]
+    },
+    {
+      "left": "train\\images\\9ad53b2712efef14f1c0af04834e8bc2_png.rf.9f74bcb7d011e1eaebd2b6e0383c6673.jpg",
+      "right": "test\\images\\d6a3597fb6185fe33d3efbe567dd1072_png.rf.9d209f030d2a70fc2021a6221d869a7c.jpg",
+      "left_split": "train",
+      "right_split": "test",
+      "left_class": "multi-label",
+      "right_class": "multi-label",
+      "hamming_distance": 3,
+      "intensity_correlation_64": "0.9365960359573364",
+      "detail_correlation_64": "0.5918489694595337",
+      "cheap_ranking_score": "0.6952731013298035",
+      "selected_for_expensive_check": "True",
+      "interior_pixels": 37438,
+      "grayscale_correlation": 0.9378709351847481,
+      "detail_correlation": 0.4071742356684577,
+      "masked_local_ssim": 0.7530910968780518,
+      "orb_good_matches": 99,
+      "orb_geometric_inliers": 51,
+      "orb_inlier_fraction": 0.5151515151515151,
+      "orb_median_reprojection_px_at_256": 1.5216792821884155,
+      "ranking_score": 30.34446962941185,
+      "homography_256": [
+        [
+          1.2847551442463314,
+          0.1188007065169119,
+          -19.69506100624215
+        ],
+        [
+          0.042367598548170876,
+          1.2948927440406324,
+          -13.51862091922586
+        ],
+        [
+          0.0007655410575965035,
+          0.0012409842929468654,
+          1.0
+        ]
+      ]
+    }
+  ],
+  "contact_sheets": [
+    "C:\\Users\\Usuario\\Desktop\\DAIIST_Assignment_2_Windows_Handoff\\daiist-assignment-2\\evidence\\vinbigdata-v3\\strong_similarity_review\\top_pairs_01_04.jpg",
+    "C:\\Users\\Usuario\\Desktop\\DAIIST_Assignment_2_Windows_Handoff\\daiist-assignment-2\\evidence\\vinbigdata-v3\\strong_similarity_review\\top_pairs_05_08.jpg",
+    "C:\\Users\\Usuario\\Desktop\\DAIIST_Assignment_2_Windows_Handoff\\daiist-assignment-2\\evidence\\vinbigdata-v3\\strong_similarity_review\\top_pairs_09_12.jpg",
+    "C:\\Users\\Usuario\\Desktop\\DAIIST_Assignment_2_Windows_Handoff\\daiist-assignment-2\\evidence\\vinbigdata-v3\\strong_similarity_review\\top_pairs_13_16.jpg",
+    "C:\\Users\\Usuario\\Desktop\\DAIIST_Assignment_2_Windows_Handoff\\daiist-assignment-2\\evidence\\vinbigdata-v3\\strong_similarity_review\\top_pairs_17_20.jpg"
+  ],
+  "visual_review": "Completed bounded model visual inspection of all top 20 pairs; see visual_review.json. No copied image was visually confirmed; leading pair remains unresolved as possibly related acquisitions."
+}

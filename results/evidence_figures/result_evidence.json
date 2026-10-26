@@ -1,0 +1,952 @@
+{
+  "schema_version": 1,
+  "test_optimization": false,
+  "provenance": {
+    "validation_predictions_sha256": "5ffaa9e014338c0833d207b640b5363c322c95538e9bfbd168ba6c559e7e52cb",
+    "test_predictions_sha256": "7ca77924fa995c19199d231b8965081bc32d9b0e344a859271d7ddb989d40026",
+    "frozen_policy_sha256": "0a9a929d2bcb80f51ba8490fd481df4156d0c4cbcdfba67f19153b3219cbb40d",
+    "manifest_sha256": "13c2bcbdf29a04c8be1568b07dba737846f64262ab434cf0b067ec0ce38fdc43",
+    "scenario_sha256": "22fd2195a794794d45b73fbf1271bb207cf02b15ea4fa3569af55ac1966debab",
+    "weights_sha256": "b01a44d932c0dfde35e00b2dccb25eb512b95d23e557183f3413831973cbe778",
+    "config_sha256": "f4a02773eb761bd6877debd57db6f8ee35dcac8a87c25e4609e20aa11eda84a1"
+  },
+  "image_confusion": {
+    "matrix": [
+      [
+        956,
+        119
+      ],
+      [
+        11,
+        413
+      ]
+    ],
+    "rows": [
+      "annotated_negative",
+      "annotated_positive"
+    ],
+    "columns": [
+      "routine",
+      "accelerated"
+    ],
+    "threshold": 0.04,
+    "images": 1499,
+    "observed_prevalence": 0.2828552368245497,
+    "counts_are_observed": true
+  },
+  "object_confusion": {
+    "level": "object",
+    "confidence_threshold": 0.04,
+    "iou_threshold": 0.5,
+    "threshold_rule": "confidence >= threshold; IoU >= threshold",
+    "matching": "Score-ordered greedy; stable cache order for ties; no reuse of a ground-truth box",
+    "images": 1499,
+    "images_with_no_ground_truth_boxes": 1075,
+    "images_with_no_retained_predictions": 967,
+    "ground_truth_instances": 1545,
+    "predicted_instances": 3294,
+    "per_class": [
+      {
+        "class_id": 0,
+        "class_name": "Aortic enlargement",
+        "true_positives": 279,
+        "false_positives": 405,
+        "false_negatives": 22,
+        "ground_truth_instances": 301,
+        "predicted_instances": 684,
+        "precision": 0.40789473684210525,
+        "recall": 0.9269102990033222
+      },
+      {
+        "class_id": 1,
+        "class_name": "Atelectasis",
+        "true_positives": 0,
+        "false_positives": 0,
+        "false_negatives": 20,
+        "ground_truth_instances": 20,
+        "predicted_instances": 0,
+        "precision": null,
+        "recall": 0.0
+      },
+      {
+        "class_id": 2,
+        "class_name": "Calcification",
+        "true_positives": 4,
+        "false_positives": 20,
+        "false_negatives": 38,
+        "ground_truth_instances": 42,
+        "predicted_instances": 24,
+        "precision": 0.16666666666666666,
+        "recall": 0.09523809523809523
+      },
+      {
+        "class_id": 3,
+        "class_name": "Cardiomegaly",
+        "true_positives": 207,
+        "false_positives": 219,
+        "false_negatives": 11,
+        "ground_truth_instances": 218,
+        "predicted_instances": 426,
+        "precision": 0.4859154929577465,
+        "recall": 0.9495412844036697
+      },
+      {
+        "class_id": 4,
+        "class_name": "Consolidation",
+        "true_positives": 0,
+        "false_positives": 0,
+        "false_negatives": 48,
+        "ground_truth_instances": 48,
+        "predicted_instances": 0,
+        "precision": null,
+        "recall": 0.0
+      },
+      {
+        "class_id": 5,
+        "class_name": "ILD",
+        "true_positives": 4,
+        "false_positives": 9,
+        "false_negatives": 36,
+        "ground_truth_instances": 40,
+        "predicted_instances": 13,
+        "precision": 0.3076923076923077,
+        "recall": 0.1
+      },
+      {
+        "class_id": 6,
+        "class_name": "Infiltration",
+        "true_positives": 14,
+        "false_positives": 80,
+        "false_negatives": 44,
+        "ground_truth_instances": 58,
+        "predicted_instances": 94,
+        "precision": 0.14893617021276595,
+        "recall": 0.2413793103448276
+      },
+      {
+        "class_id": 7,
+        "class_name": "Lung Opacity",
+        "true_positives": 34,
+        "false_positives": 160,
+        "false_negatives": 103,
+        "ground_truth_instances": 137,
+        "predicted_instances": 194,
+        "precision": 0.17525773195876287,
+        "recall": 0.24817518248175183
+      },
+      {
+        "class_id": 8,
+        "class_name": "Nodule-Mass",
+        "true_positives": 18,
+        "false_positives": 97,
+        "false_negatives": 51,
+        "ground_truth_instances": 69,
+        "predicted_instances": 115,
+        "precision": 0.1565217391304348,
+        "recall": 0.2608695652173913
+      },
+      {
+        "class_id": 9,
+        "class_name": "Other lesion",
+        "true_positives": 0,
+        "false_positives": 1,
+        "false_negatives": 118,
+        "ground_truth_instances": 118,
+        "predicted_instances": 1,
+        "precision": 0.0,
+        "recall": 0.0
+      },
+      {
+        "class_id": 10,
+        "class_name": "Pleural effusion",
+        "true_positives": 55,
+        "false_positives": 552,
+        "false_negatives": 62,
+        "ground_truth_instances": 117,
+        "predicted_instances": 607,
+        "precision": 0.09060955518945635,
+        "recall": 0.4700854700854701
+      },
+      {
+        "class_id": 11,
+        "class_name": "Pleural thickening",
+        "true_positives": 10,
+        "false_positives": 170,
+        "false_negatives": 196,
+        "ground_truth_instances": 206,
+        "predicted_instances": 180,
+        "precision": 0.05555555555555555,
+        "recall": 0.04854368932038835
+      },
+      {
+        "class_id": 12,
+        "class_name": "Pneumothorax",
+        "true_positives": 0,
+        "false_positives": 0,
+        "false_negatives": 5,
+        "ground_truth_instances": 5,
+        "predicted_instances": 0,
+        "precision": null,
+        "recall": 0.0
+      },
+      {
+        "class_id": 13,
+        "class_name": "Pulmonary fibrosis",
+        "true_positives": 42,
+        "false_positives": 914,
+        "false_negatives": 124,
+        "ground_truth_instances": 166,
+        "predicted_instances": 956,
+        "precision": 0.043933054393305436,
+        "recall": 0.25301204819277107
+      }
+    ],
+    "micro": {
+      "true_positives": 667,
+      "false_positives": 2627,
+      "false_negatives": 878,
+      "precision": 0.20248937462052216,
+      "recall": 0.43171521035598703
+    },
+    "confusion": {
+      "matrix": [
+        [
+          279,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          22
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          3,
+          3,
+          0,
+          4,
+          8
+        ],
+        [
+          3,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          6,
+          0,
+          0,
+          0,
+          0,
+          3,
+          28
+        ],
+        [
+          1,
+          0,
+          0,
+          207,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          10
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4,
+          9,
+          1,
+          0,
+          2,
+          0,
+          0,
+          6,
+          26
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          3,
+          4,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          31
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          5,
+          6,
+          0,
+          0,
+          0,
+          0,
+          0,
+          7,
+          39
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          7,
+          23,
+          2,
+          0,
+          5,
+          0,
+          0,
+          11,
+          89
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          3,
+          15,
+          0,
+          1,
+          0,
+          0,
+          3,
+          44
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          2,
+          3,
+          0,
+          1,
+          0,
+          0,
+          8,
+          103
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          51,
+          0,
+          0,
+          0,
+          64
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          19,
+          9,
+          0,
+          6,
+          172
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          7,
+          4,
+          3,
+          0,
+          0,
+          0,
+          0,
+          36,
+          116
+        ],
+        [
+          400,
+          0,
+          22,
+          219,
+          0,
+          9,
+          62,
+          143,
+          85,
+          1,
+          525,
+          168,
+          0,
+          872,
+          0
+        ]
+      ],
+      "labels": [
+        "Aortic enlargement",
+        "Atelectasis",
+        "Calcification",
+        "Cardiomegaly",
+        "Consolidation",
+        "ILD",
+        "Infiltration",
+        "Lung Opacity",
+        "Nodule-Mass",
+        "Other lesion",
+        "Pleural effusion",
+        "Pleural thickening",
+        "Pneumothorax",
+        "Pulmonary fibrosis",
+        "background (unmatched)"
+      ],
+      "rows": "true",
+      "columns": "predicted",
+      "background_index": 14,
+      "matching": "Class-agnostic geometric matching, separately from class-aware precision/recall",
+      "true_negative_boxes": null
+    },
+    "metric_note": "Fixed-threshold counts, not AP and not native maximum-F1 precision/recall. Empty denominators are null."
+  },
+  "failure_examples": {
+    "selection_rule": {
+      "false_positive": "Annotated-negative images with score >= frozen binary threshold; descending score, then image_id ascending; take first two.",
+      "false_negative": "Annotated-positive images with score < frozen binary threshold; descending score (closest misses below threshold), then image_id ascending; take first two.",
+      "maximum_per_category": 2,
+      "missing_category": "Report zero candidates and omit that category; never substitute or change the rule.",
+      "display": "Show every published annotation. Show up to five highest-confidence predictions at/above the frozen binary threshold; for a false negative, show the strongest target prediction below threshold if present. Counts of omitted prediction boxes are disclosed.",
+      "interpretation": "Examples illustrate specific annotation-defined failures and are not a random sample, prevalence estimate, exhaustive failure analysis, or claim of clinical incorrectness."
+    },
+    "candidate_counts": {
+      "false_positive": 119,
+      "false_negative": 11
+    },
+    "selected": [
+      {
+        "image_id": "test/images/7f283b7b13ae671751c79dce83ded2c0_png.rf.f5fe1796d1576ecaaed38a74103c0dbf.jpg",
+        "annotated_target": 0,
+        "score": 0.6735299825668335,
+        "threshold": 0.04,
+        "predicted_target": 1,
+        "category": "false_positive",
+        "rank_within_category": 1
+      },
+      {
+        "image_id": "test/images/654d61c8220e19e5a1ba0c771f30859f_png.rf.9dcefd2ee28b9c276e145eb2a855cf23.jpg",
+        "annotated_target": 0,
+        "score": 0.6104809045791626,
+        "threshold": 0.04,
+        "predicted_target": 1,
+        "category": "false_positive",
+        "rank_within_category": 2
+      },
+      {
+        "image_id": "test/images/d1713f5cf5838c1592e5f712b5d4928e_png.rf.9470d016edaca9a55fe6960864e10f70.jpg",
+        "annotated_target": 1,
+        "score": 0.035246726125478745,
+        "threshold": 0.04,
+        "predicted_target": 0,
+        "category": "false_negative",
+        "rank_within_category": 1
+      },
+      {
+        "image_id": "test/images/42fba4329860d5995fea57553104907a_png.rf.c54e17761f3c67035177302056c570b9.jpg",
+        "annotated_target": 1,
+        "score": 0.03507504612207413,
+        "threshold": 0.04,
+        "predicted_target": 0,
+        "category": "false_negative",
+        "rank_within_category": 2
+      }
+    ],
+    "illustrations": [
+      {
+        "image_id": "test/images/7f283b7b13ae671751c79dce83ded2c0_png.rf.f5fe1796d1576ecaaed38a74103c0dbf.jpg",
+        "annotated_target": 0,
+        "score": 0.6735299825668335,
+        "threshold": 0.04,
+        "predicted_target": 1,
+        "category": "false_positive",
+        "rank_within_category": 1,
+        "files": [
+          "example_false_positive_1.png",
+          "example_false_positive_1.svg"
+        ],
+        "image_sha256": "c7953c1cfcacaf014a06588251cdc5e5804cf1cb47e110c05cad60fbb5e45390",
+        "labels_shown": [],
+        "predictions_shown": [
+          {
+            "class_id": 3,
+            "confidence": 0.6735299825668335,
+            "xyxy": [
+              0.39814919233322144,
+              0.5575801730155945,
+              0.7417263388633728,
+              0.7249059081077576
+            ]
+          },
+          {
+            "class_id": 0,
+            "confidence": 0.29023730754852295,
+            "xyxy": [
+              0.5127987861633301,
+              0.29712027311325073,
+              0.6027555465698242,
+              0.3991054892539978
+            ]
+          },
+          {
+            "class_id": 0,
+            "confidence": 0.04417110234498978,
+            "xyxy": [
+              0.5262628793716431,
+              0.29998064041137695,
+              0.6014828681945801,
+              0.37939226627349854
+            ]
+          }
+        ],
+        "strongest_below_threshold_shown": false,
+        "predictions_above_threshold": 3,
+        "omitted_above_threshold": 0
+      },
+      {
+        "image_id": "test/images/654d61c8220e19e5a1ba0c771f30859f_png.rf.9dcefd2ee28b9c276e145eb2a855cf23.jpg",
+        "annotated_target": 0,
+        "score": 0.6104809045791626,
+        "threshold": 0.04,
+        "predicted_target": 1,
+        "category": "false_positive",
+        "rank_within_category": 2,
+        "files": [
+          "example_false_positive_2.png",
+          "example_false_positive_2.svg"
+        ],
+        "image_sha256": "b358a34361f0e7be8bb54644a6357db41a774ab8b0c27426a73d80a3309da00f",
+        "labels_shown": [],
+        "predictions_shown": [
+          {
+            "class_id": 0,
+            "confidence": 0.6104809045791626,
+            "xyxy": [
+              0.5134068727493286,
+              0.27823901176452637,
+              0.6041234731674194,
+              0.36623358726501465
+            ]
+          },
+          {
+            "class_id": 0,
+            "confidence": 0.046497929841279984,
+            "xyxy": [
+              0.5309234857559204,
+              0.28298240900039673,
+              0.6028963327407837,
+              0.34818243980407715
+            ]
+          }
+        ],
+        "strongest_below_threshold_shown": false,
+        "predictions_above_threshold": 2,
+        "omitted_above_threshold": 0
+      },
+      {
+        "image_id": "test/images/d1713f5cf5838c1592e5f712b5d4928e_png.rf.9470d016edaca9a55fe6960864e10f70.jpg",
+        "annotated_target": 1,
+        "score": 0.035246726125478745,
+        "threshold": 0.04,
+        "predicted_target": 0,
+        "category": "false_negative",
+        "rank_within_category": 1,
+        "files": [
+          "example_false_negative_1.png",
+          "example_false_negative_1.svg"
+        ],
+        "image_sha256": "177d7b393270d73de5dcc59e86837aba3eeb01a93cde929b24267da8c9cfa88e",
+        "labels_shown": [
+          {
+            "class_id": 13,
+            "xyxy": [
+              0.6025390625,
+              0.220703125,
+              0.7802734375,
+              0.330078125
+            ]
+          },
+          {
+            "class_id": 4,
+            "xyxy": [
+              0.61865234375,
+              0.4228515625,
+              0.73876953125,
+              0.5927734375
+            ]
+          },
+          {
+            "class_id": 5,
+            "xyxy": [
+              0.6025390625,
+              0.220703125,
+              0.7802734375,
+              0.330078125
+            ]
+          },
+          {
+            "class_id": 1,
+            "xyxy": [
+              0.6162109375,
+              0.1806640625,
+              0.7646484375,
+              0.3310546875
+            ]
+          },
+          {
+            "class_id": 9,
+            "xyxy": [
+              0.58837890625,
+              0.2744140625,
+              0.65380859375,
+              0.3427734375
+            ]
+          }
+        ],
+        "predictions_shown": [
+          {
+            "class_id": 8,
+            "confidence": 0.035246726125478745,
+            "xyxy": [
+              0.31509315967559814,
+              0.8594863414764404,
+              0.34952765703201294,
+              0.8949763774871826
+            ]
+          }
+        ],
+        "strongest_below_threshold_shown": true,
+        "predictions_above_threshold": 0,
+        "omitted_above_threshold": 0
+      },
+      {
+        "image_id": "test/images/42fba4329860d5995fea57553104907a_png.rf.c54e17761f3c67035177302056c570b9.jpg",
+        "annotated_target": 1,
+        "score": 0.03507504612207413,
+        "threshold": 0.04,
+        "predicted_target": 0,
+        "category": "false_negative",
+        "rank_within_category": 2,
+        "files": [
+          "example_false_negative_2.png",
+          "example_false_negative_2.svg"
+        ],
+        "image_sha256": "37ac783d4ace93f4ff705fb8c2093ac8e0709ec57a7a8b3b2a6ecc753ce753b5",
+        "labels_shown": [
+          {
+            "class_id": 5,
+            "xyxy": [
+              0.59765625,
+              0.16455078125,
+              0.83984375,
+              0.75341796875
+            ]
+          },
+          {
+            "class_id": 9,
+            "xyxy": [
+              0.66064453125,
+              0.234375,
+              0.80615234375,
+              0.4296875
+            ]
+          },
+          {
+            "class_id": 13,
+            "xyxy": [
+              0.55810546875,
+              0.17822265625,
+              0.80908203125,
+              0.47802734375
+            ]
+          },
+          {
+            "class_id": 6,
+            "xyxy": [
+              0.28369140625,
+              0.1572265625,
+              0.40771484375,
+              0.3017578125
+            ]
+          },
+          {
+            "class_id": 11,
+            "xyxy": [
+              0.716796875,
+              0.6728515625,
+              0.87109375,
+              0.8076171875
+            ]
+          }
+        ],
+        "predictions_shown": [
+          {
+            "class_id": 8,
+            "confidence": 0.03507504612207413,
+            "xyxy": [
+              0.3276436924934387,
+              0.4341966509819031,
+              0.38210010528564453,
+              0.5285395979881287
+            ]
+          }
+        ],
+        "strongest_below_threshold_shown": true,
+        "predictions_above_threshold": 0,
+        "omitted_above_threshold": 0
+      }
+    ]
+  },
+  "training_history": {
+    "summary_sha256": "785c865037d69faae41e9c446e6d15a840f7e60f6d0d3b393c3c258c59ed48db",
+    "results_csv_sha256": "af53fc350bd49d60628600e6211605ed65e85f80fb99033f0db040dadb7a8b4c",
+    "best_epoch": 10,
+    "completed_epochs": 30
+  },
+  "hybrid_worked_example": {
+    "basis": "Actual held-out annotated-class routing counts projected to an explicitly hypothetical operating scenario",
+    "thresholds": {
+      "lower": 0.02,
+      "upper": 0.15
+    },
+    "threshold_rule": "score < lower: routine; lower <= score < upper: extra human check; score >= upper: accelerated review",
+    "observed": {
+      "matrix": [
+        [
+          898,
+          131,
+          46
+        ],
+        [
+          5,
+          50,
+          369
+        ]
+      ],
+      "rows": [
+        "annotated_negative",
+        "annotated_positive"
+      ],
+      "columns": [
+        "routine",
+        "human_check",
+        "accelerated"
+      ],
+      "row_denominators": [
+        1075,
+        424
+      ],
+      "conditional_action_rates": [
+        [
+          0.8353488372093023,
+          0.12186046511627907,
+          0.04279069767441861
+        ],
+        [
+          0.01179245283018868,
+          0.1179245283018868,
+          0.8702830188679245
+        ]
+      ]
+    },
+    "prevalence_rescaling": {
+      "prevalence": 0.1,
+      "negative_reference_population": 900.0,
+      "positive_reference_population": 100.0,
+      "formula": "Each cell = observed cell / its annotated-class denominator * class prevalence * 1000",
+      "cell_arithmetic": [
+        [
+          "898 / 1075 * 900 = 751.813953",
+          "131 / 1075 * 900 = 109.674419",
+          "46 / 1075 * 900 = 38.5116279"
+        ],
+        [
+          "5 / 424 * 100 = 1.17924528",
+          "50 / 424 * 100 = 11.7924528",
+          "369 / 424 * 100 = 87.0283019"
+        ]
+      ],
+      "expected_actions_per_1000": [
+        [
+          751.8139534883721,
+          109.67441860465117,
+          38.51162790697675
+        ],
+        [
+          1.179245283018868,
+          11.79245283018868,
+          87.02830188679245
+        ]
+      ]
+    },
+    "reviewer_residual_errors": {
+      "assumed_sensitivity": 0.9,
+      "assumed_specificity": 0.9,
+      "direct_fp_per_1000": 38.51162790697675,
+      "review_fp_per_1000": 10.967441860465113,
+      "direct_fn_per_1000": 1.179245283018868,
+      "review_fn_per_1000": 1.1792452830188678,
+      "fp_arithmetic": "38.5116279 + 109.674419 * (1 - 0.9) = 49.4790698",
+      "fn_arithmetic": "1.17924528 + 11.7924528 * (1 - 0.9) = 2.35849057",
+      "expected_resolved_confusion_per_1000": [
+        [
+          850.5209302325582,
+          49.479069767441864
+        ],
+        [
+          2.3584905660377355,
+          97.64150943396226
+        ]
+      ],
+      "not_observed": "Human decisions and clinical outcomes were not measured; these are assumed residual errors."
+    },
+    "costs": {
+      "fp_eur_per_1000": 1236.9767441860465,
+      "fn_eur_per_1000": 1179.2452830188677,
+      "review_eur_per_1000": 242.9337428696797,
+      "inference_eur_per_1000": 10.0,
+      "total_eur_per_1000": 2669.1557700745943,
+      "arithmetic": "49.4790698 * 25 + 2.35849057 * 500 + 121.466871 * (2/60 * 60) + 1000 * 0.01 = 2669.15577",
+      "scope": "Incremental priority-error penalties, additional review labour and inference; common clinical assessment excluded equally."
+    },
+    "staffing": {
+      "expected_reviews_per_1000": 121.46687143483985,
+      "daily_images": 200,
+      "daily_reviews": 24.29337428696797,
+      "review_minutes": 2.0,
+      "daily_review_hours": 0.8097791428989324,
+      "hours_per_person": 2.0,
+      "people_needed": 1,
+      "available_people": 1,
+      "daily_capacity": 60.0,
+      "within_capacity": true,
+      "arithmetic": "121.466871/1000 * 200 = 24.2933743 checks/day; * 2/60 = 0.809779143 hours/day; ceil(0.809779143/2) = 1 people"
+    }
+  },
+  "scenario": {
+    "prevalence": 0.1,
+    "false_positive_eur": 25.0,
+    "false_negative_eur": 500.0,
+    "review_minutes": 2.0,
+    "reviewer_hourly_eur": 60.0,
+    "reviewer_sensitivity": 0.9,
+    "reviewer_specificity": 0.9,
+    "daily_images": 200,
+    "reviewers_available": 1,
+    "review_hours_per_person": 2.0,
+    "inference_eur_per_image": 0.01
+  },
+  "figure_files": [
+    "observed_image_confusion.png",
+    "observed_image_confusion.svg",
+    "observed_object_confusion.png",
+    "observed_object_confusion.svg",
+    "example_false_positive_1.png",
+    "example_false_positive_1.svg",
+    "example_false_positive_2.png",
+    "example_false_positive_2.svg",
+    "example_false_negative_1.png",
+    "example_false_negative_1.svg",
+    "example_false_negative_2.png",
+    "example_false_negative_2.svg",
+    "training_history.png",
+    "training_history.svg"
+  ],
+  "font": "Times New Roman with DejaVu Serif fallback; all text black",
+  "limitations": [
+    "Object annotations are representative and may omit additional lesions; annotation-defined FP/FN are not adjudicated clinical errors.",
+    "Source IDs identify images; patient independence is unverified.",
+    "Selected examples follow a documented deterministic extreme-score rule and are not a representative statistical sample.",
+    "Expected human outcomes/costs are scenario calculations, never observed reviewer outcomes."
+  ]
+}

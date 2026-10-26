@@ -1,0 +1,82 @@
+{
+  "reviewed_on": "2026-10-26",
+  "scope": "Primary-source provenance and patient-independence wording for VinBigData/VinDr-CXR. No image downloads, no private identifier access, no training.",
+  "findings": {
+    "one_image_per_patient": "Not established. No explicit one-image-per-patient or patient-disjoint assertion was found in the inspected public primary documentation for the 18,000-image release.",
+    "source_image_ids": "PhysioNet Data Description/Overview states image identifiers are encoded from DICOM Service Object Pair (SOP) Instance Unique Identifier tag (0008,0018). These are image-instance identifiers; uniqueness does not establish unique patients.",
+    "removed_metadata": "PhysioNet Data de-identification and the original Scientific Data paper say PHI tags including patient ID and acquisition date/time were removed, with only processing attributes retained.",
+    "split_claim": "The primary release describes 15,000 training scans and 3,000 test scans. The described radiologist-independence refers to separate annotation by readers, not independence of patients.",
+    "roboflow_split_limit": "A published Roboflow derivative repartitioning 14,998 source images is not the original 15,000/3,000 benchmark. Patient independence cannot be inferred from its source-image filenames or original benchmark partition sizes.",
+    "patient_leakage_status": "Unverified rather than demonstrated. Absence of explicit patient mapping/one-patient assertion is not evidence that repeated patients exist."
+  },
+  "source_distinction": {
+    "kaggle": "VinBigData competition uses 14 localized radiographic findings plus No finding; 15,000 labeled training images and 3,000 competition test images.",
+    "physionet": "VinDr-CXR publication/release describes 22 local findings and 6 global labels of suspected disease; richer annotation taxonomy than the Kaggle 14-finding task.",
+    "consequence": "Cite Kaggle for exact 14 classes and No finding interpretation. Cite VinDr paper/PhysioNet for source collection and de-identification, without implying the Roboflow derivative contains all 28 labels or retains the original test consensus."
+  },
+  "priority_proxy": {
+    "proposed_definition": "Project-defined educational image review priority based on presence of any of the 14 annotated abnormalities, with target-negative meaning none of those14 findings annotated.",
+    "supported_ground_truth": "Radiologist-annotated finding presence/localization.",
+    "unsupported_ground_truth": [
+      "Clinical urgency",
+      "Emergency status",
+      "Time to required intervention",
+      "Confirmed disease outcome",
+      "Severity across findings",
+      "All-cause health/normality"
+    ],
+    "caveats": [
+      "The source calls these critical findings, but this phrasing does not supply an urgency outcome label or validate an urgency policy.",
+      "The primary release says radiologists were blinded to relevant clinical information.",
+      "No finding means absence of the 14listed findings in Kaggle, not proof that the patient is healthy or needs no medical attention.",
+      "False negatives/recall should be stated against the defined annotated-abnormality target, not urgent patients or missed emergencies."
+    ],
+    "suggested_report_sentence": "This project simulates image review prioritization using annotated radiographic abnormalities as a proxy; it does not predict clinical urgency. Patient independence across the published derivative splits could not be verified."
+  },
+  "primary_sources": [
+    {
+      "url": "https://physionet.org/content/vindr-cxr/1.0.0/",
+      "title": "VinDr-CXR: An open dataset of chest X-rays with radiologist annotations",
+      "version": "1.0.0",
+      "sections": [
+        "Data de-identification",
+        "Data labeling",
+        "Data Descriptionâ€”Overview",
+        "Usage Notes"
+      ],
+      "exact_excerpt": "Each image has a unique, anonymous identifier",
+      "excerpt_purpose": "The subsequent source clause specifies SOP Instance UID encoding; this is not a patient identifier.",
+      "access_note": "Public documentation read only. Restricted downloadable files were not accessed."
+    },
+    {
+      "url": "https://www.nature.com/articles/s41597-022-01498-w",
+      "title": "VinDr-CXR: An open dataset of chest X-rays with radiologistâ€™s annotations",
+      "doi": "10.1038/s41597-022-01498-w",
+      "readable_mirror": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9300612/",
+      "sections": [
+        "Methodsâ€”Data de-identification",
+        "Data labeling",
+        "Data Records",
+        "Technical Validation"
+      ],
+      "observations": "Source authors describe retrospective twohospitalcollection2018â€“2020,18000images,three independent readers pertrainingimage,fiveradiologistconsensus pertestimage. No patient independence claim located."
+    },
+    {
+      "url": "https://www.kaggle.com/competitions/vinbigdata-chest-xray-abnormalities-detection/data",
+      "title": "VinBigData Chest X-ray Abnormalities Detectionâ€”Data",
+      "exact_excerpt": "The \"No finding\" observation (`14`) was intended to capture the absence of all findings above.",
+      "observations": "Exact competition taxonomy: 14 findings, unique image identifier column, radiologist ID column, bounding-box coordinates.",
+      "access_note": "Public documentation only. No Kaggle login or gated data access."
+    },
+    {
+      "url": "https://www.kaggle.com/c/vinbigdata-chest-xray-abnormalities-detection",
+      "title": "VinBigData Chest X-ray Abnormalities Detectionâ€”Overview",
+      "observations": "15,000 independently labeled training images and 3,000 test images; describes second-opinion/localization research goal. Independent labeling must not be misquoted as independent patients."
+    },
+    {
+      "url": "https://github.com/vinbigdata-medical/vindr-cxr/blob/main/README.md",
+      "title": "VinDr-CXR source authorsâ€™ repository",
+      "observations": "Author-owned overview and de-identification code location. No explicit one-image-per-patient assertion in README."
+    }
+  ]
+}
